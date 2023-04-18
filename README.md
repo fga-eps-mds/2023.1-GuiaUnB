@@ -1,4 +1,4 @@
-# Speak Up!
+# Speak Up
 ## Descrição
 O Speak Up! é um aplicativo mobile que tem como objetivo principal prevenir e denunciar casos de assédio sexual. Com este aplicativo, os usuários podem reportar casos de assédio, enviar fotos e detalhes sobre o incidente e obter suporte imediato. O aplicativo também fornece informações úteis sobre os direitos das vítimas e sobre como se proteger contra o assédio sexual.
 
@@ -17,7 +17,7 @@ Para executar o aplicativo, siga os passos abaixo:
 Faça um clone do repositório para sua máquina local
 Abra o terminal e navegue até o diretório raiz do projeto
 Execute o comando flutter packages get para instalar as dependências do Flutter
-Configure um projeto Firebase e adicione o arquivo google-services.json na pasta android/app do projeto
+Execute o comando npm install para instalar os pacotes do Node
 Execute o comando flutter run para iniciar o aplicativo no emulador ou dispositivo físico
 
 ## Funcionalidades
