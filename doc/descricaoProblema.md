@@ -1,4 +1,4 @@
-#Problema relacionado ao assédio sexual e violência contra mulheres
+# Problema relacionado ao assédio sexual e violência contra mulheres
 
 O assédio sexual e a violência contra mulheres são problemas graves em todo o mundo, com muitas mulheres enfrentando dificuldades para se proteger e denunciar essas situações. Alguns dos principais desafios incluem a falta de recursos para denunciar a violência, o estigma associado à denúncia, barreiras linguísticas ou falta de acesso a recursos, falta de informações sobre direitos e opções, bem como a necessidade de apoio emocional para lidar com o trauma.
 
