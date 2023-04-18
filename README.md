@@ -21,10 +21,10 @@ Configure um projeto Firebase e adicione o arquivo google-services.json na pasta
 Execute o comando flutter run para iniciar o aplicativo no emulador ou dispositivo físico
 
 ## Funcionalidades
-Os usuários podem reportar casos de assédio sexual
-Os usuários podem obter suporte imediato
-Os usuários podem conversar entre si para assim compartilhar suas experiências.
-O aplicativo fornece informações úteis sobre os direitos das vítimas e sobre como se proteger contra o assédio sexual.
+- Os usuários podem reportar casos de assédio sexual
+- Os usuários podem obter suporte imediato
+- Os usuários podem conversar entre si para assim compartilhar suas experiências.
+- O aplicativo fornece informações úteis sobre os direitos das vítimas e sobre como se proteger contra o assédio sexual.
 
 ## Contribuição
 Se você deseja contribuir para o Speak Up!, siga os passos abaixo:
