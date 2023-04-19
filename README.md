@@ -1,6 +1,6 @@
 # Speak Up
 ## Descrição
-O Speak Up! é um aplicativo mobile que tem como objetivo principal prevenir e denunciar casos de assédio sexual. Com este aplicativo, os usuários podem reportar casos de assédio, enviar fotos e detalhes sobre o incidente e obter suporte imediato. O aplicativo também fornece informações úteis sobre os direitos das vítimas e sobre como se proteger contra o assédio sexual.
+O Speak Up! é um aplicativo mobile que tem como objetivo principal prevenir e denunciar casos de assédio sexual. Com este aplicativo, os usuários podem reportar casos de assédio, obter informações para prevenção e compartilhar casos para ajudar outras pessoas. O aplicativo também fornece informações úteis sobre os direitos das vítimas e sobre como se proteger contra o assédio sexual.
 
 ## Tecnologias utilizadas
 O Speak Up! foi desenvolvido utilizando as seguintes tecnologias:
