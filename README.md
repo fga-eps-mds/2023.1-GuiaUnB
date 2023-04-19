@@ -39,4 +39,4 @@ Licença
 Este projeto está sob a licença MIT.
 
 ## Contato
-Se você tiver alguma dúvida ou sugestão sobre o Speak Up!, entre em contato com arthurelgg@gmail.com
+Se você tiver alguma dúvida ou sugestão sobre o Speak Up!, entre em contato com appspeakup.contato@gmail.com
