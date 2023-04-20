@@ -25,6 +25,16 @@ O aplicativo Speak Up! é uma plataforma de prevenção e denúncia de assédio 
 - O aplicativo deve permitir que os administradores do sistema respondam a cada denúncia com uma mensagem personalizada.
 - O aplicativo deve garantir que as denúncias sejam tratadas de forma confidencial e com respeito à privacidade dos usuários.
 
+## Troca de Mensagens
+- O aplicativo deve permitir que os usuários troquem mensagens entre si para conversar sobre questões relacionadas à prevenção de assédio.
+- O aplicativo deve garantir que todas as mensagens trocadas sejam privadas e seguras.
+- O aplicativo deve permitir que os usuários bloqueiem outros usuários ou denunciem mensagens ofensivas ou inapropriadas.
+## Informações de Prevenção
+- O aplicativo deve fornecer informações detalhadas sobre como prevenir o assédio sexual.
+- O aplicativo deve fornecer dicas e estratégias para evitar comportamentos inapropriados e reconhecer os sinais de assédio.
+- O aplicativo deve disponibilizar links úteis para serviços de apoio e aconselhamento para vítimas de assédio sexual.
+- O aplicativo deve permitir que os usuários denunciem comportamentos inapropriados que não constituem assédio sexual completo, mas ainda são preocupantes ou desconfortáveis.
+
 # Requisitos Não Funcionais
 
 ## Segurança
