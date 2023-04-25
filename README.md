@@ -1,42 +1,17 @@
-# Speak Up
-## Descrição
-O Speak Up! é um aplicativo mobile que tem como objetivo principal prevenir e denunciar casos de assédio sexual. Com este aplicativo, os usuários podem reportar casos de assédio, obter informações para prevenção e compartilhar casos para ajudar outras pessoas. O aplicativo também fornece informações úteis sobre os direitos das vítimas e sobre como se proteger contra o assédio sexual.
+# Guia UnB
+O Guia UnB é um aplicativo que tem como objetivo informar os alunos da Universidade de Brasília (UnB) sobre seus direitos como estudantes. Com este aplicativo, os alunos poderão ter acesso fácil e rápido a informações importantes sobre seus direitos e como exercê-los.
 
 ## Tecnologias utilizadas
-O Speak Up! foi desenvolvido utilizando as seguintes tecnologias:
+O Guia UnB foi desenvolvido utilizando as seguintes tecnologias:
 
-- Dart
-- Flutter
-- NodeJS
-- MySQL
-- Docker
-
-## Instalação e Configuração
-Para executar o aplicativo, siga os passos abaixo:
-
-Faça um clone do repositório para sua máquina local
-Abra o terminal e navegue até o diretório raiz do projeto
-Execute o comando flutter packages get para instalar as dependências do Flutter
-Execute o comando npm install para instalar os pacotes do Node
-Execute o comando flutter run para iniciar o aplicativo no emulador ou dispositivo físico
-
+- Flutter: um framework de desenvolvimento móvel do Google, utilizado para criar aplicativos Android e iOS a partir de um único código base.
+- Dart: uma linguagem de programação orientada a objetos desenvolvida pelo Google, utilizada em conjunto com o Flutter.
 ## Funcionalidades
-- Os usuários podem reportar casos de assédio sexual
-- Os usuários podem obter suporte imediato
-- Os usuários podem conversar entre si para assim compartilhar suas experiências.
-- O aplicativo fornece informações úteis sobre os direitos das vítimas e sobre como se proteger contra o assédio sexual.
+O Guia UnB possui as seguintes funcionalidades:
 
-## Contribuição
-Se você deseja contribuir para o Speak Up!, siga os passos abaixo:
+- Direitos do Aluno: uma seção que fornece informações importantes sobre os direitos dos alunos, incluindo informações sobre processos disciplinares, recursos acadêmicos e muito mais.
 
-Faça um fork deste repositório para sua conta do GitHub
-Clone o fork para sua máquina local
-Crie uma nova branch com o nome da sua feature ou correção de bug
-Realize as alterações desejadas e faça commit das mudanças
-Execute o comando git push para enviar as alterações para o seu fork
-Crie uma pull request para solicitar a inclusão das suas alterações no repositório original
-Licença
-Este projeto está sob a licença MIT.
+- Busca: uma funcionalidade que permite aos alunos pesquisar por informações específicas sobre seus direitos, tornando mais fácil encontrar as informações que precisam.
 
-## Contato
-Se você tiver alguma dúvida ou sugestão sobre o Speak Up!, entre em contato com appspeakup.contato@gmail.com
+## Como usar o Guia UnB
+Para usar o Guia UnB, basta baixar o aplicativo na loja de aplicativos do seu dispositivo móvel. Depois de instalar o aplicativo, você poderá navegar pelas diferentes seções para encontrar informações sobre seus direitos como aluno na UnB. Se precisar pesquisar por informações específicas, use a funcionalidade de busca.
