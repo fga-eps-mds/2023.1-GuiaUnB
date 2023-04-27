@@ -1,7 +1,7 @@
-# Problema relacionado ao assédio sexual e violência contra mulheres
+# Problema relacionado à informação e acesso dos diretis dos alunos da UnB
 
-O assédio sexual e a violência contra mulheres são problemas graves em todo o mundo, com muitas mulheres enfrentando dificuldades para se proteger e denunciar essas situações. Alguns dos principais desafios incluem a falta de recursos para denunciar a violência, o estigma associado à denúncia, barreiras linguísticas ou falta de acesso a recursos, falta de informações sobre direitos e opções, bem como a necessidade de apoio emocional para lidar com o trauma.
+Com a chegada a universindade de Brasilia, muitos estudantes ficam perdidos em relação a disciplinas , grade horária, seus direitos etc. Resumidamente a dificuldade dos alunos na faculdade pode ser facilmente sanada com um acesso facil a informações centralizadas e de fácil acesso por qualquer um.
 
-Este aplicativo de prevenção ao assédio sexual e denúncia de violência contra mulheres tem como objetivo fornecer uma ampla gama de recursos para ajudar as mulheres a se protegerem contra o assédio sexual e obterem informações sobre como denunciar a violência. Além disso, o aplicativo oferece acesso a recursos locais disponíveis e um espaço de comunidade para que as mulheres se conectem, compartilhem suas histórias e apoiem umas às outras.
+Com base nessas informções supracitadasuma ideia pra reolver esse problema e consequentemente varios outros, foi proposto a criação de um app/plataforma de facil acesso sem login para alunos se informarem para com isso se adaptarem melhor à faculdade. 
 
-Acreditamos que o uso deste aplicativo pode ajudar a resolver esses problemas, fornecendo às mulheres ferramentas de prevenção e denúncia. Além disso, a comunidade de mulheres no aplicativo pode oferecer suporte emocional e criar um ambiente seguro e de apoio para aquelas que estão passando por situações semelhantes.
+Acreditamos que o uso deste aplicativo pode ajudar a resolver esses problemas, fornecendo o necessário para os alunos usufruírem. alem de informações distribuidas por assuntos alunos poderão interagir e dar suas opnio  
