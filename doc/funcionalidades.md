@@ -1,8 +1,6 @@
-# Funcionalidades do Aplicativo de Prevenção ao Assédio Sexual e Denúncia de Violência contra Mulheres
-Algumas das funcionalidades que podem ser incorporadas ao aplicativo de prevenção ao assédio sexual e denúncia de violência contra mulheres são:
+# Funcionalidades do Aplicativo GuiaUnb
+Algumas das funcionalidades que podem ser incorporadas ao aplicativo GuiaUnB são:
 
-- **Informações e orientações:** o aplicativo pode fornecer informações detalhadas sobre os direitos das mulheres, opções para denunciar a violência e recursos locais disponíveis, como linhas de apoio, centros de acolhimento e serviços de emergência.
-- **Ferramentas de prevenção:** o aplicativo pode incluir dicas de segurança, orientações para situações de risco e recursos para criar um plano de segurança pessoal, ajudando as mulheres a evitar situações perigosas e se preparar para enfrentar possíveis ameaças.
-- **Espaço de comunidade:** o aplicativo pode permitir que as mulheres se conectem umas com as outras, compartilhem suas histórias, ofereçam apoio emocional e se organizem para lidar com a violência e o assédio sexual. Este espaço também pode ser utilizado para compartilhar informações sobre serviços locais, eventos e iniciativas de conscientização.
-- **Identificação de padrões de comportamento abusivo:** o aplicativo pode fornecer orientações sobre como identificar comportamentos abusivos em relacionamentos afetivos e oferecer recursos para ajudar as mulheres a sair dessas situações.
-- **Recursos para lidar com o trauma emocional:** o aplicativo pode incluir informações sobre terapia, grupos de apoio e outras formas de cuidado emocional e de saúde mental para ajudar as mulheres a lidar com o trauma emocional causado pelo assédio sexual e pela violência.
+- **Informações e orientações:** o aplicativo pode fornecer informações detalhadas sobre matérias, professores, locais pra determidada necessidade(onde e com que falar pra resolver algum problema), e também os direitos os quais poucas pessoas conhecem e sabm como usufruir dele. 
+- **Ferramentas de acesso e manuseio:** Para acessar o appnão sera necessário nenhum log in, somente baixar e usar o aplicativo pode incluir dicas de segurança (editar futuramente para saber quais)  .
+- **Espaço de comunidade:** o aplicativo pode permitir que as pessoas se conectem umas com as outras, compartilhem suas histórias e informaçoes uteis, ofereçam apoio e se organizem para lidar com situações em comum. Este espaço também pode ser utilizado para compartilhar informações sobre serviços locais, eventos e iniciativas de conscientização.
