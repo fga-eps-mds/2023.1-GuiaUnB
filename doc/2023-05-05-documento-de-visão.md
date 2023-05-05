@@ -131,8 +131,7 @@ Os usuários poderão utilizar o aplicativo baixando ele na loja de aplicativos 
 
 ### 3.7.1 Site UnB
 
-    O próprio site da UnB possui uma seção de perguntas frequentes, porém não é muito intuitivo e não possui uma interface amigável. Além disso, o site não é muito acessível, pois possui uma linguagem muito técnica e não é muito fácil de encontrar.
-
+O próprio site da UnB possui uma seção de perguntas frequentes, porém não é muito intuitivo e não possui uma interface amigável. Além disso, o site não é muito acessível, pois possui uma linguagem muito técnica e não é muito fácil de encontrar.
 
 ## **4. Visão geral do Produto**
 
