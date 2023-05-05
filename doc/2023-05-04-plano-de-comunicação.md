@@ -35,8 +35,8 @@ O esforço para realizar cada uma das tarefas é medido com a equipe e assim, es
 #### 3.2.2 Planejamento da Sprint
 Após o pré-planejamento, cada equipe faz uma reunião com todos os integrantes para dividir as tarefas que ficarão alocadas para a equipe entre os membros de acordo com dificuldade e disponibilidade. Além disso também são levantadas quais melhorias podem ser feitas. A Sprint Review e Sprint Retrospective ocorrem no mesmo dia do Planejamento da Sprint.
 
-#### 3.2.3 Daily Meeting
-Tarefa realizada pelo telegram ou discord todos os dias, onde cada integrante explica de forma clara três pontos: o que foi feito desde última Daily, o que pretende fazer até a próxima Daily e o que tem atrapalhado a produtividade, dessa forma os integrantes estão todo os dias se mantendo informados do andamento da sprint.
+#### 3.2.3 Reuniões Semanais
+Tarefa realizada pelo discord duas vezes por semana, onde cada integrante explica de forma clara três pontos: o que foi feito desde a última reunião, o que pretende fazer até a próxima e o que tem atrapalhado a produtividade, dessa forma os integrantes estão se mantendo informados do andamento da sprint.
 
 #### 3.2.4 Sprint Review
 Reunião para mostrar os resultados positivos da sprint, cada membro mostra o trabalho que fez para que o time possa fornecer e obter feedback. 
