@@ -72,7 +72,7 @@ Documento de Visão. Aix. Disponível em: https://fga-eps-mds.github.io/2019.1-A
 
 | Para    | que                                                                                                                           | o produto       | que                                                | diferente de | nosso produto                                             |
 | ------- | ----------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------------------------------------------- | ------------ | --------------------------------------------------------- |
-| Pessoas físicas | tem dificuldade em encontrar informações verdadeiras. | é um aplicativo para evitar a desinformação. | auxilia na redução das principais questões|Site UNB que apresenta dados de forma pouco intuitiva  | mostra informações de forma clara e intuitiva.|
+| Pessoas físicas | tem dificuldade em encontrar informações verdadeiras. | é um aplicativo para evitar a desinformação. | auxilia na redução das principais questões. |site UNB que apresenta dados de forma pouco intuitiva.  | mostra informações de forma clara e intuitiva.|
 
 ## **3. Descrição dos Envolvidos e dos Usuários**
 
