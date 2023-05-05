@@ -1,35 +1,33 @@
-# Contribuindo para o projeto
-O Speak Up! é um projeto open-source e estamos sempre abertos a novas contribuições. Se você deseja contribuir para o projeto, siga as diretrizes abaixo:
+---
+tag: "politicas"
+---
 
-## Como contribuir
-1. Verifique a lista de problemas (issues) em aberto e escolha um para trabalhar ou crie um novo problema se achar necessário.
-2. Faça um fork do repositório para sua conta do GitHub.
-3. Clone o fork para sua máquina local.
-4. Crie uma nova branch com um nome descritivo do que você está trabalhando. Por exemplo, "adicionando-funcionalidade-x".
-Implemente as alterações necessárias.
-5. Execute os testes e certifique-se de que eles estejam passando.
-6. Faça commit das alterações com uma mensagem descritiva em inglês, seguindo as convenções de commit message do projeto.
-7. Faça um push das alterações para a sua branch.
-8. Abra um pull request para o repositório original, descrevendo as alterações que você fez e relacionando o problema que está resolvendo (se houver).
-Aguarde o feedback da equipe de desenvolvimento do projeto.
+Antes de fazer qualquer alteração no repositório, crie uma issue e se responsabilize por essa alteração. Atente-se a [política de branchs](https://github.com/fga-eps-mds/2023.1-GuiaUnB/blob/docs/doc/2023-05-04-branches.md)
+e a [política de commits](https://github.com/fga-eps-mds/2023.1-GuiaUnB/blob/docs/doc/2023-05-04-commits.md). 
 
-## Convenções de commit message
+## Histórico de versões
 
-Os commits devem seguir as seguintes convenções:
+| Data       | Versão | Descrição                      | Autor             |
+| :--------: | :----: | :----------:                   | :---------------: |
+| 30/08/2021 |    0.1   | Envio inicial | [Arthur Gabriel](https://github.com/ArthurGabrieel)|
 
-- O título do commit deve ser descritivo e começar com um verbo no imperativo. Exemplo: "Adiciona funcionalidade x".
-- O corpo do commit deve explicar detalhadamente o que foi alterado e por quê.
+## Criação de Issues
 
-## Testando o código
-O Speak Up! tem uma suíte de testes automatizados. Certifique-se de que todos os testes estão passando antes de enviar o pull request.
+Ao criar issues atente-se as seguintes questões:
 
-## Estilo de código
-O código do Speak Up! segue as seguintes convenções:
+- Já existe issue referente ao assunto que você pretende abordar na sua? Se sim, trabalhe a partir da issue já criada
+- Adicione um título que sintetize bem o problema abordado na issue
+- Adicione uma descrição adequada, de modo que qualquer membro do repositório consiga compreender qual é o problema
+- Adicione ao menos um Assignee
+- Adicione as Labels adequadas
+- Adicione a milestone referente a sprint em que o problema será trabalhado
 
-- O código deve seguir as convenções de estilo do Dart.
-- Utilize identação com 2 espaços.
-- Utilize nomes descritivos para variáveis, funções e classes.
-- Utilize comentários para explicar trechos de código complexos.
+## Criação de Pull Request
+
+Ao fazer um pull request atente-se para:
+
+- Linkar o PR a sua Issue correspondente
+- Marcar um dos responsáveis para revisão
 
 ## Dúvidas e sugestões
-Se você tiver alguma dúvida ou sugestão sobre como contribuir para o Speak Up!, sinta-se à vontade para entrar em contato com a equipe de desenvolvimento.
+Se você tiver alguma dúvida ou sugestão sobre como contribuir para o Guia UnB, sinta-se à vontade para entrar em contato com a equipe de desenvolvimento.
