@@ -16,11 +16,14 @@ Nesta sprint, a equipe foi estruturada entre seus papeis e funções. Além diss
 
 ## Objetivos
 
-|                            Issue                             |              Título               |                    Responsáveis                     |
-| :----------------------------------------------------------: | :-------------------------------: | :-------------------------------------------------: |
-| [#12](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/1) |  Sprint 3 - Criação do Product Backlog  | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
-| [#13](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/3) | Sprint 3 - Definir Equipe de Desenvolvimento | Todos |
-| [#14](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/3) | Sprint 3 - Estudar Git Flow | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
+|                             Issue                              |                        Título                        |                    Responsáveis                     |
+| :------------------------------------------------------------: | :--------------------------------------------------: | :-------------------------------------------------: |
+| [#12](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/1)  |        Sprint 3 - Criação do Product Backlog         | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
+| [#13](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/3)  |     Sprint 3 - Definir Equipe de Desenvolvimento     |                        Todos                        |
+| [#14](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/3)  |             Sprint 3 - Estudar Git Flow              | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
+| [#30](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/30) | Sprint 3 - Criação do Documento de Código de Conduta | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
+| [#31](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/31) |   Sprint 3 - Criação do Documento de Contribuição    | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
+
 
 
 ## Papeis
