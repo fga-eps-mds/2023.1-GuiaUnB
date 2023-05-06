@@ -1,4 +1,4 @@
-Nesta sprint, a equipe foi estruturada entre seus papeis e funções. Além disso, foi criado o Product Backlog e também foi utilizado o período para o aprendizado de novas ferramentas.
+Nesta sprint, a equipe foi estruturada entre seus papeis e funções. Além disso, foi criado o Product Backlog e também foi utilizado o período para o aprendizado de novas ferramentas. Por fim, foi criado o documento de código de conduta e de contribuição.
 
 ## Histórico de Versões
 
