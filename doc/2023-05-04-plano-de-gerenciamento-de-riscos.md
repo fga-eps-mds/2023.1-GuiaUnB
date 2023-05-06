@@ -6,6 +6,7 @@ excerpt: ""
 | Data       | Versão | Descrição                      | Autor(es) |
 | :--------: | :----: | :----------------------------: | :-------: |
 | 04/05/2023 |  0.1   |  Criação do plano de riscos    | [Thiago Freitas](https://github.com/thiagorfreitas)|
+| 06/05/2023 |  0.2   |  Atualizações no plano de riscos    | [Thiago Freitas](https://github.com/thiagorfreitas)|
 
 ## 1. Introdução
 O Plano de Gerenciamento de Riscos fornece informações sobre papéis e responsabilidades relativas aos riscos e descreve as categorias de risco que podem ser expressas como uma estrutura analítica dos riscos.
@@ -13,11 +14,7 @@ O Plano de Gerenciamento de Riscos fornece informações sobre papéis e respons
 ## 2. Objetivo
 O objetivo do Plano de Gerenciamento de Riscos é documentar os riscos associados ao projeto e as ações a serem tomadas para que eles sejam mitigados ou contingenciada.
 
-## 3. Estrutura Analítica dos Riscos
-Uma forma comum para estruturar categorias dos riscos, representadas hierarquicamente, usa a estrutura analítica dos riscos (EAR). Uma EAR possibilita a melhor vizualização de todos as fontes de riscos, sendo útil para identificação e categorização.
-
-![Riscos - Diagrama de atividade](https://user-images.githubusercontent.com/44625056/131579354-8e01f3bc-71e4-4dd1-b20a-aeb26ec6b82c.png)
-Estrutura Analítica dos Riscos deste projeto.
+## 3. Riscos
 
 ### 3.1. Risco Técnico
 
@@ -49,8 +46,6 @@ Estrutura Analítica dos Riscos deste projeto.
 
 | Tipo         | Descrição                                                                                                |
 |--------------|----------------------------------------------------------------------------------------------------------|
-| Cliente      | Riscos gerados pelo cliente em relação ao produto, como mudanças no escopo devido a um pedido do cliente |
-| Pandemia     | Riscos gerados pela pandemia                                                                             |
 | Greve na UnB | Risco gerado pela paralisação de atividades na UnB                                                       |
 
 ## 4. Identificação dos Riscos
@@ -62,20 +57,18 @@ Estrutura Analítica dos Riscos deste projeto.
 | RN03 | Os arquitetos não conseguirem planejar e garantir a execução da arquitetura | da falta de conhecimento das tecnologias do projeto                | dificuldade na organização e atraso no desenvolvimento                          | Complexidade           |
 | RN04 | A equipe de desenvolvimento não se adaptar às tecnologias escolhidas      | da falta de conhecimento das tecnologias do projeto                | atraso na entrega do produto ou falha total da entrega                                                 | Complexidade           |
 | RN05 | Houverem dificuldades em realizar testes                                  | da falta de conhecimento                                           | atraso na entrega das histórias planejadas                                                             | Complexidade           |
-| RN06 | Os DevOps não conseguirem automatizar o deploy e a integração contínua    | de falta de conhecimento                                           | atraso na entrega do produto em ambiente de produção                                                   | Complexidade           |
-| RN07 | Os DevOps não conseguirem automatizar o deploy e a integração contínua    | de indefinição da Arquitetura do projeto                           | atraso na entrega do produto em ambiente de produção e necessidade de replanejamento da arquitetura    | Complexidade           |
-| RN08 | O produto final estiver em baixa qualidade                                | da falhas da equipe de desenvolvimento                             | refazer todo o produto e necessidade de replanejamento                                                 | Qualidade              |
-| RN09 | As atividades não forem concretizadas no prazo                            | da falta de integração da equipe de desenvolvimento                | atraso na baseline do projeto                                                                          | Estimativa/Dependência |
-| RN10 | Houver histórias de usuário mal definidas                                 | de falta elicitação de requisitos de forma adequada                | atraso na entrega do produto e necessidade de redefinição das histórias                                | Estimativa             |
-| RN11 | Houver Sprint mal planejada                                               | de histórias mal planejadas                                        | atraso na entrega do produto, dificuldade na compreensão das histórias e necessidade de replanejamento | Estimativa/Priorização |
-| RN12 | Houver mudança no escopo                                                  | da falha no planejamento                                           | atraso e necessidade de replanejamento ou projeto não ser concluído a tempo                            | Planejamento           |
-| RN13 | Houver falta de comunicação na equipe                                     | da não utilização dos meios de comunicação definidos               | dificuldade no gerenciamento da equipe por parte do Scrum Master e falta de alinhamento das equipes    | Comunicação            |
-| RN14 | Houver problemas na comunicação da equipe                                 | do número de membros                                               | dificuldade no gerenciamento da equipe por parte do Scrum Master e falta de alinhamento das equipes    | Comunicação            |
-| RN15 | Membros da equipe abandonarem o projeto                                   | da desmotivação, sobrecarga causadas ou não pela pandemia          | sobrecarga entre os membros restantes e necessidade de replanejamento                                  | Recursos/Pandemia               |
-| RN16 | Houver perda ou defeitos em equipamentos                                  | de mal uso ou acidentes                                            | atraso na entrega do projeto e necessidade de replanejamento                                           | Recursos               |
-| RN17 | Houver o cancelamento do projeto                                          | de falta de interesse do cliente                                   | interrupção do projeto                                                                                      | Cliente                |
-| RN18 | A qualidade do software não corresponder às expectativas do cliente       | de má implementação                                                | descontentamento do Cliente e possibilidade de cancelamento do projeto                                 | Cliente/Qualidade      |
-| RN19 | Houver greve na UnB                                                       | de orientações de assembleias do corpo docente ou estudantil       | interrupção do projeto                                                                                 | Greve na UnB           |
+| RN06 | O produto final estiver em baixa qualidade                                | da falhas da equipe de desenvolvimento                             | refazer todo o produto e necessidade de replanejamento                                                 | Qualidade              |
+| RN07 | As atividades não forem concretizadas no prazo                            | da falta de integração da equipe de desenvolvimento                | atraso na baseline do projeto                                                                          | Estimativa/Dependência |
+| RN08 | Houver histórias de usuário mal definidas                                 | de falta elicitação de requisitos de forma adequada                | atraso na entrega do produto e necessidade de redefinição das histórias                                | Estimativa             |
+| RN09 | Houver Sprint mal planejada                                               | de histórias mal planejadas                                        | atraso na entrega do produto, dificuldade na compreensão das histórias e necessidade de replanejamento | Estimativa/Priorização |
+| RN10 | Houver mudança no escopo                                                  | da falha no planejamento                                           | atraso e necessidade de replanejamento ou projeto não ser concluído a tempo                            | Planejamento           |
+| RN11 | Houver falta de comunicação na equipe                                     | da não utilização dos meios de comunicação definidos               | dificuldade no gerenciamento da equipe por parte do Scrum Master e falta de alinhamento das equipes    | Comunicação            |
+| RN12 | Houver problemas na comunicação da equipe                                 | do número de membros                                               | dificuldade no gerenciamento da equipe por parte do Scrum Master e falta de alinhamento das equipes    | Comunicação            |
+| RN13 | Membros da equipe abandonarem o projeto                                   | da desmotivação, sobrecarga causadas ou não pela pandemia          | sobrecarga entre os membros restantes e necessidade de replanejamento                                  | Recursos/Pandemia               |
+| RN14 | Houver perda ou defeitos em equipamentos                                  | de mal uso ou acidentes                                            | atraso na entrega do projeto e necessidade de replanejamento                                           | Recursos               |
+| RN15 | Houver o cancelamento do projeto                                          | de falta de interesse do cliente                                   | interrupção do projeto                                                                                      | Cliente                |
+| RN16 | A qualidade do software não corresponder às expectativas do cliente       | de má implementação                                                | descontentamento do Cliente e possibilidade de cancelamento do projeto                                 | Cliente/Qualidade      |
+| RN17 | Houver greve na UnB                                                       | de orientações de assembleias do corpo docente ou estudantil       | interrupção do projeto                                                                                 | Greve na UnB           |
 
 ## 5. Interpretação
 
