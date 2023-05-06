@@ -18,7 +18,7 @@ Nessa sprint focamos em documentação e estudo de tecnologias. A equipe se divi
 
 |                             Issue                              |                          Título                          |                    Responsáveis                     |
 | :------------------------------------------------------------: | :------------------------------------------------------: | :-------------------------------------------------: |
-|  [#5](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/5)  |            Sprint 2 - Estudar Dart e Flutter             | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
+|  [#5](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/5)  |            Sprint 2 - Estudar Dart e Flutter             |                        Todos                        |
 |  [#7](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/5)  |             Sprint 2 - Descrição do problema             |    [Alexandre Beck](https://github.com/zzzBECK)     |
 |  [#8](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/8)  | Sprint 2 - Identificar funcionalidades para o aplicativo |    [Alexandre Beck](https://github.com/zzzBECK)     |
 | [#10](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/10) |        Sprint 2 - Criação de template para issues        | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
