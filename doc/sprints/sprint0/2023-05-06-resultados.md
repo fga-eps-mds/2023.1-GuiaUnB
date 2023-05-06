@@ -2,15 +2,15 @@ Durante esta sprint, foram atribuídos os papéis de Scrum Master, PO e Arquitet
 
 ## Histórico de Versões
 
-| Data       | Versão | Descrição                      |   |
-| :--------: | :----: | :----------:                   | :---------------: |
-| 29/03/2023 |    0.1   | Fechamento do documento
+|    Data    | Versão |        Descrição        |
+| :--------: | :----: | :---------------------: |
+| 06/05/2023 |  0.1   | Fechamento do documento |
 
 ## Objetivos
 
-| Issue |            Título            |         Status        | 
-|-------|:----------------------------:|-----------------------|
-| [#1](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/1) | Sprint 0 - Descrição do Projeto | _Concluído_ |
+| Issue                                                        |              Título               | Status      |
+| ------------------------------------------------------------ | :-------------------------------: | ----------- |
+| [#1](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/1) |  Sprint 0 - Descrição do Projeto  | _Concluído_ |
 | [#3](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/3) | Sprint 0 - Ambientação do Projeto | _Concluído_ |
 
 ## Avaliação do Scrum Master
