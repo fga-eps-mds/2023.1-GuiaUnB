@@ -1,4 +1,4 @@
-Nesta sprint, a equipe foi decidido criar o Story Map do projeto, criar o Protótipo de Baixa Fidelidade e documentação de Políticas de Segurança, Arquitetura, Padronização de Branches e atualização do README.md
+Nesta sprint, foi decidio criar a Documentação de Padronização de Commits, Documentação de Plano de Comunicação, Documentação de Plano de Gerenciamento de Riscos, Documentação de Visão e Documentação das Sprints Passadas
 
 ## Histórico de Versões
 
