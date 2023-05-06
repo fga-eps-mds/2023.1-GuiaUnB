@@ -8,7 +8,7 @@ Nesta sprint, a equipe foi decidido criar o Story Map do projeto, criar o Protó
 
 ## Tamanho da Sprint
 
-**Início**: 24/03/23
+**Início**: 24/04/23
 
 **Fim**: 30/04/23
 
