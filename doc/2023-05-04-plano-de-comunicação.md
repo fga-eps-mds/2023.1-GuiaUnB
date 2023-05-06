@@ -3,7 +3,7 @@ excerpt: ""
 ---
 | Data       | Versão | Descrição                      | Autor             |
 | :--------: | :----: | :----------:                   | :---------------: |
-| 06/09/2021 |  0.1   | Abertura do documento | [Arthur Gabriel](https://github.com/ArthurGabrieel)|
+| 04/05/2023 |  0.1   | Abertura do documento | [Arthur Gabriel](https://github.com/ArthurGabrieel)|
 
 ## 1. Objetivo
 Este documento tem como objetivo oficializar os meios de comunicação entre os membros do projeto, explicitando desde as ferramentas utilizadas até os processos necessários para assegurar que as informações sejam armazenadas, organizadas e distribuídas.
