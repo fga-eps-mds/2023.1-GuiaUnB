@@ -9,7 +9,7 @@ Nessa sprint a equipe se acostumou com o padrão de documentação do projeto e 
 
 ## Tamanho da Sprint
 
-**Início**: 24/03/23
+**Início**: 24/04/23
 
 **Fim**: 30/04/23
 
