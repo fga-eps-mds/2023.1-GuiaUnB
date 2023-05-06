@@ -1,7 +1,0 @@
-# Problema relacionado ao assédio sexual e violência contra mulheres
-
-O assédio sexual e a violência contra mulheres são problemas graves em todo o mundo, com muitas mulheres enfrentando dificuldades para se proteger e denunciar essas situações. Alguns dos principais desafios incluem a falta de recursos para denunciar a violência, o estigma associado à denúncia, barreiras linguísticas ou falta de acesso a recursos, falta de informações sobre direitos e opções, bem como a necessidade de apoio emocional para lidar com o trauma.
-
-Este aplicativo de prevenção ao assédio sexual e denúncia de violência contra mulheres tem como objetivo fornecer uma ampla gama de recursos para ajudar as mulheres a se protegerem contra o assédio sexual e obterem informações sobre como denunciar a violência. Além disso, o aplicativo oferece acesso a recursos locais disponíveis e um espaço de comunidade para que as mulheres se conectem, compartilhem suas histórias e apoiem umas às outras.
-
-Acreditamos que o uso deste aplicativo pode ajudar a resolver esses problemas, fornecendo às mulheres ferramentas de prevenção e denúncia. Além disso, a comunidade de mulheres no aplicativo pode oferecer suporte emocional e criar um ambiente seguro e de apoio para aquelas que estão passando por situações semelhantes.

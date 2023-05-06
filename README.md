@@ -1,17 +1,59 @@
-# Guia UnB
-O Guia UnB é um aplicativo que tem como objetivo informar os alunos da Universidade de Brasília (UnB) sobre seus direitos como estudantes. Com este aplicativo, os alunos poderão ter acesso fácil e rápido a informações importantes sobre seus direitos e como exercê-los.
+## 💻 Visão Geral
+O Guia UnB tem como objetivo auxiliar os estudantes da Universidade de Brasília a compreenderem seus direitos e deveres de maneira prática e intuitiva, combatendo a desinformação e promovendo a transparência na comunicação entre a instituição e seus alunos.
+	
 
-## Tecnologias utilizadas
-O Guia UnB foi desenvolvido utilizando as seguintes tecnologias:
+## 💡 Ideia e Incentivo
+O Guia UnB é uma ferramenta essencial para quem estuda, trabalha ou está envolvido com a Universidade de Brasília. Com informações atualizadas e confiáveis sobre os serviços oferecidos pela instituição, o aplicativo ajuda a esclarecer dúvidas e facilita o acesso a importantes recursos acadêmicos.
 
-- Flutter: um framework de desenvolvimento móvel do Google, utilizado para criar aplicativos Android e iOS a partir de um único código base.
-- Dart: uma linguagem de programação orientada a objetos desenvolvida pelo Google, utilizada em conjunto com o Flutter.
-## Funcionalidades
-O Guia UnB possui as seguintes funcionalidades:
+## 🚀 Como executar o projeto
+### 🛠 Tecnologias e Pré-Requisitos
+Esse projeto usa algumas ferramentas para o seu desenvolvimento:
+- [Dart](https://dart.dev/)
+- [Flutter](https://docs.flutter.dev/get-started/install)
 
-- Direitos do Aluno: uma seção que fornece informações importantes sobre os direitos dos alunos, incluindo informações sobre processos disciplinares, recursos acadêmicos e muito mais.
+### ✔️ Instalando e executando
+Baixe o repositório e entre nele
 
-- Busca: uma funcionalidade que permite aos alunos pesquisar por informações específicas sobre seus direitos, tornando mais fácil encontrar as informações que precisam.
+    git clone https://github.com/fga-eps-mds/2023.1-GuiaUnB.git
+    cd guia_unb
 
-## Como usar o Guia UnB
-Para usar o Guia UnB, basta baixar o aplicativo na loja de aplicativos do seu dispositivo móvel. Depois de instalar o aplicativo, você poderá navegar pelas diferentes seções para encontrar informações sobre seus direitos como aluno na UnB. Se precisar pesquisar por informações específicas, use a funcionalidade de busca.
+Em seguida é preciso baixar as dependências do aplicativo
+
+    flutter pub get
+
+Agora você pode executar o aplicativo no seu dispositivo Android ou iOS, ou em um emulador. Para isso, execute o comando:
+
+    flutter run
+
+## 🤝 Como contribuir para o projeto
+
+[Guia de Contribuição](CONTRIBUTING.md)
+
+[Código de Conduta](CODE_OF_CONDUCT.md)
+
+[Política de Branches](/doc/2023-05-04-branches.md)
+
+[Políticas de Commits](doc/2023-05-04-commits.md)
+
+[Template para criação de issues](.github/ISSUE_TEMPLATE/custom.md)
+
+[Template para criação de pull requests](.github/ISSUE_TEMPLATE/.pull_request_template.md)
+
+
+
+## 👨‍💻 Desenvolvedores
+
+<table>
+	<tr>
+		<td align="center"><a href="https://github.com/ArthurGabrieel"><img src="https://avatars.githubusercontent.com/u/78980894?v=4" width="100px;" alt=""/><br /><sub><b>Arthur Gabriel</b></sub></a><br /><a href="https://github.com/ArthurGabrieel"></a></td>
+		<td align="center"><a href="https://github.com/zzzBECK"><img src="https://avatars.githubusercontent.com/u/82113486?v=4" width="100px;" alt=""/><br /><sub><b>Alexandre Beck</b></sub></a><br /><a href="https://github.com/zzzBECK"></a></td>
+		<td align="center"><a href="https://github.com/thiagorfreitas"><img src="https://avatars.githubusercontent.com/u/77907084?v=4" width="100px;" alt=""/><br /><sub><b>Thiago Freitas</b></sub></a><br /><a href="https://github.com/thiagorfreitas"></a></td>
+		<td align="center"><a href="https://github.com/LucasAvelar2711"><img src="https://avatars.githubusercontent.com/u/88166607?v=4" width="100px;" alt=""/><br /><sub><b>Lucas Avelar</b></sub></a><br /><a href="https://github.com/LucasAvelar2711"></a></td>
+		<td align="center"><a href="https://github.com/igor-ribeir0"><img src="https://avatars.githubusercontent.com/u/91838885?v=4" width="100px;" alt=""/><br /><sub><b>Igor Ribeiro </b></sub></a><br /><a href="https://github.com/igor-ribeir0"></a></td>
+        <td align="center"><a href="https://github.com/GenilsonJunior99006"><img src="https://avatars.githubusercontent.com/u/61212256?v=4" width="100px;" alt=""/><br /><sub><b>Genilson Junior </b></sub></a><br /><a href="https://github.com/GenilsonJunior99006"></a></td>
+	</tr>
+</table>
+
+## 📝 Licença
+Este projeto está licenciado sob os termos da licença 
+[MIT](./LICENSE).
