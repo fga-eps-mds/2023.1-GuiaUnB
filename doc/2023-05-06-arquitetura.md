@@ -15,7 +15,7 @@ Essa documentação engloba as funções visadas pelo projeto, além das tecnolo
 ### 2.1 Flutter
 <center>
 <figure>
-  <img width="300" src="../guia_unb/assets/images/flutter-logo.png" />
+  <img width="300" src="https://storage.googleapis.com/cms-storage-bucket/847ae81f5430402216fd.svg" />
 </figure>
 </center>
 
@@ -24,7 +24,7 @@ O aplicativo GuiaUnB será construído utilizando o Flutter, um framework popula
 ### 2.2 Dart
 <center>
 <figure>
-  <img width="100" src="../guia_unb/assets/images/dart-logo.png" />
+  <img width="100" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Dart-logo.png" />
 </figure>
 </center>
 
