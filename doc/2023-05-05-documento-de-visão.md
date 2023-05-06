@@ -11,6 +11,7 @@ Assim, será explicado o problema evidenciado, a oportunidade encontrada, a desc
 | Data | Versão | Descrição | Autor(es) |
 | :--: | :----: | :-------: | :-------: |
 |05/05/2023|0.1|Criação da primeira versão|[Arthur Gabriel](https://github.com/ArthurGabrieel)|
+|06/05/2023|0.2|Atualizações na Organização da Equipe|[Thiago Freitas](https://github.com/thiagorfreitas)|
 
 
 ## **1. Introdução**
@@ -108,10 +109,10 @@ Os usuários poderão utilizar o aplicativo baixando ele na loja de aplicativos 
 
 | Papel  |  Descrição  |
 | ----- | -------------------- |
-| Scrum Master | [Alexandre Beck](https://github.com/zzzBECK) |
+| Scrum Master | [Thiago Freitas](https://github.com/thiagorfreitas) |
 | Product Owner | [Lucas Antunes](https://github.com/LucasAvelar2711) |
 | Arquiteto de Software | [Arthur Gabriel](https://github.com/ArthurGabrieel)|
-| Desenvolvedor | [Thiago Freitas](https://github.com/thiagorfreitas), [Igor Ribeiro](https://github.com/igor-ribeir0) e [Genilson Silva](https://github.com/GenilsonJunior99006)|
+| Desenvolvedor | [Alexandre Beck](https://github.com/zzzBECK), [Igor Ribeiro](https://github.com/igor-ribeir0) e [Genilson Silva](https://github.com/GenilsonJunior99006)|
 
 ### 3.5 Perfis dos Usuários
 
