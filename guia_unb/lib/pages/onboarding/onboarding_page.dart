@@ -1,5 +1,5 @@
 import 'dart:ui';
-
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
 import 'package:guia_unb/core/config/routes/routes.dart';
 
@@ -14,10 +14,12 @@ class OnboardingPage extends StatelessWidget {
       body: Stack(
         children: [
           Center(
-            child: Image.asset(
-              "assets/images/logo.png",
-              fit: BoxFit.cover,
-            ),
+            child: SvgPicture.asset(
+              "assets/images/unb-logo.svg",
+              height: 200,
+              width: 200,
+              alignment: Alignment.center,
+          )
           ),
           Positioned.fill(
             child: BackdropFilter(
