@@ -36,7 +36,7 @@ class OnboardingPage extends StatelessWidget {
                     style: ButtonStyle(
                       textStyle: MaterialStateProperty.all(textTheme.labelMedium),
                       backgroundColor: MaterialStateProperty.all(
-                        const Color(0xFF165AB7),
+                        Theme.of(context).colorScheme.secondary,
                       ),
                       padding: MaterialStateProperty.all(
                         const EdgeInsets.symmetric(vertical: 14, horizontal: 32),

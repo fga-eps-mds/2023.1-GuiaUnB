@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:guia_unb/core/util/color.dart';
 
 class AppTheme {
   static ThemeData appTheme() {
     return ThemeData(
-      canvasColor: Colors.white,
+      primaryColor: AppColors.primary,
+      colorScheme: const ColorScheme.light(
+        primary: AppColors.primary,
+        secondary: AppColors.secondary,
+      ),
+      canvasColor: AppColors.background,
       fontFamily: "Poppins",
       textTheme: const TextTheme(
         labelMedium: TextStyle(
@@ -15,7 +21,7 @@ class AppTheme {
         ),
       ),
       buttonTheme: ButtonThemeData(
-        buttonColor: const Color(0xFF165AB7),
+        buttonColor: AppColors.secondary,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
@@ -23,7 +29,7 @@ class AppTheme {
         textTheme: ButtonTextTheme.primary,
       ),
       iconTheme: const IconThemeData(
-        color: Colors.black,
+        color: AppColors.primary,
       ),
     );
   }
