@@ -19,7 +19,7 @@ class AppTheme {
           color: AppColors.label,
           fontWeight: FontWeight.bold,
           fontFamily: "Poppins",
-          fontSize: 28,
+          fontSize: 30,
         ),
       ),
       canvasColor: AppColors.background,

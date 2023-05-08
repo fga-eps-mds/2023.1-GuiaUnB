@@ -21,9 +21,6 @@ class AppCard extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Card(
-        color: theme.primaryColor,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        elevation: 10,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: ListTile(

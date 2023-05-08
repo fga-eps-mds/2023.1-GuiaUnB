@@ -35,10 +35,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Guia UnB",
-          style: TextStyle(color: AppColors.label, fontSize: 28),
-        ),
+        title: const Text("Guia UnB"),
         centerTitle: true,
         automaticallyImplyLeading: false,
         actions: [

@@ -10,18 +10,12 @@ class InitialPage extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: Card(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
-        elevation: 10,
-        color: theme.colorScheme.primary,
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(
             vertical: 10.0,
             horizontal: 20,
           ),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 'Direitos dos Alunos',

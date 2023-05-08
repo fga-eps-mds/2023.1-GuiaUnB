@@ -13,11 +13,6 @@ class AboutPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Card(
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
-            ),
-            elevation: 10,
-            color: theme.colorScheme.primary,
             child: Padding(
               padding: const EdgeInsets.symmetric(
                 vertical: 10.0,
