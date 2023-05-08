@@ -9,6 +9,13 @@ class AppTheme {
         primary: AppColors.primary,
         secondary: AppColors.secondary,
       ),
+      appBarTheme: const AppBarTheme(
+        backgroundColor: AppColors.background,
+        elevation: 0,
+        iconTheme: IconThemeData(
+          color: AppColors.secondary,
+        ),
+      ),
       canvasColor: AppColors.background,
       fontFamily: "Poppins",
       textTheme: const TextTheme(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:guia_unb/pages/home/home_page.dart';
-import 'package:guia_unb/pages/onboarding/onboarging_page.dart';
+import 'package:guia_unb/pages/onboarding/onboarding_page.dart';
 import '../core/config/routes/routes.dart';
 import '../core/config/theme/app_theme.dart';
 

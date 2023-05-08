@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:guia_unb/core/util/color.dart';
+import 'package:guia_unb/pages/ajuda/ajuda_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -18,18 +20,26 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60),
-        child: CupertinoNavigationBar(
-          middle: Text("Guia UnB"),
+      appBar: AppBar(
+        title: const Text(
+          "Guia UnB",
+          style: TextStyle(color: AppColors.label, fontSize: 28),
         ),
+        centerTitle: true,
+        automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(Icons.search),
+          ),
+        ],
       ),
       body: IndexedStack(
         index: _selectedIndex,
-        children: [
+        children: const [
           Center(child: Text("Home")),
           Center(child: Text("Profile")),
-          Center(child: Text("Ajuda")),
+          AjudaPage(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
