@@ -6,11 +6,13 @@ class AppCard extends StatelessWidget {
     required this.title,
     required this.subtitle,
     required this.icon,
+    this.onTap,
   }) : super(key: key);
 
   final String title;
   final String subtitle;
   final IconData icon;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -20,9 +22,7 @@ class AppCard extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 8),
       child: Card(
         color: theme.primaryColor,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         elevation: 10,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -36,6 +36,7 @@ class AppCard extends StatelessWidget {
               subtitle,
               style: theme.textTheme.labelMedium,
             ),
+            onTap: onTap,
           ),
         ),
       ),

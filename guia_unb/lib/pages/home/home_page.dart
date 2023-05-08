@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
       case 0:
         return const InitialPage();
       case 1:
-        return const TipsPage();
+        return TipsPage();
       case 2:
         return const AboutPage();
       default:
@@ -49,12 +49,12 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: AnimatedSwitcher(
-        duration: const Duration(milliseconds: 200),
+        duration: const Duration(milliseconds: 300),
         transitionBuilder: (child, animation) {
           return SlideTransition(
             position: Tween<Offset>(
-              begin: const Offset(2, 0),
-              end: Offset.zero,
+              begin: const Offset(-2, 0),
+              end: const Offset(0, 0),
             ).animate(animation),
             child: child,
           );
@@ -62,7 +62,6 @@ class _HomePageState extends State<HomePage> {
         child: _getSelectedPage(),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        elevation: 5,
         fixedColor: Theme.of(context).colorScheme.secondary,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
