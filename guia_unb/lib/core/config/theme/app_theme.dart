@@ -20,11 +20,22 @@ class AppTheme {
       fontFamily: "Poppins",
       textTheme: const TextTheme(
         labelMedium: TextStyle(
+          color: AppColors.labelWhite,
           fontSize: 20,
         ),
         titleLarge: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 60,
+        ),
+        titleMedium: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 30,
+          color: AppColors.labelWhite,
+        ),
+        titleSmall: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 22,
+          color: AppColors.labelWhite,
         ),
       ),
       buttonTheme: ButtonThemeData(

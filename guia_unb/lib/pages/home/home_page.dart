@@ -1,7 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:guia_unb/core/util/color.dart';
-import 'package:guia_unb/pages/ajuda/ajuda_page.dart';
+import 'package:guia_unb/pages/home/inicio/inicio.dart';
+import 'package:guia_unb/pages/home/sobre/sobre.dart';
+
+import 'dicas/dicas.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -37,13 +39,13 @@ class _HomePageState extends State<HomePage> {
       body: IndexedStack(
         index: _selectedIndex,
         children: const [
-          Center(child: Text("Home")),
-          Center(child: Text("Profile")),
-          AjudaPage(),
+          InitialPage(),
+          TipsPage(),
+          AboutPage(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        elevation: 3,
+        elevation: 5,
         fixedColor: Theme.of(context).colorScheme.secondary,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -51,12 +53,12 @@ class _HomePageState extends State<HomePage> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-            label: 'Profile',
+            icon: Icon(Icons.tips_and_updates),
+            label: 'Dicas',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.help),
-            label: 'Help',
+            label: 'Ajuda',
           ),
         ],
         currentIndex: _selectedIndex,
