@@ -12,22 +12,22 @@ class OnboardingPage extends StatelessWidget {
     final textTheme = Theme.of(context).textTheme;
 
     return Scaffold(
-      body: Stack(
-        children: [
-          Center(
-              child: SvgPicture.asset(
-            "assets/images/unb-logo.svg",
-            height: 200,
-            width: 200,
-            alignment: Alignment.center,
-          )),
-          Positioned.fill(
-            child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-                child: const SizedBox()),
-          ),
-          SafeArea(
-            child: Center(
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Center(
+                child: SvgPicture.asset(
+              "assets/images/unb-logo.svg",
+              height: 200,
+              width: 200,
+              alignment: Alignment.center,
+            )),
+            Positioned.fill(
+              child: BackdropFilter(
+                  filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+                  child: const SizedBox()),
+            ),
+            Center(
               child: Column(
                 children: [
                   Text("Bem vindo", style: textTheme.titleLarge),
@@ -59,9 +59,9 @@ class OnboardingPage extends StatelessWidget {
                   )
                 ],
               ),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }

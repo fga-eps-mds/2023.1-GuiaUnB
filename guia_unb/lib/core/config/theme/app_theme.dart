@@ -55,6 +55,31 @@ class AppTheme {
       iconTheme: const IconThemeData(
         color: AppColors.primary,
       ),
+      cardTheme: const CardTheme(
+        color: AppColors.primary,
+        elevation: 10,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(20),
+          ),
+        ),
+      ),
+      dialogTheme: const DialogTheme(
+        alignment: Alignment.center,
+        backgroundColor: AppColors.background,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(20),
+          ),
+        ),
+      ),
+      dividerColor: AppColors.primary,
+      pageTransitionsTheme: const PageTransitionsTheme(
+        builders: {
+          TargetPlatform.android: ZoomPageTransitionsBuilder(),
+          TargetPlatform.iOS: ZoomPageTransitionsBuilder(),
+        },
+      ),
     );
   }
 }

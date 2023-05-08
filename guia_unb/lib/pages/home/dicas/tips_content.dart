@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../core/components/app_card.dart';
 
 class TipsContent {
-  static const List<Widget> estudoContent = [
+  static const List<Widget> estudo = [
     AppCard(
       title: 'Organize seu tempo',
       subtitle:
@@ -30,7 +30,7 @@ class TipsContent {
     ),
   ];
 
-  static const List<Widget> saudeContent = [
+  static const List<Widget> saude = [
     AppCard(
       title: 'Mantenha a higiene',
       subtitle:

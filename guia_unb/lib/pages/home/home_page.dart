@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
       case 0:
         return const InitialPage();
       case 1:
-        return TipsPage();
+        return const TipsPage();
       case 2:
         return const AboutPage();
       default:

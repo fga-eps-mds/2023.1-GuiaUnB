@@ -3,7 +3,7 @@ import 'package:guia_unb/core/components/app_card.dart';
 import 'package:guia_unb/pages/home/dicas/tips_content.dart';
 
 class TipsPage extends StatelessWidget {
-  TipsPage({super.key});
+  const TipsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -26,9 +26,6 @@ class TipsPage extends StatelessWidget {
                 children: content,
               ),
             ),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(20),
-            ),
             actions: [
               TextButton(
                 onPressed: () => Navigator.pop(context),
@@ -41,26 +38,25 @@ class TipsPage extends StatelessWidget {
       return null;
     }
 
-    return SingleChildScrollView(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
-        child: Column(
-          children: [
-            AppCard(
-              title: 'Dicas de estudo',
-              subtitle: 'Algumas dicas para ajudar com os estudos.',
-              icon: Icons.lightbulb_outline,
-              onTap: () => openDialog("Dicas de estudo", TipsContent.estudoContent),
-            ),
-            AppCard(
-              title: 'Dicas de saúde',
-              subtitle: 'Algumas dicas para ajudar com a saúde.',
-              icon: Icons.local_hospital,
-              onTap: () => openDialog("Dicas de saúde", TipsContent.saudeContent),
-            ),
-          ],
+    return ListView(
+      padding: const EdgeInsets.symmetric(horizontal: 18),
+      shrinkWrap: true,
+      children: [
+        AppCard(
+          title: 'Dicas de estudo',
+          subtitle: 'Algumas dicas para ajudar com os estudos.',
+          icon: Icons.lightbulb_outline,
+          onTap: () => openDialog("Dicas de estudo", TipsContent.estudo),
         ),
-      ),
+        const Divider(),
+        AppCard(
+          title: 'Dicas de saúde',
+          subtitle: 'Algumas dicas para ajudar com a saúde.',
+          icon: Icons.local_hospital,
+          onTap: () => openDialog("Dicas de saúde", TipsContent.saude),
+        ),
+        const Divider(),
+      ],
     );
   }
 }
