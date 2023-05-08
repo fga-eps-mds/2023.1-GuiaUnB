@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:guia_unb/core/util/color.dart';
 import 'package:guia_unb/pages/home/inicio/inicio.dart';
 import 'package:guia_unb/pages/home/sobre/sobre.dart';
-
 import 'dicas/dicas.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,6 +16,19 @@ class _HomePageState extends State<HomePage> {
 
   void _onItemTapped(int index) {
     setState(() => _selectedIndex = index);
+  }
+
+  Widget _getSelectedPage() {
+    switch (_selectedIndex) {
+      case 0:
+        return const InitialPage();
+      case 1:
+        return const TipsPage();
+      case 2:
+        return const AboutPage();
+      default:
+        return const InitialPage();
+    }
   }
 
   @override
@@ -36,13 +48,18 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: IndexedStack(
-        index: _selectedIndex,
-        children: const [
-          InitialPage(),
-          TipsPage(),
-          AboutPage(),
-        ],
+      body: AnimatedSwitcher(
+        duration: const Duration(milliseconds: 200),
+        transitionBuilder: (child, animation) {
+          return SlideTransition(
+            position: Tween<Offset>(
+              begin: const Offset(2, 0),
+              end: Offset.zero,
+            ).animate(animation),
+            child: child,
+          );
+        },
+        child: _getSelectedPage(),
       ),
       bottomNavigationBar: BottomNavigationBar(
         elevation: 5,
@@ -58,7 +75,7 @@ class _HomePageState extends State<HomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.help),
-            label: 'Ajuda',
+            label: 'Sobre',
           ),
         ],
         currentIndex: _selectedIndex,

@@ -15,6 +15,12 @@ class AppTheme {
         iconTheme: IconThemeData(
           color: AppColors.secondary,
         ),
+        titleTextStyle: TextStyle(
+          color: AppColors.label,
+          fontWeight: FontWeight.bold,
+          fontFamily: "Poppins",
+          fontSize: 28,
+        ),
       ),
       canvasColor: AppColors.background,
       fontFamily: "Poppins",
