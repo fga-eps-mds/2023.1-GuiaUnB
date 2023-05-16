@@ -14,7 +14,6 @@ Neste documento consta o Protótipo de Baixa Fidelidade desenvolvidos para melho
 
 ## 2.Protótipo de Baixa Fidelidade
 
-![](./assests/IMG_0206.jpeg)
 ![](./assests/IMG_0207.jpeg)
 ![](./assests/IMG_0208.jpeg)
 ![](./assests/IMG_0209.jpeg)
