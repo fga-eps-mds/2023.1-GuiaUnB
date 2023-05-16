@@ -4,23 +4,20 @@ excerpt: ""
 
 | Data       | Versão | Descrição                      | Autor |
 | :--------: | :----: | :----------------------------: | :-------: |
-| 13/09/2021 |  0.1   |     Abertura do documento      | [Amanda Nobre](https://github.com/AmandaNbr) |
+| 13/05/2023 |  0.1   |     Abertura do documento      | [Lucas Avelar](https://github.com/LucasAvelar2711) |
+| 16/05/2023 |  0.2   |     Organização do Documento   | [Alexandre Beck](https://github.com/zzzBECK) |
 
 ## 1.Introdução
 
-Neste documento constam os protótipos desenvolvidos para melhor visualização da ideia do chatBot e informações acerca do contexto e desenvolvimento dos mesmos.
-
-## 2.Protótipos de Baixa Fidelidade
-
-O grupo se reuniu afim de fazer um brainstorm de ideias sobre como o app deveria se comportar e paracer para o usuario fianl, logo após isso um dos membros foi responsavel pela criação do primeiro protótipo
-
-### 2.1 Protótipo de baixa fidelidade
-
-![](https://github.com/fga-eps-mds/2023.1-GuiaUnB/tree/docs/doc/assests)
-Criado por: Lucas Antunes de Avelar (https://github.com/LucasAvelar2711)
+Neste documento consta o Protótipo de Baixa Fidelidade desenvolvidos para melhor visualização da ideia do Guia UnB e informações acerca do contexto e desenvolvimento dos mesmos, com o objetivo de desenvolver estratégias e sintetizar ideias do grupo acerca da visualização do produto.
 
 
-## 3.Protótipos de Alta Fidelidade
+## 2.Protótipo de Baixa Fidelidade
 
-Desenvolvidos a partir da ideia inicial dos protótipos de baixa fidelidade.
-
+![](./assests/IMG_0206.jpeg)
+![](./assests/IMG_0207.jpeg)
+![](./assests/IMG_0208.jpeg)
+![](./assests/IMG_0209.jpeg)
+![](./assests/IMG_0210.jpeg)
+![](./assests/IMG_0211.jpeg)
+Criado por [Lucas Avelar](https://github.com/LucasAvelar2711)
