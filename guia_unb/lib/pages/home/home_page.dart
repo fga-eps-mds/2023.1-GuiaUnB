@@ -53,6 +53,7 @@ class _HomePageState extends State<HomePage> {
         child: _getSelectedPage(),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Theme.of(context).colorScheme.background,
         fixedColor: Theme.of(context).colorScheme.secondary,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
