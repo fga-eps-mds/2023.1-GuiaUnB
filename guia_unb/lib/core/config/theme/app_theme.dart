@@ -8,6 +8,7 @@ class AppTheme {
       colorScheme: const ColorScheme.light(
         primary: AppColors.primary,
         secondary: AppColors.secondary,
+        background: AppColors.background,
       ),
       appBarTheme: const AppBarTheme(
         backgroundColor: AppColors.background,
@@ -74,6 +75,88 @@ class AppTheme {
         ),
       ),
       dividerColor: AppColors.primary,
+      pageTransitionsTheme: const PageTransitionsTheme(
+        builders: {
+          TargetPlatform.android: ZoomPageTransitionsBuilder(),
+          TargetPlatform.iOS: ZoomPageTransitionsBuilder(),
+        },
+      ),
+    );
+  }
+
+  static ThemeData appThemeDark() {
+    return ThemeData(
+      primaryColor: AppColors.primary,
+      colorScheme: const ColorScheme.dark(
+        primary: AppColors.primaryDark,
+        secondary: AppColors.secondaryDark,
+        background: AppColors.appBarColorDark
+      ),
+      appBarTheme: const AppBarTheme(
+        backgroundColor: AppColors.appBarColorDark,
+        elevation: 0,
+        iconTheme: IconThemeData(
+          color: AppColors.secondaryDark,
+        ),
+        titleTextStyle: TextStyle(
+          color: AppColors.labelWhite,
+          fontWeight: FontWeight.bold,
+          fontFamily: "Poppins",
+          fontSize: 30,
+        ),
+      ),
+      canvasColor: AppColors.backgroundDark,
+      fontFamily: "Poppins",
+      textTheme: const TextTheme(
+        labelMedium: TextStyle(
+          color: AppColors.labelWhite,
+          fontSize: 20,
+        ),
+        titleLarge: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 60,
+        ),
+        titleMedium: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 30,
+          color: AppColors.labelWhite,
+        ),
+        titleSmall: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 22,
+          color: AppColors.labelWhite,
+        ),
+      ),
+      buttonTheme: ButtonThemeData(
+        buttonColor: AppColors.primaryDark,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(20),
+        ),
+        padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 32),
+        textTheme: ButtonTextTheme.primary,
+      ),
+      iconTheme: const IconThemeData(
+        color: AppColors.secondaryDark,
+      ),
+      cardTheme: const CardTheme(
+        color: AppColors.primaryDark,
+        elevation: 10,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(20),
+          ),
+        ),
+      ),
+      dialogTheme: const DialogTheme(
+        alignment: Alignment.center,
+        backgroundColor: AppColors.backgroundDark,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(
+            Radius.circular(20),
+          ),
+        ),
+      ),
+      dividerColor: AppColors.secondaryDark,
       pageTransitionsTheme: const PageTransitionsTheme(
         builders: {
           TargetPlatform.android: ZoomPageTransitionsBuilder(),
