@@ -83,6 +83,7 @@ class AppTheme {
       ),
     );
   }
+
   static ThemeData appThemeDark() {
     return ThemeData(
       primaryColor: AppColors.primary,
