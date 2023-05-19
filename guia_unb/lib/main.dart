@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: AppTheme.appTheme(),
+      darkTheme: AppTheme.appThemeDark(),
       routes: {
         Routes.onboarding: (_) => const OnboardingPage(),
         Routes.home: (_) => const HomePage(),
