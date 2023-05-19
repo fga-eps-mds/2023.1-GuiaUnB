@@ -38,12 +38,6 @@ class _HomePageState extends State<HomePage> {
         title: const Text("Guia UnB"),
         centerTitle: true,
         automaticallyImplyLeading: false,
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.search),
-          ),
-        ],
       ),
       body: AnimatedSwitcher(
         duration: const Duration(milliseconds: 300),
@@ -59,6 +53,7 @@ class _HomePageState extends State<HomePage> {
         child: _getSelectedPage(),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Theme.of(context).colorScheme.background,
         fixedColor: Theme.of(context).colorScheme.secondary,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
