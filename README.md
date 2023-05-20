@@ -10,6 +10,7 @@ O Guia UnB é uma ferramenta essencial para quem estuda, trabalha ou está envol
 Esse projeto usa algumas ferramentas para o seu desenvolvimento:
 - [Dart](https://dart.dev/)
 - [Flutter](https://docs.flutter.dev/get-started/install)
+- [Firebase](https://firebase.google.com/?gad=1&gclid=CjwKCAjwvJyjBhApEiwAWz2nLZcvndRU1oLs0fC5adsWFvX97gOHZ5UMdoVUr6bQ9GjmrJA1xfm-WxoCzmIQAvD_BwE&gclsrc=aw.ds&hl=pt-br)
 
 ### ✔️ Instalando e executando
 Baixe o repositório e entre nele
