@@ -3,7 +3,7 @@
   |Data|Versão|Alteração|Autor|  
   |----|------|---------|-----|  
   |06/05/2023|0.1|Abertura do documento de Arquitetura|[Thiago Freitas](https://github.com/thiagorfreitas)|
-  |19/05/2023|0.1|Adicionando o firebase|[Arthur Gabriel](https://github.com/ArthurGabrieel)|
+  |19/05/2023|0.2|Adicionando o firebase|[Arthur Gabriel](https://github.com/ArthurGabrieel)|
   
 ## 1. Introdução
 ## 1.1 Finalidade
