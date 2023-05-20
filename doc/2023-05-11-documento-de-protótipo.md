@@ -15,11 +15,11 @@ Neste documento constam os Protótipos de Alta e Baixa Fidelidade desenvolvidos 
 
 ## 2.Protótipo de Baixa Fidelidade
 
-![](./assests/IMG_0207.jpeg)
-![](./assests/IMG_0208.jpeg)
-![](./assests/IMG_0209.jpeg)
-![](./assests/IMG_0210.jpeg)
-![](./assests/IMG_0211.jpeg)
+![](./assets/IMG_0207.jpeg)
+![](./assets/IMG_0208.jpeg)
+![](./assets/IMG_0209.jpeg)
+![](./assets/IMG_0210.jpeg)
+![](./assets/IMG_0211.jpeg)
 Criado por [Lucas Avelar](https://github.com/LucasAvelar2711)
 
 ## 3.Protótipo de Alta Fidelidade
