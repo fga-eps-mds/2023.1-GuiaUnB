@@ -3,6 +3,7 @@
   |Data|Versão|Alteração|Autor|  
   |----|------|---------|-----|  
   |06/05/2023|0.1|Abertura do documento de Arquitetura|[Thiago Freitas](https://github.com/thiagorfreitas)|
+  |19/05/2023|0.2|Adicionando o firebase|[Arthur Gabriel](https://github.com/ArthurGabrieel)|
   
 ## 1. Introdução
 ## 1.1 Finalidade
@@ -29,6 +30,15 @@ O aplicativo GuiaUnB será construído utilizando o Flutter, um framework popula
 </center>
 
 Dart é a linguagem de programação utilizada pelo Flutter. Sendo assim, ela será utilizada para o desenvolvimento do GuiaUnB. O Dart é uma linguagem moderna e fácil de aprender, o que contribui para a eficiência no desenvolvimento de aplicativos móveis com o Flutter. Além disso, o Dart oferece uma performance de execução excepcional, o que é fundamental para garantir um bom desempenho do aplicativo.
+
+### 2.3 Firebase
+<center>
+<figure>
+  <img width="100" src="https://firebase.google.com/static/images/brand-guidelines/logo-logomark.png?hl=pt-br" />
+</figure>
+</center>
+
+O Firebase é uma plataforma de desenvolvimento de aplicativos móveis e web oferecida pela Google. Ele inclui uma variedade de serviços, como banco de dados em tempo real, autenticação de usuários, hospedagem web, armazenamento em nuvem, notificações em tempo real, análise de dados, monitoramento de desempenho e funções na nuvem. Com essas ferramentas, os desenvolvedores podem criar aplicativos escaláveis, colaborativos e eficientes, aproveitando recursos prontos para uso e reduzindo a necessidade de gerenciar infraestrutura complexa.
 
 # 3. Arquitetura Escolhida
 ## 3.1 Clean Architecture em Flutter
