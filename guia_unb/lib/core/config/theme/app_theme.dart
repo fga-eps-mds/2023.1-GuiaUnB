@@ -27,8 +27,12 @@ class AppTheme {
       fontFamily: "Poppins",
       textTheme: const TextTheme(
         labelMedium: TextStyle(
-          color: AppColors.labelWhite,
+          color: AppColors.label,
           fontSize: 20,
+        ),
+        bodySmall: TextStyle(
+          color: AppColors.labelWhite,
+          fontSize: 12,
         ),
         titleLarge: TextStyle(
           fontWeight: FontWeight.bold,
@@ -57,7 +61,7 @@ class AppTheme {
         color: AppColors.primary,
       ),
       cardTheme: const CardTheme(
-        color: AppColors.primary,
+        color: AppColors.background,
         elevation: 10,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(
@@ -112,6 +116,10 @@ class AppTheme {
           color: AppColors.labelWhite,
           fontSize: 20,
         ),
+        bodySmall: TextStyle(
+          color: AppColors.labelWhite,
+          fontSize: 12,
+        ),
         titleLarge: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 60,
@@ -139,7 +147,7 @@ class AppTheme {
         color: AppColors.secondaryDark,
       ),
       cardTheme: const CardTheme(
-        color: AppColors.primaryDark,
+        color: AppColors.background,
         elevation: 10,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(
