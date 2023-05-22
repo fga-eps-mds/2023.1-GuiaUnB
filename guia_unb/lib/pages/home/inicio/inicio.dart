@@ -48,21 +48,26 @@ class InitialPage extends StatelessWidget {
         SizedBox(
           height: screenSize.height * 0.38,
           child: ListView.builder(
-            itemCount: 5,
-            itemBuilder: (_, __) => InkWell(
+            itemCount: mockData.length,
+            itemBuilder: (_, index) => InkWell(
               onTap: () {},
-              child: ListTile(
-                isThreeLine: true,
-                leading: Icon(Icons.book),
-                title: Text(
-                  "Revisão de notas",
-                  style: theme.textTheme.labelMedium,
-                ),
-                subtitle: Text("Como solicitar revisão de notas",
-                    style: theme.textTheme.bodySmall?.copyWith(
-                      color: theme.colorScheme.onSurface.withOpacity(0.6),
-                    )),
-                trailing: const Icon(Icons.arrow_forward_ios),
+              child: Column(
+                children: [
+                  ListTile(
+                    isThreeLine: true,
+                    leading: const Icon(Icons.book),
+                    title: Text(
+                      mockData[index]["title"],
+                      style: theme.textTheme.labelMedium,
+                    ),
+                    subtitle: Text(mockData[index]["subtitle"],
+                        style: theme.textTheme.bodySmall?.copyWith(
+                          color: theme.colorScheme.onSurface.withOpacity(0.6),
+                        )),
+                    trailing: const Icon(Icons.arrow_forward_ios),
+                  ),
+                  const Divider()
+                ],
               ),
             ),
           ),
