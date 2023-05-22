@@ -38,25 +38,6 @@ class TipsPage extends StatelessWidget {
       return null;
     }
 
-    return ListView(
-      padding: const EdgeInsets.symmetric(horizontal: 18),
-      shrinkWrap: true,
-      children: [
-        AppCard(
-          title: 'Dicas de estudo',
-          subtitle: 'Algumas dicas para ajudar com os estudos.',
-          icon: Icons.lightbulb_outline,
-          onTap: () => openDialog("Dicas de estudo", TipsContent.estudo),
-        ),
-        const Divider(),
-        AppCard(
-          title: 'Dicas de saúde',
-          subtitle: 'Algumas dicas para ajudar com a saúde.',
-          icon: Icons.local_hospital,
-          onTap: () => openDialog("Dicas de saúde", TipsContent.saude),
-        ),
-        const Divider(),
-      ],
-    );
+    return Text('data');
   }
 }
