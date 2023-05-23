@@ -4,7 +4,6 @@
 - [ ] Novo arquivo (mundança que adiciona funcionabilidade)
 - [ ] Correção de bug (mudança que **NÃO** muda funcionabilidade)
 - [ ] Mudança decisiva no arquivo (correção ou recurso que faz com que funcionabilidade existente seja alterada)
-- [ ] "Não sei dizer o que mudou, mas nada está igual" (Victor & Leo)
 <!--
 Apagar as checkboxes não marcadas. Poluir menos o template
 -->

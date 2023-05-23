@@ -8,27 +8,32 @@ class AppTheme {
       colorScheme: const ColorScheme.light(
         primary: AppColors.primary,
         secondary: AppColors.secondary,
+        tertiary: AppColors.labelTitle,
         background: AppColors.background,
       ),
       appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.background,
+        backgroundColor: AppColors.appBarColor,
         elevation: 0,
         iconTheme: IconThemeData(
-          color: AppColors.secondary,
+          color: AppColors.labelTitle,
         ),
         titleTextStyle: TextStyle(
-          color: AppColors.label,
+          color: AppColors.labelTitle,
           fontWeight: FontWeight.bold,
           fontFamily: "Poppins",
           fontSize: 30,
         ),
       ),
-      canvasColor: AppColors.background,
+      canvasColor: AppColors.cardBackground,
       fontFamily: "Poppins",
       textTheme: const TextTheme(
         labelMedium: TextStyle(
-          color: AppColors.labelWhite,
+          color: AppColors.labelTitle,
           fontSize: 20,
+        ),
+        bodySmall: TextStyle(
+          color: AppColors.labelWhite,
+          fontSize: 12,
         ),
         titleLarge: TextStyle(
           fontWeight: FontWeight.bold,
@@ -57,8 +62,8 @@ class AppTheme {
         color: AppColors.primary,
       ),
       cardTheme: const CardTheme(
-        color: AppColors.primary,
-        elevation: 10,
+        color: AppColors.cardBackground,
+        elevation: 5,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(
             Radius.circular(20),
@@ -74,7 +79,7 @@ class AppTheme {
           ),
         ),
       ),
-      dividerColor: AppColors.primary,
+      dividerColor: AppColors.appBarColor,
       pageTransitionsTheme: const PageTransitionsTheme(
         builders: {
           TargetPlatform.android: ZoomPageTransitionsBuilder(),
@@ -83,9 +88,10 @@ class AppTheme {
       ),
     );
   }
+
   static ThemeData appThemeDark() {
     return ThemeData(
-      primaryColor: AppColors.primary,
+      primaryColor: AppColors.primaryDark,
       colorScheme: const ColorScheme.dark(
         primary: AppColors.primaryDark,
         secondary: AppColors.secondaryDark,
@@ -110,6 +116,10 @@ class AppTheme {
         labelMedium: TextStyle(
           color: AppColors.labelWhite,
           fontSize: 20,
+        ),
+        bodySmall: TextStyle(
+          color: AppColors.labelWhite,
+          fontSize: 12,
         ),
         titleLarge: TextStyle(
           fontWeight: FontWeight.bold,
@@ -138,7 +148,7 @@ class AppTheme {
         color: AppColors.secondaryDark,
       ),
       cardTheme: const CardTheme(
-        color: AppColors.primaryDark,
+        color: AppColors.cardBackground,
         elevation: 10,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(
