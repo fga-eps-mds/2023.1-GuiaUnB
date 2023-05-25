@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:guia_unb/core/components/app_card.dart';
-import 'package:guia_unb/pages/home/dicas/tips_content.dart';
 
 class TipsPage extends StatelessWidget {
   const TipsPage({super.key});

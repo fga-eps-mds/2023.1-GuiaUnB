@@ -25,7 +25,7 @@ class AppCard extends StatelessWidget {
         children: [
           SizedBox(
             width: 170,
-            height: 170,
+            height: MediaQuery.of(context).size.height * 0.18,
             child: Card(
               child: Center(
                 child: Icon(
