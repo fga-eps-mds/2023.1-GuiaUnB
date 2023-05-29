@@ -40,6 +40,13 @@ class InitialPage extends StatelessWidget {
               ),
               const Spacer(),
               ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: theme.colorScheme.tertiary,
+                  elevation: 8,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                ),
                 onPressed: () {},
                 child: Text("Ver todos", style: theme.textTheme.bodySmall),
               ),
@@ -57,7 +64,10 @@ class InitialPage extends StatelessWidget {
                   children: [
                     ListTile(
                       isThreeLine: true,
-                      leading: const Icon(Icons.book),
+                      leading: Icon(
+                        Icons.book,
+                        color: theme.colorScheme.tertiary,
+                      ),
                       title: Text(
                         data[index]["title"],
                         style: theme.textTheme.labelMedium,
@@ -66,7 +76,10 @@ class InitialPage extends StatelessWidget {
                           style: theme.textTheme.bodySmall?.copyWith(
                             color: theme.colorScheme.onSurface.withOpacity(0.6),
                           )),
-                      trailing: const Icon(Icons.arrow_forward_ios),
+                      trailing: Icon(
+                        Icons.arrow_forward_ios,
+                        color: theme.colorScheme.tertiary,
+                      ),
                     ),
                     const Divider()
                   ],

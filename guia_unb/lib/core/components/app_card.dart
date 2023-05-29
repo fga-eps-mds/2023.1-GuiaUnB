@@ -31,7 +31,7 @@ class AppCard extends StatelessWidget {
                 child: Icon(
                   icon,
                   size: 80,
-                  color: AppColors.icon,
+                  color: theme.colorScheme.tertiary,
                 ),
               ),
             ),
