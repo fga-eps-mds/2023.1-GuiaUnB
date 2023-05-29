@@ -77,7 +77,7 @@ class _HomePageState extends State<HomePage> {
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Theme.of(context).colorScheme.background,
-        fixedColor: Theme.of(context).colorScheme.secondary,
+        fixedColor: Theme.of(context).colorScheme.tertiary,
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),

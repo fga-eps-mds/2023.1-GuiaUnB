@@ -19,4 +19,5 @@ class AppColors {
   static const cardBackground = Color(0xFFDEDEDE);
   static const label = Color(0xFF1F1F1F);
   static const labelWhite = Color(0xFFE3E2E2);
+  static const lightBlue = Color(0xFF577CFC);
 }
