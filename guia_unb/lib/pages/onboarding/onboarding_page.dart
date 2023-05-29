@@ -33,9 +33,14 @@ class OnboardingPage extends StatelessWidget {
               child: Column(
                 children: [
                   Text("Bem vindo", style: textTheme.titleLarge),
-                  Text("Obrigado por baixar o Guia UnB",
-                      style: textTheme.labelMedium
-                          ?.copyWith(color: AppColors.label)),
+                  Text(
+                    "Obrigado por baixar o Guia UnB",
+                    style: textTheme.labelMedium?.copyWith(
+                        color: Theme.of(context)
+                            .colorScheme
+                            .onSurface
+                            .withOpacity(0.9)),
+                  ),
                   const SizedBox(height: 500),
                   ElevatedButton(
                     style: ButtonStyle(
@@ -56,8 +61,7 @@ class OnboardingPage extends StatelessWidget {
                       elevation: MaterialStateProperty.all(10),
                     ),
                     onPressed: () {
-                      Provider.of<LoadData>(context, listen: false)
-                          .loadData();
+                      Provider.of<LoadData>(context, listen: false).loadData();
                       Navigator.of(context).pushNamed(Routes.home);
                     },
                     child: const Text("Começar"),

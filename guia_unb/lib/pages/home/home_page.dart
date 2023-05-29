@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:guia_unb/pages/home/configuracoes/settings.dart';
 import 'package:guia_unb/pages/home/inicio/inicio.dart';
 import 'package:guia_unb/pages/home/sobre/sobre.dart';
-import 'dicas/dicas.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -22,9 +22,9 @@ class _HomePageState extends State<HomePage> {
       case 0:
         return const InitialPage();
       case 1:
-        return const TipsPage();
-      case 2:
         return const AboutPage();
+      case 2:
+        return const SettingsPage();
       default:
         return const InitialPage();
     }
@@ -33,35 +33,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(60),
-        child: AppBar(
-          toolbarHeight: 70,
-          title: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Duvidas Frequentes",
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                    ),
-              ),
-              Text(
-                "Lista de dúvidas frequentes",
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface
-                          .withOpacity(0.8),
-                    fontSize: 16,
-                    ),
-              ),
-            ],
-          ),
-          automaticallyImplyLeading: false,
-        ),
-      ),
       body: AnimatedSwitcher(
         duration: const Duration(milliseconds: 300),
         transitionBuilder: (child, animation) {
@@ -84,12 +55,12 @@ class _HomePageState extends State<HomePage> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.tips_and_updates),
-            label: 'Dicas',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.help),
             label: 'Sobre',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Configurações',
           ),
         ],
         currentIndex: _selectedIndex,
