@@ -6,7 +6,7 @@ class AppColors {
   static const appBarColor = Color(0xFFCECECE);
   static const primary = Color(0xFF236CCC);
   static const secondary = Color(0xFF308550);
-  static const labelTitle = Color(0xFF061444);
+  static const labelTitle = Color(0xFF081D62);
 
   // dark theme ----------------------------------------------------------------
   static const backgroundDark = Color(0xFF252525);
@@ -19,4 +19,5 @@ class AppColors {
   static const cardBackground = Color(0xFFDEDEDE);
   static const label = Color(0xFF1F1F1F);
   static const labelWhite = Color(0xFFE3E2E2);
+  static const lightBlue = Color(0xFF577CFC);
 }

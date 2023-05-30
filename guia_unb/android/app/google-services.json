@@ -7,20 +7,12 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:466271756446:android:420ddbb5270f4e48ee9b8f",
+        "mobilesdk_app_id": "1:466271756446:android:68a4f7083b00d2d4ee9b8f",
         "android_client_info": {
-          "package_name": "br.com.guiaunb"
+          "package_name": "br.com.mds.guiaunb"
         }
       },
       "oauth_client": [
-        {
-          "client_id": "466271756446-13fsoe4aj7t6fl7rc7pre3fhn1o8djdt.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "br.com.guiaunb",
-            "certificate_hash": "91a6b4babf8f7f882e7e680cbfb26b09055ce8b4"
-          }
-        },
         {
           "client_id": "466271756446-nrdp2lrv7iiudpoe5304j8badofnmvig.apps.googleusercontent.com",
           "client_type": 3
