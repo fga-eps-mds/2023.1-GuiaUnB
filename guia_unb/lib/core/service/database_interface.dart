@@ -1,3 +1,5 @@
+import '../models/category.dart';
+
 abstract class IDatabase {
-  Future<List<Map<String, dynamic>>> getData(String table);
+  Future<List<Category>> getData();
 }
