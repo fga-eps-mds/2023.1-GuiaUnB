@@ -1,15 +1,17 @@
-import 'package:flutter/foundation.dart';
+import 'dart:core';
+
 import 'package:flutter/material.dart';
 
+import '../models/category.dart';
 import '../service/db_firebase.dart';
 
 class LoadData with ChangeNotifier {
-  List<Map<String, dynamic>> _data = [];
+  List<Category> _categories = [];
 
-  List<Map<String, dynamic>> get data => _data;
+  List<Category> get data => _categories;
 
   Future<void> loadData() async {
-    _data = await DatabaseFirebase().getData("duvidas");
+    _categories = await DatabaseFirebase().getData();
     notifyListeners();
   }
 }
