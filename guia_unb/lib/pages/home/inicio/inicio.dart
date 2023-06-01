@@ -106,7 +106,15 @@ class InitialPage extends StatelessWidget {
                       Navigator.pushNamed(
                         context,
                         "/doubt",
-                        arguments: category.doubts[index],
+                        arguments: {
+                          'category': category,
+                          'doubt': {
+                            'title': category.doubts[index].title,
+                            'description': category.doubts[index].description,
+                            'body': category.doubts[index].body,
+                            // Adicione outras propriedades do objeto Doubt conforme necessário
+                          },
+                        },
                       );
                     }
                   );

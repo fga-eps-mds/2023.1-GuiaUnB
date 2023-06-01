@@ -20,6 +20,11 @@ class CategoryPage extends StatelessWidget {
         itemBuilder: (_, index) => DoubtCard(
           title: category.doubts[index].title,
           description: category.doubts[index].description,
+          onTap: () => Navigator.pushNamed(
+            context,
+            '/doubt',
+            arguments: category.doubts[index],
+          ),
         ),
       ),
     );
