@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:guia_unb/core/util/color.dart';
 
-class AppCard extends StatelessWidget {
-  const AppCard({
+class CategoryCard extends StatelessWidget {
+  const CategoryCard({
     Key? key,
     required this.title,
     required this.description,

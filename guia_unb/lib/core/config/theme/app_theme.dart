@@ -47,7 +47,7 @@ class AppTheme {
         titleSmall: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 22,
-          color: AppColors.labelWhite,
+          color: AppColors.labelTitle,
         ),
       ),
       buttonTheme: ButtonThemeData(
