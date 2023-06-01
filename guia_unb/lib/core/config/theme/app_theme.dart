@@ -47,7 +47,12 @@ class AppTheme {
         titleSmall: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 22,
-          color: AppColors.labelWhite,
+          color: AppColors.labelTitle,
+        ),
+        headlineLarge: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 22,
+          color: AppColors.labelTitle,
         ),
       ),
       buttonTheme: ButtonThemeData(
@@ -102,7 +107,7 @@ class AppTheme {
         backgroundColor: AppColors.appBarColorDark,
         elevation: 0,
         iconTheme: IconThemeData(
-          color: AppColors.secondaryDark,
+          color: AppColors.lightBlue,
         ),
         titleTextStyle: TextStyle(
           color: AppColors.labelWhite,
@@ -135,6 +140,11 @@ class AppTheme {
           fontWeight: FontWeight.bold,
           fontSize: 22,
           color: AppColors.labelWhite,
+        ),
+        headlineLarge: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 22,
+          color: AppColors.lightBlue,
         ),
       ),
       buttonTheme: ButtonThemeData(

@@ -29,10 +29,10 @@ As ferramentas utilizadas para elaborar os storyboards foram:
 
 |         Nome         | Idade |       Profissão       |                                           Objetivo                                            |                                        Expectativa                                         |
 | :------------------: | :---: | :-------------------: | :-------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: |
-| Camila Lobo |  20   | Estudante | Deseja acessar o site Guia UnB para obter informações que necessita sobre auxílios | Ela espera ver de forma fácil, objetiva e resumida seus direitos na universidade |
+| Rodrigo Maia |  20   | Estudante | Deseja acessar o site Guia UnB para obter informações que necessita sobre auxílios | Ele espera ver de forma fácil, objetiva e resumida seus direitos na universidade |
 
 
-Camila Lobo é uma Estudante de Letras, após se deparar com um problema, precisou buscar por informações sobre seus direitos, após acessar o site Guia UnB, ela teve seu problema solucionado e conseguiu resolver seu problema, já ficando ciente de onde acessar o site da próxima vez pela sua utilidade e facildiade.
+Rodrigo é um Estudante de Letras, após se deparar com um problema, precisou buscar por informações sobre seus direitos, após acessar o site Guia UnB, ela teve seu problema solucionado e conseguiu resolver seu problema, já ficando ciente de onde acessar o site da próxima vez pela sua utilidade e facildiade, compartilhando o mesmo com um amigo.
 
 
 1. Conclusão
@@ -45,7 +45,7 @@ Concluímos que a partir desse documento podemos ter uma visão inicial das tare
 
 6. Histórico de versionamento
 
-| Data  | Versão |                      Descrição                       |                                                Autor                                                |                                                   Revisor                                                   |
+| Data  | Versão |                      Descrição                       |                                                Autor                                                |                                                                                                   |
 | :---: | :----: | :--------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
-| 23/05/23 | 1.0.0  |      Criação do documento de StoryBoard       | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) |
-|   
+| 23/05/23 | 0.1  |      Criação do documento de StoryBoard       | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) ||
+| 31/05/23 | 0.2  |      Atualização do StoryBoard       | [Genilson Silva](https://github.com/GenilsonJunior99006)|

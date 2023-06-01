@@ -87,7 +87,8 @@ As personas têm como objetivo fornecer uma perspectiva adicional sobre os usuá
 
 7. Versionamento
 
-| Data  | Versão |                      Descrição                       |                                                Autor                                                |                                                   Revisor                                                   |
+
+| Data  | Versão |                      Descrição                       |                                                Autor                                                |                                                                                                      |
 | :---: | :----: | :--------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
-| 23/05/23 | 1.0.0  |      Criação do documento de Persona       | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) |
-|   
+| 23/05/2023 | 0.1 |      Criação do Documento de Personas     | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) |
+| 31/05/2023 | 0.2  |      Atualização do Documento de Personas     | [Genilson Silva](https://github.com/GenilsonJunior99006)|

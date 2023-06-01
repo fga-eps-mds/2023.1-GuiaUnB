@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../core/components/app_card.dart';
+import '../../../core/components/category_card.dart';
+import '../../../core/components/doubt_card.dart';
+import '../../../core/models/category.dart';
 import '../../../core/providers/load_data.dart';
 
 class InitialPage extends StatelessWidget {
@@ -11,7 +13,7 @@ class InitialPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final theme = Theme.of(context);
-    final data = Provider.of<LoadData>(context).data;
+    List<Category> categories = Provider.of<LoadData>(context).data;
 
     return Scaffold(
       appBar: PreferredSize(
@@ -24,19 +26,19 @@ class InitialPage extends StatelessWidget {
               Text(
                 "Duvidas Frequentes",
                 style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24,
-                ),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
               ),
               Text(
                 "Lista de dúvidas frequentes",
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                  color: Theme.of(context)
-                      .colorScheme
-                      .onSurface
-                      .withOpacity(0.8),
-                  fontSize: 16,
-                ),
+                      color: Theme.of(context)
+                          .colorScheme
+                          .onSurface
+                          .withOpacity(0.8),
+                      fontSize: 16,
+                    ),
               ),
             ],
           ),
@@ -51,12 +53,19 @@ class InitialPage extends StatelessWidget {
               child: ListView.separated(
                 scrollDirection: Axis.horizontal,
                 padding: const EdgeInsets.all(8),
-                itemCount: data.length,
+                itemCount: categories.length,
                 separatorBuilder: (_, __) => const SizedBox(width: 12),
-                itemBuilder: (_, index) => AppCard(
-                  title: data[index]["title"],
-                  description: data[index]["description"],
+                itemBuilder: (_, index) => CategoryCard(
+                  title: categories[index].title,
+                  description: categories[index].description,
                   icon: Icons.ac_unit,
+                  onTap: () {
+                    Navigator.pushNamed(
+                      context,
+                      "/category",
+                      arguments: categories[index],
+                    );
+                  },
                 ),
               ),
             ),
@@ -87,36 +96,31 @@ class InitialPage extends StatelessWidget {
             SizedBox(
               height: screenSize.height * 0.34,
               child: ListView.builder(
-                itemCount: data.length,
-                itemBuilder: (_, index) => InkWell(
-                  onTap: () {},
-                  child: Column(
-                    children: [
-                      ListTile(
-                        isThreeLine: true,
-                        leading: Icon(
-                          Icons.book,
-                          color: theme.colorScheme.tertiary,
-                        ),
-                        title: Text(
-                          data[index]["title"],
-                          style: theme.textTheme.labelMedium,
-                        ),
-                        subtitle: Text(data[index]["description"],
-                            style: theme.textTheme.bodySmall?.copyWith(
-                              color: theme.colorScheme.onSurface.withOpacity(0.6),
-                            )),
-                        trailing: Icon(
-                          Icons.arrow_forward_ios,
-                          color: theme.colorScheme.tertiary,
-                        ),
-                      ),
-                      const Divider()
-                    ],
-                  ),
-                ),
+                itemCount: categories[0].doubts.length,
+                itemBuilder: (_, index) {
+                  final category = categories[0];
+                  return DoubtCard(
+                    title: category.doubts[index].title,
+                    description: category.doubts[index].description,
+                    onTap: () {
+                      Navigator.pushNamed(
+                        context,
+                        "/doubt",
+                        arguments: {
+                          'category': category,
+                          'doubt': {
+                            'title': category.doubts[index].title,
+                            'description': category.doubts[index].description,
+                            'body': category.doubts[index].body,
+                            // Adicione outras propriedades do objeto Doubt conforme necessário
+                          },
+                        },
+                      );
+                    }
+                  );
+                },
               ),
-            )
+            ),
           ],
         ),
       ),

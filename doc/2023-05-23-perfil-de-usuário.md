@@ -107,7 +107,7 @@ Com base nos dados coletados por meio do questionário, é possível identificar
 
 9. Versionamento
 
-| Data  | Versão |                      Descrição                       |                                                Autor                                                |                                                   Revisor                                                   |
+| Data  | Versão |                      Descrição                       |                                                Autor                                                |                                                                                                      |
 | :---: | :----: | :--------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
-| 23/05/23 | 1.0.0  |      Criação do documento de Perfil do Usuário       | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) |
-|   
+| 23/05/2023 | 0.1 |      Criação do documento de Perfil do Usuário       | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) |   
+| 31/05/2023 | 0.2  |      Atualização do Perfil de Usuário       | [Genilson Silva](https://github.com/GenilsonJunior99006)|
