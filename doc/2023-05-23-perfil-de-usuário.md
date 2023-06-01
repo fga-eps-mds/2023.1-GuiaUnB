@@ -110,4 +110,4 @@ Com base nos dados coletados por meio do questionário, é possível identificar
 | Data  | Versão |                      Descrição                       |                                                Autor                                                |                                                                                                      |
 | :---: | :----: | :--------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
 | 23/05/2023 | 0.1 |      Criação do documento de Perfil do Usuário       | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) |  |   
-| 31/05/2023 | 0.2  |      Atualização do Pefil de Usuário       | [Genilson Silva](https://github.com/GenilsonJunior99006)|
+| 31/05/2023 | 0.2  |      Atualização do Perfil de Usuário       | [Genilson Silva](https://github.com/GenilsonJunior99006)|
