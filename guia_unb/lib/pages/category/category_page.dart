@@ -22,8 +22,16 @@ class CategoryPage extends StatelessWidget {
           description: category.doubts[index].description,
           onTap: () => Navigator.pushNamed(
             context,
-            '/doubt',
-            arguments: category.doubts[index],
+            "/doubt",
+            arguments: {
+              'category': category,
+              'doubt': {
+                'title': category.doubts[index].title,
+                'description': category.doubts[index].description,
+                'body': category.doubts[index].body,
+                // Adicione outras propriedades do objeto Doubt conforme necessário
+              },
+            },
           ),
         ),
       ),
