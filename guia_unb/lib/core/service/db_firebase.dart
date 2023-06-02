@@ -30,7 +30,9 @@ class DatabaseFirebase implements IDatabase {
       }).toList();
 
       final category = Category(
-          title: categoryName, description: categoryDescription, doubts: doubts);
+          title: categoryName,
+          description: categoryDescription,
+          doubts: doubts);
       categories.add(category);
     }
     return categories;

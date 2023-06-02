@@ -5,6 +5,7 @@ import '../../../core/components/category_card.dart';
 import '../../../core/components/doubt_card.dart';
 import '../../../core/models/category.dart';
 import '../../../core/providers/load_data.dart';
+import '../../core/config/routes/routes.dart';
 
 class InitialPage extends StatelessWidget {
   const InitialPage({Key? key}) : super(key: key);
@@ -25,20 +26,17 @@ class InitialPage extends StatelessWidget {
             children: [
               Text(
                 "Duvidas Frequentes",
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                    ),
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                ),
               ),
               Text(
                 "Lista de dúvidas frequentes",
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface
-                          .withOpacity(0.8),
-                      fontSize: 16,
-                    ),
+                style: theme.textTheme.bodySmall?.copyWith(
+                  color: theme.colorScheme.onSurface.withOpacity(0.8),
+                  fontSize: 16,
+                ),
               ),
             ],
           ),
@@ -62,7 +60,7 @@ class InitialPage extends StatelessWidget {
                   onTap: () {
                     Navigator.pushNamed(
                       context,
-                      "/category",
+                      Routes.category,
                       arguments: categories[index],
                     );
                   },
@@ -100,24 +98,22 @@ class InitialPage extends StatelessWidget {
                 itemBuilder: (_, index) {
                   final category = categories[0];
                   return DoubtCard(
-                    title: category.doubts[index].title,
-                    description: category.doubts[index].description,
-                    onTap: () {
-                      Navigator.pushNamed(
-                        context,
-                        "/doubt",
-                        arguments: {
-                          'category': category,
-                          'doubt': {
-                            'title': category.doubts[index].title,
-                            'description': category.doubts[index].description,
-                            'body': category.doubts[index].body,
-                            // Adicione outras propriedades do objeto Doubt conforme necessário
+                      title: category.doubts[index].title,
+                      description: category.doubts[index].description,
+                      onTap: () {
+                        Navigator.pushNamed(
+                          context,
+                          Routes.doubt,
+                          arguments: {
+                            'category': category,
+                            'doubt': {
+                              'title': category.doubts[index].title,
+                              'description': category.doubts[index].description,
+                              'body': category.doubts[index].body,
+                            },
                           },
-                        },
-                      );
-                    }
-                  );
+                        );
+                      });
                 },
               ),
             ),
