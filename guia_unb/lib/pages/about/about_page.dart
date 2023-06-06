@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guia_unb/core/components/custom_appbar.dart';
 import 'package:guia_unb/core/util/color.dart';
 
 class AboutPage extends StatelessWidget {
@@ -9,34 +10,9 @@ class AboutPage extends StatelessWidget {
     final theme = Theme.of(context);
 
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(75),
-        child: AppBar(
-          toolbarHeight: 120,
-          title: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Sobre",
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                    ),
-              ),
-              Text(
-                "Informações sobre o aplicativo",
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface
-                          .withOpacity(0.8),
-                      fontSize: 16,
-                    ),
-              ),
-            ],
-          ),
-          automaticallyImplyLeading: false,
-        ),
+      appBar: const CustomAppBar(
+        title: "Sobre o Guia UnB",
+        subtitle: "Informações sobre o aplicativo",
       ),
       body: Stack(
         children: [

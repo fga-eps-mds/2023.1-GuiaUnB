@@ -3,7 +3,7 @@ import 'package:guia_unb/pages/category/category_page.dart';
 import 'package:guia_unb/pages/doubt/doubt_page.dart';
 import 'package:guia_unb/pages/initial_page.dart';
 import 'package:guia_unb/pages/onboarding/onboarding_page.dart';
-import 'package:guia_unb/pages/splash_page/splash_page.dart';
+import 'package:guia_unb/pages/splash/splash_page.dart';
 import 'package:provider/provider.dart';
 
 import '../core/config/routes/routes.dart';

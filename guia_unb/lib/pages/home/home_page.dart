@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guia_unb/core/components/custom_appbar.dart';
 import 'package:provider/provider.dart';
 
 import '../../../core/components/category_card.dart';
@@ -17,37 +18,15 @@ class HomePage extends StatelessWidget {
     List<Category> categories = Provider.of<LoadData>(context).data;
 
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(75),
-        child: AppBar(
-          toolbarHeight: 120,
-          title: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Duvidas Frequentes",
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 24,
-                ),
-              ),
-              Text(
-                "Lista de dúvidas frequentes",
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.colorScheme.onSurface.withOpacity(0.8),
-                  fontSize: 16,
-                ),
-              ),
-            ],
-          ),
-          automaticallyImplyLeading: false,
-        ),
+      appBar: const CustomAppBar(
+        title: "Duvidas Frequentes",
+        subtitle: "Lista de dúvidas frequentes",
       ),
       body: SingleChildScrollView(
         child: Column(
           children: [
             SizedBox(
-              height: screenSize.height * 0.365,
+              height: screenSize.height * 0.33,
               child: ListView.separated(
                 scrollDirection: Axis.horizontal,
                 padding: const EdgeInsets.all(8),
@@ -57,13 +36,11 @@ class HomePage extends StatelessWidget {
                   title: categories[index].title,
                   description: categories[index].description,
                   icon: Icons.ac_unit,
-                  onTap: () {
-                    Navigator.pushNamed(
-                      context,
-                      Routes.category,
-                      arguments: categories[index],
-                    );
-                  },
+                  onTap: () => Navigator.pushNamed(
+                    context,
+                    Routes.category,
+                    arguments: categories[index],
+                  ),
                 ),
               ),
             ),
@@ -72,7 +49,7 @@ class HomePage extends StatelessWidget {
               children: [
                 const SizedBox(width: 15),
                 Text(
-                  "Dúvidas Discplinares",
+                  "Dúvidas Disciplinares",
                   style: theme.textTheme.labelMedium,
                 ),
                 const Spacer(),
@@ -92,28 +69,27 @@ class HomePage extends StatelessWidget {
             ),
             const Divider(),
             SizedBox(
-              height: screenSize.height * 0.34,
+              height: screenSize.height * 0.38,
               child: ListView.builder(
                 itemCount: categories[0].doubts.length,
                 itemBuilder: (_, index) {
                   final category = categories[0];
                   return DoubtCard(
-                      title: category.doubts[index].title,
-                      description: category.doubts[index].description,
-                      onTap: () {
-                        Navigator.pushNamed(
-                          context,
-                          Routes.doubt,
-                          arguments: {
-                            'category': category,
-                            'doubt': {
-                              'title': category.doubts[index].title,
-                              'description': category.doubts[index].description,
-                              'body': category.doubts[index].body,
-                            },
-                          },
-                        );
-                      });
+                    title: category.doubts[index].title,
+                    description: category.doubts[index].description,
+                    onTap: () => Navigator.pushNamed(
+                      context,
+                      Routes.doubt,
+                      arguments: {
+                        'category': category,
+                        'doubt': {
+                          'title': category.doubts[index].title,
+                          'description': category.doubts[index].description,
+                          'body': category.doubts[index].body,
+                        },
+                      },
+                    ),
+                  );
                 },
               ),
             ),

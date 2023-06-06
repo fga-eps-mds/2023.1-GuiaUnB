@@ -31,59 +31,57 @@ class OnboardingPageState extends State<OnboardingPage> {
       body: AnimatedOpacity(
         opacity: _showContent ? 1.0 : 0.0,
         duration: const Duration(milliseconds: 700),
-        child: SafeArea(
-          child: Stack(
-            children: [
-              Center(
-                child: SvgPicture.asset(
-                  "assets/images/unb-logo.svg",
-                  height: 200,
-                  width: 200,
-                  alignment: Alignment.center,
-                ),
+        child: Stack(
+          children: [
+            Center(
+              child: SvgPicture.asset(
+                "assets/images/unb-logo.svg",
+                height: 200,
+                width: 200,
+                alignment: Alignment.center,
               ),
-              Positioned.fill(
-                child: BackdropFilter(
-                  filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-                  child: const SizedBox(),
-                ),
+            ),
+            Positioned.fill(
+              child: BackdropFilter(
+                filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
+                child: const SizedBox(),
               ),
-              Center(
-                child: Column(
-                  children: [
-                    Text("Bem vindo",
-                        style: theme.textTheme.titleLarge
-                            ?.copyWith(fontWeight: FontWeight.bold)),
-                    Text(
-                      "Obrigado por baixar o Guia UnB",
-                      style: theme.textTheme.labelMedium?.copyWith(
-                        color: Theme.of(context)
-                            .colorScheme
-                            .onSurface
-                            .withOpacity(0.9),
-                      ),
+            ),
+            Center(
+              child: Column(
+                children: [
+                  Text("Bem vindo",
+                      style: theme.textTheme.titleLarge
+                          ?.copyWith(fontWeight: FontWeight.bold)),
+                  Text(
+                    "Obrigado por baixar o Guia UnB",
+                    style: theme.textTheme.labelMedium?.copyWith(
+                      color: Theme.of(context)
+                          .colorScheme
+                          .onSurface
+                          .withOpacity(0.9),
                     ),
-                    const SizedBox(height: 500),
-                    ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          textStyle: theme.textTheme.bodyMedium?.copyWith(
-                            color: theme.colorScheme.onSecondary,
-                          ),
-                          backgroundColor: theme.colorScheme.secondary,
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 14, horizontal: 32),
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20)),
-                          elevation: 10),
-                      onPressed: () =>
-                          Navigator.of(context).pushNamed(Routes.home),
-                      child: const Text("Começar"),
-                    ),
-                  ],
-                ),
+                  ),
+                  const SizedBox(height: 500),
+                  ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        textStyle: theme.textTheme.bodyMedium?.copyWith(
+                          color: theme.colorScheme.onSecondary,
+                        ),
+                        backgroundColor: theme.colorScheme.secondary,
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 14, horizontal: 32),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)),
+                        elevation: 10),
+                    onPressed: () =>
+                        Navigator.of(context).pushNamed(Routes.home),
+                    child: const Text("Começar"),
+                  ),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
