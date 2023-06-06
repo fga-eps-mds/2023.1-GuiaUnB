@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:guia_unb/pages/home/home_page.dart';
+import 'package:guia_unb/pages/settings/settings_page.dart';
 
-import 'configuracoes/settings.dart';
-import 'inicio/inicio.dart';
-import 'sobre/sobre.dart';
+import 'about/about_page.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+class InitialPage extends StatefulWidget {
+  const InitialPage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<InitialPage> createState() => _MainPageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _MainPageState extends State<InitialPage> {
   int _selectedIndex = 0;
 
   void _onItemTapped(int index) {
@@ -21,13 +21,13 @@ class _HomePageState extends State<HomePage> {
   Widget _getSelectedPage() {
     switch (_selectedIndex) {
       case 0:
-        return const InitialPage();
+        return const HomePage();
       case 1:
         return const AboutPage();
       case 2:
         return const SettingsPage();
       default:
-        return const InitialPage();
+        return const HomePage();
     }
   }
 
@@ -58,6 +58,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
     return Scaffold(
       body: AnimatedSwitcher(
         duration: const Duration(milliseconds: 300),
@@ -65,8 +66,8 @@ class _HomePageState extends State<HomePage> {
         child: _getSelectedPage(),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Theme.of(context).colorScheme.background,
-        fixedColor: Theme.of(context).colorScheme.tertiary,
+        backgroundColor: theme.colorScheme.background,
+        fixedColor: theme.colorScheme.tertiary,
         items: _bottomNavigationBarItems,
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:guia_unb/core/service/database_interface.dart';
 
 import '../models/category.dart';
-import '../service/db_firebase.dart';
 
 class LoadData with ChangeNotifier {
   List<Category> _categories = [];
@@ -9,7 +9,7 @@ class LoadData with ChangeNotifier {
   List<Category> get data => _categories;
 
   Future<void> loadData() async {
-    _categories = await DatabaseFirebase().getData();
+    _categories = await IDatabase().getData();
     notifyListeners();
   }
 }

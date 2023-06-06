@@ -7,8 +7,8 @@ import '../../../core/models/category.dart';
 import '../../../core/providers/load_data.dart';
 import '../../core/config/routes/routes.dart';
 
-class InitialPage extends StatelessWidget {
-  const InitialPage({Key? key}) : super(key: key);
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

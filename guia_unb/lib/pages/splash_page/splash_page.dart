@@ -1,3 +1,4 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:guia_unb/core/config/routes/routes.dart';
@@ -29,8 +30,9 @@ class SplashPageState extends State<SplashPage>
     loadDataAndNavigate();
   }
 
-  Future<void> loadDataAndNavigate() async {
-    await Provider.of<LoadData>(context, listen: false).loadData();
+  void loadDataAndNavigate() {
+    Firebase.initializeApp()
+        .then((_) => Provider.of<LoadData>(context, listen: false).loadData());
     navigateToOnboarding();
   }
 
