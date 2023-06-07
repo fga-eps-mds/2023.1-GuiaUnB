@@ -5,11 +5,13 @@ class DoubtCard extends StatelessWidget {
     Key? key,
     required this.title,
     required this.description,
+    required this.icon,
     this.onTap,
   }) : super(key: key);
 
   final String title;
   final String description;
+  final IconData icon;
   final Function()? onTap;
 
   @override
@@ -23,7 +25,8 @@ class DoubtCard extends StatelessWidget {
           ListTile(
             isThreeLine: true,
             leading: Icon(
-              Icons.book,
+              icon,
+              size: 32,
               color: theme.colorScheme.tertiary,
             ),
             title: Text(title, style: theme.textTheme.labelMedium),

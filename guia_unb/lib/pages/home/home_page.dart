@@ -15,7 +15,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final theme = Theme.of(context);
-    List<Category> categories = Provider.of<LoadData>(context).data;
+    final categories = Provider.of<LoadData>(context).data;
 
     return Scaffold(
       appBar: const CustomAppBar(
@@ -35,7 +35,7 @@ class HomePage extends StatelessWidget {
                 itemBuilder: (_, index) => CategoryCard(
                   title: categories[index].title,
                   description: categories[index].description,
-                  icon: Icons.ac_unit,
+                  icon: categories[index].icon,
                   onTap: () => Navigator.pushNamed(
                     context,
                     Routes.category,
@@ -77,6 +77,7 @@ class HomePage extends StatelessWidget {
                   return DoubtCard(
                     title: category.doubts[index].title,
                     description: category.doubts[index].description,
+                    icon: category.doubts[index].icon,
                     onTap: () => Navigator.pushNamed(
                       context,
                       Routes.doubt,
@@ -86,6 +87,7 @@ class HomePage extends StatelessWidget {
                           'title': category.doubts[index].title,
                           'description': category.doubts[index].description,
                           'body': category.doubts[index].body,
+                          'icon': category.doubts[index].icon,
                         },
                       },
                     ),

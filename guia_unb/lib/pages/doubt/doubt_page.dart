@@ -8,22 +8,22 @@ class DoubtPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Map<String, dynamic> arguments =
+    final arguments =
         ModalRoute.of(context)?.settings.arguments as Map<String, dynamic>;
-    final Category category = arguments['category'] as Category;
+    final category = arguments['category'] as Category;
     final Map<String, dynamic> doubtData =
         arguments['doubt'] as Map<String, dynamic>;
-    final Doubt doubt = Doubt(
-      title: doubtData['title'],
-      description: doubtData['description'],
-      body: doubtData['body'],
-      // Atribua outras propriedades do objeto Doubt conforme necessário
-    );
+    final doubt = Doubt(
+        title: doubtData['title'],
+        description: doubtData['description'],
+        body: doubtData['body'],
+        icon: doubtData['icon']);
     final theme = Theme.of(context);
+
     return Scaffold(
       body: NestedScrollView(
-        headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
-          return <Widget>[
+        headerSliverBuilder: (_, __) {
+          return [
             SliverAppBar(
               title: Text(doubt.title, style: theme.textTheme.headlineLarge),
               floating: true,
@@ -46,15 +46,15 @@ class DoubtPage extends StatelessWidget {
             ListTile(
               isThreeLine: true,
               leading: Icon(
-                Icons.book,
+                doubt.icon,
+                size: 32,
                 color: theme.colorScheme.tertiary,
               ),
               title: Text(doubt.title, style: theme.textTheme.labelMedium),
               subtitle: Text(category.title.toUpperCase(),
                   style: theme.textTheme.bodySmall?.copyWith(
                     color: theme.colorScheme.onSurface.withOpacity(0.6),
-                  )
-              ),
+                  )),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
