@@ -32,7 +32,7 @@ class CategoryPage extends StatelessWidget {
                 'title': category.doubts[index].title,
                 'description': category.doubts[index].description,
                 'body': category.doubts[index].body,
-                // Adicione outras propriedades do objeto Doubt conforme necessário
+                'icon': category.doubts[index].icon,
               },
             },
           ),
