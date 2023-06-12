@@ -16,7 +16,11 @@ class CategoryPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-          title: Text(category.title, style: theme.textTheme.titleSmall)),
+          title: Text(category.title, style: theme.textTheme.titleSmall),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back_ios),
+            onPressed: () => Navigator.pop(context),
+          )),
       body: ListView.builder(
         itemCount: category.doubts.length,
         itemBuilder: (_, index) => DoubtCard(

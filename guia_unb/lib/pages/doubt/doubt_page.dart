@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guia_unb/core/util/color.dart';
 
 import '../../core/models/category.dart';
 import '../../core/models/doubt.dart';
@@ -32,10 +33,30 @@ class DoubtPage extends StatelessWidget {
               // O AppBar é fixado no topo
               expandedHeight: 250,
               // Altura expandida do AppBar
+              leading: IconButton(
+                icon: const Icon(Icons.arrow_back_ios),
+                onPressed: () => Navigator.pop(context),
+              ),
               flexibleSpace: FlexibleSpaceBar(
-                background: Image.network(
-                  'https://rap24horas.com.br/wp-content/uploads/2018/08/sucessofff.png',
-                  fit: BoxFit.cover,
+                background: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        theme.colorScheme.tertiary.withOpacity(0.3),
+                        theme.colorScheme.tertiary.withOpacity(0.6),
+                      ],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                  ),
+                  child: Align(
+                    alignment: Alignment.center,
+                    child: Icon(
+                      category.icon,
+                      size: 64,
+                      color: theme.colorScheme.onPrimary.withOpacity(0.5),
+                    ),
+                  ),
                 ),
               ),
             ),

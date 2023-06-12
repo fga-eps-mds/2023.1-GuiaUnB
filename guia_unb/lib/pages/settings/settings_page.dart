@@ -16,10 +16,8 @@ class SettingsPage extends StatefulWidget {
 class _SettingsPageState extends State<SettingsPage> {
   @override
   Widget build(BuildContext context) {
-    final themeProvider = Provider.of<ThemeProvider>(context);
-    final isDarkMode =
-        themeProvider.selectedTheme.brightness == Brightness.dark;
     final theme = Theme.of(context);
+
     return Scaffold(
       appBar: const CustomAppBar(
         title: 'Configurações',
@@ -40,15 +38,15 @@ class _SettingsPageState extends State<SettingsPage> {
                 color: theme.colorScheme.onSurface.withOpacity(0.6),
               ),
             ),
-            trailing: Switch(
-              activeColor: theme.colorScheme.tertiary,
-              value: isDarkMode,
-              onChanged: (value) {
-                final selectedTheme =
-                    value ? AppTheme.darkTheme() : AppTheme.lightTheme();
-                Provider.of<ThemeProvider>(context, listen: false)
-                    .selectedTheme = selectedTheme;
-              },
+            trailing: Consumer<ThemeProvider>(
+              builder: (_, themeProvider, __) => Switch(
+                activeColor: theme.colorScheme.tertiary,
+                value:
+                    themeProvider.selectedTheme.brightness == Brightness.dark,
+                onChanged: (value) {
+                  themeProvider.toggleTheme();
+                },
+              ),
             ),
           ),
           const Divider(),
