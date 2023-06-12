@@ -22,6 +22,9 @@ jobs:
     - uses: subosito/flutter-action@v1
       with:
         flutter-version: '3.3.10'
+        
+    - name: Entering in the project root
+      run: cd guia_unb
     
     - name: Getting the dependencies for the Flutter project
       run: flutter pub get
