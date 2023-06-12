@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:guia_unb/core/components/doubt_card.dart';
 import 'package:guia_unb/core/models/category.dart';
 
+import '../../core/config/routes/routes.dart';
+
 class CategoryPage extends StatelessWidget {
   const CategoryPage({
     Key? key,
@@ -14,22 +16,27 @@ class CategoryPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-          title: Text(category.title, style: theme.textTheme.titleSmall)),
+          title: Text(category.title, style: theme.textTheme.titleSmall),
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back_ios),
+            onPressed: () => Navigator.pop(context),
+          )),
       body: ListView.builder(
         itemCount: category.doubts.length,
         itemBuilder: (_, index) => DoubtCard(
           title: category.doubts[index].title,
           description: category.doubts[index].description,
+          icon: category.doubts[index].icon,
           onTap: () => Navigator.pushNamed(
             context,
-            "/doubt",
+            Routes.doubt,
             arguments: {
               'category': category,
               'doubt': {
                 'title': category.doubts[index].title,
                 'description': category.doubts[index].description,
                 'body': category.doubts[index].body,
-                // Adicione outras propriedades do objeto Doubt conforme necessário
+                'icon': category.doubts[index].icon,
               },
             },
           ),
