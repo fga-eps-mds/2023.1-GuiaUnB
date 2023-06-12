@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:guia_unb/core/util/color.dart';
 
 import '../../core/models/category.dart';
 import '../../core/models/doubt.dart';
