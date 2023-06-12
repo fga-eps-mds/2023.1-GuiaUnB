@@ -10,15 +10,15 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       appBar: CustomAppBar(
-        title: "Configurações",
-        subtitle: "Configurações do aplicativo",
+        title: 'Configurações',
+        subtitle: 'Configurações do aplicativo',
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(vertical: 200.0, horizontal: 60.0),
         child: Card(
           color: AppColors.lightBlue,
           child: Center(
-            child: Text("Configurações"),
+            child: Text('Configurações'),
           ),
         ),
       ),

@@ -15,19 +15,19 @@ class Doubt {
 
   Map<String, dynamic> toJson() {
     return {
-      "title": title,
-      "description": description,
-      "body": body,
-      "icon": icon.codePoint,
+      'title': title,
+      'description': description,
+      'body': body,
+      'icon': icon.codePoint,
     };
   }
 
   static Doubt fromMap(Map<String, dynamic> map) {
     return Doubt(
-      title: map["title"],
-      description: map["description"],
-      body: map["body"],
-      icon: IconData(map["icon"]),
+      title: map['title'],
+      description: map['description'],
+      body: map['body'],
+      icon: IconData(map['icon']),
     );
   }
 }

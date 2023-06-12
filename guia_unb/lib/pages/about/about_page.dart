@@ -11,8 +11,8 @@ class AboutPage extends StatelessWidget {
 
     return Scaffold(
       appBar: const CustomAppBar(
-        title: "Sobre o Guia UnB",
-        subtitle: "Informações sobre o aplicativo",
+        title: 'Sobre o Guia UnB',
+        subtitle: 'Informações sobre o aplicativo',
       ),
       body: Stack(
         children: [
@@ -23,7 +23,7 @@ class AboutPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Sobre o Guia UnB",
+                    'Sobre o Guia UnB',
                     style: theme.textTheme.titleMedium?.copyWith(
                       fontSize: 24,
                       color: theme.colorScheme.onSurface,

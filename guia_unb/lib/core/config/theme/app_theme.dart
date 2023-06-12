@@ -20,12 +20,12 @@ class AppTheme {
         titleTextStyle: TextStyle(
           color: AppColors.labelTitle,
           fontWeight: FontWeight.bold,
-          fontFamily: "Poppins",
+          fontFamily: 'Poppins',
           fontSize: 30,
         ),
       ),
       canvasColor: AppColors.cardBackground,
-      fontFamily: "Poppins",
+      fontFamily: 'Poppins',
       textTheme: const TextTheme(
         labelMedium: TextStyle(
           color: AppColors.labelTitle,
@@ -112,12 +112,12 @@ class AppTheme {
         titleTextStyle: TextStyle(
           color: AppColors.labelWhite,
           fontWeight: FontWeight.bold,
-          fontFamily: "Poppins",
+          fontFamily: 'Poppins',
           fontSize: 30,
         ),
       ),
       canvasColor: AppColors.backgroundDark,
-      fontFamily: "Poppins",
+      fontFamily: 'Poppins',
       textTheme: const TextTheme(
         labelMedium: TextStyle(
           color: AppColors.labelWhite,

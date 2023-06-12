@@ -30,7 +30,7 @@ class DoubtPage extends StatelessWidget {
               // O AppBar fica flutuante enquanto você rola
               pinned: true,
               // O AppBar é fixado no topo
-              expandedHeight: 400,
+              expandedHeight: 250,
               // Altura expandida do AppBar
               flexibleSpace: FlexibleSpaceBar(
                 background: Image.network(

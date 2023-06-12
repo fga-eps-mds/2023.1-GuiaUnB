@@ -55,7 +55,7 @@ class SplashPageState extends State<SplashPage>
         opacity: _fadeAnimation,
         child: Center(
           child: SvgPicture.asset(
-            "assets/images/unb-logo.svg",
+            'assets/images/unb-logo.svg',
             height: 200,
             width: 200,
             alignment: Alignment.center,

@@ -7,8 +7,10 @@ import 'database_interface.dart';
 class DatabaseFirebase implements IDatabase {
   @override
   Future<List<Category>> getData() async {
+    final instance = FirebaseFirestore.instance;
+    instance.settings = const Settings(persistenceEnabled: true);
     final QuerySnapshot categoriesSnapshot =
-        await FirebaseFirestore.instance.collection('categorias').get();
+        await instance.collection('categorias').get();
 
     final List<Category> categories = [];
 

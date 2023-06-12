@@ -4,7 +4,6 @@ import 'package:provider/provider.dart';
 
 import '../../../core/components/category_card.dart';
 import '../../../core/components/doubt_card.dart';
-import '../../../core/models/category.dart';
 import '../../../core/providers/load_data.dart';
 import '../../core/config/routes/routes.dart';
 
@@ -19,8 +18,8 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: const CustomAppBar(
-        title: "Duvidas Frequentes",
-        subtitle: "Lista de dúvidas frequentes",
+        title: 'Duvidas Frequentes',
+        subtitle: 'Lista de dúvidas frequentes',
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -49,7 +48,7 @@ class HomePage extends StatelessWidget {
               children: [
                 const SizedBox(width: 15),
                 Text(
-                  "Dúvidas Disciplinares",
+                  'Dúvidas Disciplinares',
                   style: theme.textTheme.labelMedium,
                 ),
                 const Spacer(),
@@ -62,7 +61,7 @@ class HomePage extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {},
-                  child: Text("Ver todos", style: theme.textTheme.bodySmall),
+                  child: Text('Ver todos', style: theme.textTheme.bodySmall),
                 ),
                 const SizedBox(width: 15),
               ],

@@ -35,7 +35,7 @@ class OnboardingPageState extends State<OnboardingPage> {
           children: [
             Center(
               child: SvgPicture.asset(
-                "assets/images/unb-logo.svg",
+                'assets/images/unb-logo.svg',
                 height: 200,
                 width: 200,
                 alignment: Alignment.center,
@@ -50,11 +50,11 @@ class OnboardingPageState extends State<OnboardingPage> {
             Center(
               child: Column(
                 children: [
-                  Text("Bem vindo",
+                  Text('Bem vindo',
                       style: theme.textTheme.titleLarge
                           ?.copyWith(fontWeight: FontWeight.bold)),
                   Text(
-                    "Obrigado por baixar o Guia UnB",
+                    'Obrigado por baixar o Guia UnB',
                     style: theme.textTheme.labelMedium?.copyWith(
                       color: Theme.of(context)
                           .colorScheme
@@ -75,8 +75,8 @@ class OnboardingPageState extends State<OnboardingPage> {
                             borderRadius: BorderRadius.circular(20)),
                         elevation: 10),
                     onPressed: () =>
-                        Navigator.of(context).pushNamed(Routes.home),
-                    child: const Text("Começar"),
+                        Navigator.of(context).pushReplacementNamed(Routes.home),
+                    child: const Text('Começar'),
                   ),
                 ],
               ),
