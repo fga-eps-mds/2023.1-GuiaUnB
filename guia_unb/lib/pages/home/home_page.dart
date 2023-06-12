@@ -1,70 +1,101 @@
 import 'package:flutter/material.dart';
-import 'package:guia_unb/pages/home/configuracoes/settings.dart';
-import 'package:guia_unb/pages/home/inicio/inicio.dart';
-import 'package:guia_unb/pages/home/sobre/sobre.dart';
+import 'package:guia_unb/core/components/custom_appbar.dart';
+import 'package:provider/provider.dart';
 
-class HomePage extends StatefulWidget {
+import '../../../core/components/category_card.dart';
+import '../../../core/components/doubt_card.dart';
+import '../../../core/providers/database_provider.dart';
+import '../../core/config/routes/routes.dart';
+
+class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 0;
-
-  void _onItemTapped(int index) {
-    setState(() => _selectedIndex = index);
-  }
-
-  Widget _getSelectedPage() {
-    switch (_selectedIndex) {
-      case 0:
-        return const InitialPage();
-      case 1:
-        return const AboutPage();
-      case 2:
-        return const SettingsPage();
-      default:
-        return const InitialPage();
-    }
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    final theme = Theme.of(context);
+    final categories = Provider.of<DatabaseProvider>(context).data;
+
     return Scaffold(
-      body: AnimatedSwitcher(
-        duration: const Duration(milliseconds: 300),
-        transitionBuilder: (child, animation) {
-          return SlideTransition(
-            position: Tween<Offset>(
-              begin: const Offset(-2, 0),
-              end: const Offset(0, 0),
-            ).animate(animation),
-            child: child,
-          );
-        },
-        child: _getSelectedPage(),
+      appBar: const CustomAppBar(
+        title: 'Duvidas Frequentes',
+        subtitle: 'Lista de dúvidas frequentes',
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Theme.of(context).colorScheme.background,
-        fixedColor: Theme.of(context).colorScheme.tertiary,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.help),
-            label: 'Sobre',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Configurações',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(
+              height: screenSize.height * 0.33,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.all(8),
+                itemCount: categories.length,
+                separatorBuilder: (_, __) => const SizedBox(width: 12),
+                itemBuilder: (_, index) => CategoryCard(
+                  title: categories[index].title,
+                  description: categories[index].description,
+                  icon: categories[index].icon,
+                  onTap: () => Navigator.pushNamed(
+                    context,
+                    Routes.category,
+                    arguments: categories[index],
+                  ),
+                ),
+              ),
+            ),
+            const Divider(),
+            Row(
+              children: [
+                const SizedBox(width: 15),
+                Text(
+                  'Dúvidas Disciplinares',
+                  style: theme.textTheme.labelMedium,
+                ),
+                const Spacer(),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: theme.colorScheme.tertiary,
+                    elevation: 8,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                  ),
+                  onPressed: () {},
+                  child: Text('Ver todos', style: theme.textTheme.bodySmall),
+                ),
+                const SizedBox(width: 15),
+              ],
+            ),
+            const Divider(),
+            SizedBox(
+              height: screenSize.height * 0.38,
+              child: ListView.builder(
+                itemCount: categories[0].doubts.length,
+                itemBuilder: (_, index) {
+                  final category = categories[0];
+                  return DoubtCard(
+                    title: category.doubts[index].title,
+                    description: category.doubts[index].description,
+                    icon: category.doubts[index].icon,
+                    onTap: () => Navigator.pushNamed(
+                      context,
+                      Routes.doubt,
+                      arguments: {
+                        'category': category,
+                        'doubt': {
+                          'title': category.doubts[index].title,
+                          'description': category.doubts[index].description,
+                          'body': category.doubts[index].body,
+                          'icon': category.doubts[index].icon,
+                        },
+                      },
+                    ),
+                  );
+                },
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

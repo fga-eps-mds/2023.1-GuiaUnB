@@ -24,7 +24,7 @@ class CategoryCard extends StatelessWidget {
         children: [
           SizedBox(
             width: 170,
-            height: MediaQuery.of(context).size.height * 0.18,
+            height: 140,
             child: Card(
               child: Center(
                 child: Icon(
