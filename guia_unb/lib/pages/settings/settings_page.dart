@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:guia_unb/core/components/custom_appbar.dart';
-import 'package:guia_unb/core/config/theme/app_theme.dart';
 import 'package:provider/provider.dart';
 
 import '../../core/config/routes/routes.dart';
@@ -43,8 +42,8 @@ class _SettingsPageState extends State<SettingsPage> {
                 activeColor: theme.colorScheme.tertiary,
                 value:
                     themeProvider.selectedTheme.brightness == Brightness.dark,
-                onChanged: (value) {
-                  themeProvider.toggleTheme();
+                onChanged: (_) async {
+                  await themeProvider.toggleTheme();
                 },
               ),
             ),
