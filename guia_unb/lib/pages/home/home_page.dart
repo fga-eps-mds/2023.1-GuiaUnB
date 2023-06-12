@@ -4,7 +4,7 @@ import 'package:provider/provider.dart';
 
 import '../../../core/components/category_card.dart';
 import '../../../core/components/doubt_card.dart';
-import '../../../core/providers/load_data.dart';
+import '../../../core/providers/database_provider.dart';
 import '../../core/config/routes/routes.dart';
 
 class HomePage extends StatelessWidget {
@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenSize = MediaQuery.of(context).size;
     final theme = Theme.of(context);
-    final categories = Provider.of<LoadData>(context).data;
+    final categories = Provider.of<DatabaseProvider>(context).data;
 
     return Scaffold(
       appBar: const CustomAppBar(

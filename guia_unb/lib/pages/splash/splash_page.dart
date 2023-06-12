@@ -2,7 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:guia_unb/core/config/routes/routes.dart';
-import 'package:guia_unb/core/providers/load_data.dart';
+import 'package:guia_unb/core/providers/database_provider.dart';
 import 'package:provider/provider.dart';
 
 class SplashPage extends StatefulWidget {
@@ -32,7 +32,7 @@ class SplashPageState extends State<SplashPage>
 
   void loadDataAndNavigate() {
     Firebase.initializeApp()
-        .then((_) => Provider.of<LoadData>(context, listen: false).loadData());
+        .then((_) => Provider.of<DatabaseProvider>(context, listen: false).loadData());
     navigateToOnboarding();
   }
 

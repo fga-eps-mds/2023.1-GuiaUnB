@@ -8,8 +8,7 @@ import 'package:guia_unb/pages/splash/splash_page.dart';
 import 'package:provider/provider.dart';
 
 import '../core/config/routes/routes.dart';
-import '../core/config/theme/app_theme.dart';
-import 'core/providers/load_data.dart';
+import 'core/providers/database_provider.dart';
 
 void main() {
   runApp(const GuiaUnB());
@@ -22,7 +21,7 @@ class GuiaUnB extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => LoadData()),
+        ChangeNotifierProvider(create: (_) => DatabaseProvider()),
         ChangeNotifierProvider(create: (_) => ThemeProvider()),
       ],
       child: Consumer<ThemeProvider>(
@@ -43,5 +42,3 @@ class GuiaUnB extends StatelessWidget {
     );
   }
 }
-
-

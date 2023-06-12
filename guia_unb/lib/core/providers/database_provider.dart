@@ -3,7 +3,7 @@ import 'package:guia_unb/core/service/database_interface.dart';
 
 import '../models/category.dart';
 
-class LoadData with ChangeNotifier {
+class DatabaseProvider with ChangeNotifier {
   List<Category> _categories = [];
 
   List<Category> get data => _categories;
