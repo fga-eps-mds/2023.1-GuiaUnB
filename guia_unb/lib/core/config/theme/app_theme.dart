@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:guia_unb/core/util/color.dart';
 
 class AppTheme {
-  static ThemeData appTheme() {
+  static ThemeData lightTheme() {
     return ThemeData(
+      brightness: Brightness.light,
       primaryColor: AppColors.primary,
       colorScheme: const ColorScheme.light(
         primary: AppColors.primary,
@@ -23,6 +24,10 @@ class AppTheme {
           fontFamily: 'Poppins',
           fontSize: 30,
         ),
+      ),
+      dividerTheme: const DividerThemeData(
+        color: AppColors.divider,
+        thickness: 1,
       ),
       canvasColor: AppColors.cardBackground,
       fontFamily: 'Poppins',
@@ -94,8 +99,9 @@ class AppTheme {
     );
   }
 
-  static ThemeData appThemeDark() {
+  static ThemeData darkTheme() {
     return ThemeData(
+      brightness: Brightness.dark,
       primaryColor: AppColors.primaryDark,
       colorScheme: const ColorScheme.dark(
         primary: AppColors.primaryDark,
@@ -115,6 +121,10 @@ class AppTheme {
           fontFamily: 'Poppins',
           fontSize: 30,
         ),
+      ),
+      dividerTheme: const DividerThemeData(
+        color: AppColors.divider,
+        thickness: 1,
       ),
       canvasColor: AppColors.backgroundDark,
       fontFamily: 'Poppins',
