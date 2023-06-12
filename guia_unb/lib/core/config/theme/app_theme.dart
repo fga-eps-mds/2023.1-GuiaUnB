@@ -89,7 +89,6 @@ class AppTheme {
           ),
         ),
       ),
-      dividerColor: AppColors.appBarColor,
       pageTransitionsTheme: const PageTransitionsTheme(
         builders: {
           TargetPlatform.android: ZoomPageTransitionsBuilder(),
@@ -123,7 +122,7 @@ class AppTheme {
         ),
       ),
       dividerTheme: const DividerThemeData(
-        color: AppColors.divider,
+        color: AppColors.dividerDark,
         thickness: 1,
       ),
       canvasColor: AppColors.backgroundDark,
@@ -186,7 +185,6 @@ class AppTheme {
           ),
         ),
       ),
-      dividerColor: AppColors.appBarColorDark,
       pageTransitionsTheme: const PageTransitionsTheme(
         builders: {
           TargetPlatform.android: ZoomPageTransitionsBuilder(),

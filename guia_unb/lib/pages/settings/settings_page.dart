@@ -72,6 +72,7 @@ class _SettingsPageState extends State<SettingsPage> {
             onTap: () =>
                 Navigator.pushReplacementNamed(context, Routes.onboarding),
           ),
+          const Divider(),
         ],
       ),
     );
