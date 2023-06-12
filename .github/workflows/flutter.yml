@@ -38,3 +38,6 @@ jobs:
 
     - name: Running lint
       run: flutter analyze
+      
+    - name: Build apk
+      run: flutter build apk
