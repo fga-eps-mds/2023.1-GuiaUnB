@@ -1,88 +1,110 @@
-import 'dart:ui';
-import 'package:flutter_svg/flutter_svg.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:guia_unb/core/config/routes/routes.dart';
+import 'package:guia_unb/pages/home/home_page.dart';
+
+import '../../core/components/onboarding_slide.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({Key? key}) : super(key: key);
 
   @override
-  OnboardingPageState createState() => OnboardingPageState();
+  _OnboardingPageState createState() => _OnboardingPageState();
 }
 
-class OnboardingPageState extends State<OnboardingPage> {
-  bool _showContent = false;
+class _OnboardingPageState extends State<OnboardingPage> {
+  final CarouselController _carouselController = CarouselController();
+  int currentIndex = 0;
 
-  @override
-  void initState() {
-    super.initState();
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      setState(() {
-        _showContent = true;
-      });
-    });
-  }
+  List<Widget> onboardingSlides = const [
+    OnboardingSlide(
+      image: 'assets/images/logo.png',
+      title: 'Bem-vindo ao Guia UnB',
+      description:
+          'O Guia UnB é um aplicativo que te ajuda a tirar dúvidas sobre a Universidade de Brasília.',
+    ),
+    OnboardingSlide(
+      image: 'assets/images/logo.png',
+      title: 'Advanced Features',
+      description: 'Enjoy advanced and personalized features.',
+    ),
+    OnboardingSlide(
+      image: 'assets/images/logo.png',
+      title: 'Easy to Use',
+      description: 'Navigate easily and enjoy the user experience.',
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
-
     return Scaffold(
-      body: AnimatedOpacity(
-        opacity: _showContent ? 1.0 : 0.0,
-        duration: const Duration(milliseconds: 700),
-        child: Stack(
-          children: [
-            Center(
-              child: SvgPicture.asset(
-                'assets/images/unb-logo.svg',
-                height: 200,
-                width: 200,
-                alignment: Alignment.center,
+      body: Column(
+        children: [
+          Expanded(
+            child: CarouselSlider(
+              carouselController: _carouselController,
+              options: CarouselOptions(
+                height: MediaQuery.of(context).size.height,
+                viewportFraction: 1.0,
+                enableInfiniteScroll: false,
+                onPageChanged: (index, reason) {
+                  setState(() {
+                    currentIndex = index;
+                  });
+                },
+              ),
+              items: onboardingSlides,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 40.0),
+            child: DotsIndicator(
+              dotsCount: onboardingSlides.length,
+              position: currentIndex.toDouble(),
+              decorator: DotsDecorator(
+                activeColor: Theme.of(context).colorScheme.secondary,
+                activeSize: const Size(18.0, 9.0),
+                activeShape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5.0),
+                ),
+                spacing: const EdgeInsets.all(4.0),
               ),
             ),
-            Positioned.fill(
-              child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-                child: const SizedBox(),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Theme.of(context).colorScheme.secondary,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30.0),
+              ),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 50.0,
+                vertical: 15.0,
               ),
             ),
-            Center(
-              child: Column(
-                children: [
-                  Text('Bem vindo',
-                      style: theme.textTheme.titleLarge
-                          ?.copyWith(fontWeight: FontWeight.bold)),
-                  Text(
-                    'Obrigado por baixar o Guia UnB',
-                    style: theme.textTheme.labelMedium?.copyWith(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface
-                          .withOpacity(0.9),
-                    ),
+            onPressed: () {
+              if (currentIndex < onboardingSlides.length - 1) {
+                _carouselController.nextPage();
+              } else {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomePage(),
                   ),
-                  const SizedBox(height: 500),
-                  ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        textStyle: theme.textTheme.bodyMedium?.copyWith(
-                          color: theme.colorScheme.onSecondary,
-                        ),
-                        backgroundColor: theme.colorScheme.secondary,
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 14, horizontal: 32),
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20)),
-                        elevation: 10),
-                    onPressed: () =>
-                        Navigator.of(context).pushReplacementNamed(Routes.home),
-                    child: const Text('Começar'),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
+                );
+              }
+            },
+            child: Text(
+                currentIndex < onboardingSlides.length - 1
+                    ? 'Próximo'
+                    : 'Começar',
+                style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                    )),
+          ),
+          const SizedBox(height: 70.0),
+        ],
       ),
     );
   }
