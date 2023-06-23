@@ -2,6 +2,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:guia_unb/pages/home/home_page.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/components/onboarding_slide.dart';
 
@@ -34,6 +35,11 @@ class _OnboardingPageState extends State<OnboardingPage> {
       description: 'Navigate easily and enjoy the user experience.',
     ),
   ];
+
+  Future<void> completeOnboarding() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('onboardingCompleted', true);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -86,6 +92,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
               if (currentIndex < onboardingSlides.length - 1) {
                 _carouselController.nextPage();
               } else {
+                completeOnboarding();
                 Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(

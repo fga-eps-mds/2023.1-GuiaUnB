@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:guia_unb/core/config/routes/routes.dart';
 import 'package:guia_unb/core/providers/database_provider.dart';
 import 'package:provider/provider.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -30,10 +31,27 @@ class SplashPageState extends State<SplashPage>
     loadDataAndNavigate();
   }
 
-  void loadDataAndNavigate() {
-    Firebase.initializeApp()
-        .then((_) => Provider.of<DatabaseProvider>(context, listen: false).loadData());
-    navigateToOnboarding();
+  void loadDataAndNavigate() async {
+    await Firebase.initializeApp().then((value) =>
+        Provider.of<DatabaseProvider>(context, listen: false).loadData());
+    navigateToAppropriateScreen();
+  }
+
+  void navigateToAppropriateScreen() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    bool onboardingCompleted = prefs.getBool('onboardingCompleted') ?? false;
+
+    if (onboardingCompleted) {
+      navigateToHomePage();
+    } else {
+      navigateToOnboarding();
+    }
+  }
+
+  void navigateToHomePage() {
+    _animationController.forward().whenComplete(() {
+      Navigator.of(context).pushReplacementNamed(Routes.home);
+    });
   }
 
   void navigateToOnboarding() {
