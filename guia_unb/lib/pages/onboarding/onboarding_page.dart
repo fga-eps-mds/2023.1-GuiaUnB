@@ -10,7 +10,7 @@ class OnboardingPage extends StatefulWidget {
   const OnboardingPage({Key? key}) : super(key: key);
 
   @override
-  _OnboardingPageState createState() => _OnboardingPageState();
+  State<OnboardingPage> createState() => _OnboardingPageState();
 }
 
 class _OnboardingPageState extends State<OnboardingPage> {
