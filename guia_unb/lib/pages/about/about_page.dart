@@ -1,9 +1,56 @@
+import 'dart:io';
+
+import 'package:device_info/device_info.dart';
 import 'package:flutter/material.dart';
 import 'package:guia_unb/core/components/custom_appbar.dart';
 import 'package:guia_unb/core/util/color.dart';
+import 'package:package_info/package_info.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({Key? key}) : super(key: key);
+
+  void _sendEmail() async {
+    final Uri emailUri = Uri(
+      scheme: 'mailto',
+      path: 'guiaunb.contato@gmail.com',
+      queryParameters: {
+        'subject': 'Reportar Bug',
+        'body': await _getDeviceInfo()
+      },
+    );
+
+    if (await canLaunchUrl(emailUri)) {
+      await launchUrl(emailUri);
+    } else {
+      throw 'Não foi possível abrir o aplicativo de e-mail.';
+    }
+  }
+
+  Future<String> _getDeviceInfo() async {
+    final DeviceInfoPlugin deviceInfoPlugin = DeviceInfoPlugin();
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    String appVersion = packageInfo.version;
+
+    if (Platform.isAndroid) {
+      final AndroidDeviceInfo androidInfo = await deviceInfoPlugin.androidInfo;
+      return 'Versão do aplicativo: $appVersion'
+          '\n\nInformações do dispositivo:'
+          '\n- Marca: ${androidInfo.brand}'
+          '\n- Modelo: ${androidInfo.model}'
+          '\n- Versão do Android: ${androidInfo.version.release}'
+          '\n\n Informe o bug encontrado:';
+    } else if (Platform.isIOS) {
+      final IosDeviceInfo iosInfo = await deviceInfoPlugin.iosInfo;
+      return 'Versão do aplicativo: $appVersion'
+          '\n\nInformações do dispositivo:'
+          '\n- Marca: Apple'
+          '\n- Modelo: ${iosInfo.model}'
+          '\n- Versão do iOS: ${iosInfo.systemVersion}'
+          '\n\n Informe o bug encontrado:';
+    }
+    return 'Versão do aplicativo: $appVersion';
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -122,7 +169,6 @@ class AboutPage extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             child: Padding(
               padding: const EdgeInsets.only(bottom: 30),
-              // Adicione um espaçamento inferior ao TextButton
               child: TextButton.icon(
                 style: TextButton.styleFrom(
                   backgroundColor: theme.colorScheme.tertiary,
@@ -139,7 +185,7 @@ class AboutPage extends StatelessWidget {
                 ),
                 icon: const Icon(Icons.error_outline,
                     color: AppColors.labelWhite),
-                onPressed: () {},
+                onPressed: _sendEmail,
               ),
             ),
           ),
