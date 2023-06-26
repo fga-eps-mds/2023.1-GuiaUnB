@@ -23,23 +23,28 @@ class CategoryPage extends StatelessWidget {
           )),
       body: ListView.builder(
         itemCount: category.doubts.length,
-        itemBuilder: (_, index) => DoubtCard(
-          title: category.doubts[index].title,
-          description: category.doubts[index].description,
-          icon: category.doubts[index].icon,
-          onTap: () => Navigator.pushNamed(
-            context,
-            Routes.doubt,
-            arguments: {
-              'category': category,
-              'doubt': {
-                'title': category.doubts[index].title,
-                'description': category.doubts[index].description,
-                'body': category.doubts[index].body,
-                'icon': category.doubts[index].icon,
-              },
-            },
-          ),
+        itemBuilder: (_, index) => Column(
+          children: [
+            DoubtCard(
+              title: category.doubts[index].title,
+              description: category.doubts[index].description,
+              icon: category.doubts[index].icon,
+              onTap: () => Navigator.pushNamed(
+                context,
+                Routes.doubt,
+                arguments: {
+                  'category': category,
+                  'doubt': {
+                    'title': category.doubts[index].title,
+                    'description': category.doubts[index].description,
+                    'body': category.doubts[index].body,
+                    'icon': category.doubts[index].icon,
+                  },
+                },
+              ),
+            ),
+            const Divider(),
+          ],
         ),
       ),
     );
