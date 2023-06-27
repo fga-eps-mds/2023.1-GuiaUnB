@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           SizedBox(
-            height: screenSize.height * 0.32,
+            height: screenSize.height * 0.33,
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
               padding: const EdgeInsets.all(8),
@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
           ),
           const Divider(),
           SizedBox(
-            height: screenSize.height * 0.45,
+            height: screenSize.height * 0.43,
             child: ListView.builder(
               itemCount: categories.length,
               itemBuilder: (_, index) => Column(

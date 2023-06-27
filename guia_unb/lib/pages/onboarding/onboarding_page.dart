@@ -65,7 +65,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 40.0),
+            padding: const EdgeInsets.symmetric(vertical: 20.0),
             child: DotsIndicator(
               dotsCount: onboardingSlides.length,
               position: currentIndex.toDouble(),
@@ -102,7 +102,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
                       fontWeight: FontWeight.bold,
                     )),
           ),
-          const SizedBox(height: 70.0),
+          const SizedBox(height: 60.0),
         ],
       ),
     );

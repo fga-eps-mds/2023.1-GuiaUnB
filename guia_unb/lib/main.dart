@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:guia_unb/core/providers/theme_provider.dart';
 import 'package:guia_unb/pages/category/category_page.dart';
 import 'package:guia_unb/pages/doubt/doubt_page.dart';
@@ -11,6 +12,10 @@ import '../core/config/routes/routes.dart';
 import 'core/providers/database_provider.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+  ]);
   runApp(const GuiaUnB());
 }
 
