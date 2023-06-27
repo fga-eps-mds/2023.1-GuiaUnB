@@ -23,7 +23,7 @@ class HomePage extends StatelessWidget {
       body: Column(
         children: [
           SizedBox(
-            height: screenSize.height * 0.30,
+            height: screenSize.height * 0.32,
             child: ListView.separated(
               scrollDirection: Axis.horizontal,
               padding: const EdgeInsets.all(8),
@@ -43,16 +43,15 @@ class HomePage extends StatelessWidget {
           ),
           const Divider(),
           SizedBox(
-            height: MediaQuery.of(context).size.height * 0.49,
+            height: screenSize.height * 0.45,
             child: ListView.builder(
               itemCount: categories.length,
-              itemBuilder: (_, index) =>
-                  Column(
-                    children: [
-                      PreviewCategory(category: categories[index]),
-                      const Divider(),
-                    ],
-                  ),
+              itemBuilder: (_, index) => Column(
+                children: [
+                  PreviewCategory(category: categories[index]),
+                  const Divider(),
+                ],
+              ),
             ),
           )
         ],

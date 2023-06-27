@@ -1,10 +1,10 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
-import 'package:guia_unb/pages/home/home_page.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../core/components/onboarding_slide.dart';
+import '../../core/config/routes/routes.dart';
 
 class OnboardingPage extends StatefulWidget {
   const OnboardingPage({Key? key}) : super(key: key);
@@ -43,6 +43,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   @override
   Widget build(BuildContext context) {
+    final isNotLastPage = currentIndex < onboardingSlides.length - 1;
+
     return Scaffold(
       body: Column(
         children: [
@@ -69,9 +71,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
               position: currentIndex.toDouble(),
               decorator: DotsDecorator(
                 activeColor: Theme.of(context).colorScheme.secondary,
-                activeSize: const Size(18.0, 9.0),
+                activeSize: const Size(10.0, 10.0),
                 activeShape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5.0),
+                  borderRadius: BorderRadius.circular(10.0),
                 ),
                 spacing: const EdgeInsets.all(4.0),
               ),
@@ -81,30 +83,20 @@ class _OnboardingPageState extends State<OnboardingPage> {
             style: ElevatedButton.styleFrom(
               backgroundColor: Theme.of(context).colorScheme.secondary,
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(30.0),
-              ),
-              padding: const EdgeInsets.symmetric(
-                horizontal: 50.0,
-                vertical: 15.0,
-              ),
+                  borderRadius: BorderRadius.circular(30.0)),
+              padding:
+                  const EdgeInsets.symmetric(horizontal: 50.0, vertical: 15.0),
             ),
-            onPressed: () {
-              if (currentIndex < onboardingSlides.length - 1) {
+            onPressed: () async {
+              if (isNotLastPage) {
                 _carouselController.nextPage();
               } else {
-                completeOnboarding();
-                Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const HomePage(),
-                  ),
+                await completeOnboarding().then(
+                  (_) => Navigator.pushReplacementNamed(context, Routes.home),
                 );
               }
             },
-            child: Text(
-                currentIndex < onboardingSlides.length - 1
-                    ? 'Próximo'
-                    : 'Começar',
+            child: Text(isNotLastPage ? 'Próximo' : 'Começar',
                 style: Theme.of(context).textTheme.bodySmall!.copyWith(
                       fontSize: 18.0,
                       fontWeight: FontWeight.bold,

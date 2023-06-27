@@ -19,11 +19,11 @@ class AboutPage extends StatelessWidget {
         'body': await _getDeviceInfo()
       },
     );
-
-    if (await canLaunchUrl(emailUri)) {
+    try {
       await launchUrl(emailUri);
-    } else {
-      throw 'Não foi possível abrir o aplicativo de e-mail.';
+      print(emailUri);
+    } catch (e) {
+      print(e);
     }
   }
 
