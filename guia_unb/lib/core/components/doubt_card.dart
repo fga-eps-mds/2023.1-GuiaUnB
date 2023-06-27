@@ -20,27 +20,25 @@ class DoubtCard extends StatelessWidget {
 
     return InkWell(
       onTap: onTap,
-      child: Column(
-        children: [
-          ListTile(
-            isThreeLine: true,
-            leading: Icon(
-              icon,
-              size: 32,
-              color: theme.colorScheme.tertiary,
-            ),
-            title: Text(title, style: theme.textTheme.labelMedium),
-            subtitle: Text(description,
-                style: theme.textTheme.bodySmall?.copyWith(
-                  color: theme.colorScheme.onSurface.withOpacity(0.6),
-                )),
-            trailing: Icon(
-              Icons.arrow_forward_ios,
-              color: theme.colorScheme.tertiary,
-            ),
+      child: SizedBox(
+        height: 100,
+        child: ListTile(
+          isThreeLine: true,
+          leading: Icon(
+            icon,
+            size: 32,
+            color: theme.colorScheme.tertiary,
           ),
-          const Divider()
-        ],
+          title: Text(title, style: theme.textTheme.labelMedium),
+          subtitle: Text(description,
+              style: theme.textTheme.bodySmall?.copyWith(
+                color: theme.colorScheme.onSurface.withOpacity(0.6),
+              )),
+          trailing: Icon(
+            Icons.arrow_forward_ios,
+            color: theme.colorScheme.tertiary,
+          ),
+        ),
       ),
     );
   }
