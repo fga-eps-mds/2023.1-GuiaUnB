@@ -20,19 +20,21 @@ class _OnboardingPageState extends State<OnboardingPage> {
   List<Widget> onboardingSlides = const [
     OnboardingSlide(
       image: 'assets/images/logo.png',
-      title: 'Bem-vindo ao Guia UnB',
+      title: 'Bem-vindo',
       description:
           'O Guia UnB é um aplicativo que te ajuda a tirar dúvidas sobre a Universidade de Brasília.',
     ),
     OnboardingSlide(
       image: 'assets/images/logo.png',
-      title: 'Advanced Features',
-      description: 'Enjoy advanced and personalized features.',
+      title: 'Benefícios',
+      description:
+          'O app traz benefícios como acesso rápido a informações relevantes sobre a UnB, com uma interface intuitiva e amigável para uma navegação fácil e agradável.',
     ),
     OnboardingSlide(
       image: 'assets/images/logo.png',
-      title: 'Easy to Use',
-      description: 'Navigate easily and enjoy the user experience.',
+      title: 'Orientações',
+      description:
+          'Na tela inicial é possível ver as dúvidas frequentes separadas por categoria.',
     ),
   ];
 
@@ -65,7 +67,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(vertical: 20.0),
+            padding: const EdgeInsets.only(bottom: 40.0),
             child: DotsIndicator(
               dotsCount: onboardingSlides.length,
               position: currentIndex.toDouble(),
