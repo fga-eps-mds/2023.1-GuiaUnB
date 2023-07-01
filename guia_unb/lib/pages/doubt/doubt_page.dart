@@ -17,8 +17,14 @@ class DoubtPage extends StatelessWidget {
         title: doubtData['title'],
         description: doubtData['description'],
         body: doubtData['body'],
-        icon: doubtData['icon']);
+        icon: doubtData['icon'],
+        link: doubtData['link']);
     final theme = Theme.of(context);
+
+    String firebaseString = doubt.body;
+    String convertedString = firebaseString.replaceAll('\\n', '\n');
+
+    print(convertedString);
 
     return Scaffold(
       body: NestedScrollView(
@@ -77,9 +83,18 @@ class DoubtPage extends StatelessWidget {
                   )),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
+              padding: const EdgeInsets.symmetric(horizontal: 16.0),
               child: Text(
                 doubt.body,
+                style: theme.textTheme.bodyMedium?.copyWith(
+                  color: theme.colorScheme.onSurface.withOpacity(0.6),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 16.0),
+              child: Text(
+                doubt.link ?? '',
                 style: theme.textTheme.bodyMedium?.copyWith(
                   color: theme.colorScheme.onSurface.withOpacity(0.6),
                 ),
