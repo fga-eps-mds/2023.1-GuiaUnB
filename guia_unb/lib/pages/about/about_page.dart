@@ -21,9 +21,9 @@ class AboutPage extends StatelessWidget {
     );
     try {
       await launchUrl(emailUri);
-      print(emailUri);
+      debugPrint(emailUri.toString());
     } catch (e) {
-      print(e);
+      debugPrint(e.toString());
     }
   }
 

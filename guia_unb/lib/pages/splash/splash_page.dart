@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:guia_unb/core/config/routes/routes.dart';
 import 'package:guia_unb/core/providers/database_provider.dart';
@@ -32,9 +33,47 @@ class SplashPageState extends State<SplashPage>
   }
 
   void loadDataAndNavigate() async {
-    await Firebase.initializeApp().then((value) =>
-        Provider.of<DatabaseProvider>(context, listen: false).loadData());
-    navigateToAppropriateScreen();
+    try {
+      await Firebase.initializeApp().then((_) =>
+          Provider.of<DatabaseProvider>(context, listen: false).loadData());
+      navigateToAppropriateScreen();
+    } catch (error) {
+      debugPrint('Erro ao carregar os dados: $error');
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: const [
+                Icon(
+                  Icons.error,
+                  color: Colors.red,
+                  size: 45,
+                ),
+                SizedBox(width: 40),
+                Text('Erro'),
+              ],
+            ),
+            content: const Text('Não foi possível carregar os dados.'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                  SystemNavigator.pop();
+                },
+                child: Text(
+                  'OK',
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.tertiary,
+                  ),
+                ),
+              ),
+            ],
+          );
+        },
+      );
+    }
   }
 
   void navigateToAppropriateScreen() async {
