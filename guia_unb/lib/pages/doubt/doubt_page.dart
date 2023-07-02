@@ -1,4 +1,8 @@
+import 'dart:ui';
+
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../core/models/category.dart';
 import '../../core/models/doubt.dart';
@@ -68,49 +72,48 @@ class DoubtPage extends StatelessWidget {
           ];
         },
         body: SingleChildScrollView(
-          child: Column(
-            children: [
-              ListTile(
-                isThreeLine: true,
-                leading: Icon(
-                  doubt.icon,
-                  size: 32,
-                  color: theme.colorScheme.tertiary,
-                ),
-                title: Text(doubt.title, style: theme.textTheme.labelMedium),
-                subtitle: Text(
-                  category.title.toUpperCase(),
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.colorScheme.onSurface.withOpacity(0.6),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Column(
+              children: [
+                ListTile(
+                  isThreeLine: true,
+                  leading: Icon(
+                    doubt.icon,
+                    size: 32,
+                    color: theme.colorScheme.tertiary,
+                  ),
+                  title: Text(doubt.title, style: theme.textTheme.labelMedium),
+                  subtitle: Text(
+                    category.title.toUpperCase(),
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.onSurface.withOpacity(0.6),
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 16.0, vertical: 20),
-                child: RichText(
-                  text: TextSpan(
-                    children: [
-                      TextSpan(
-                        text: 'Pergunta: ',
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          color: theme.colorScheme.onSurface.withOpacity(0.8),
-                          fontWeight: FontWeight.bold,
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 20.0),
+                  child: RichText(
+                    text: TextSpan(
+                      children: [
+                        TextSpan(
+                          text: 'Pergunta: ',
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: theme.colorScheme.onSurface.withOpacity(0.8),
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
-                      ),
-                      TextSpan(
-                        text: doubt.description,
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          color: theme.colorScheme.onSurface.withOpacity(0.6),
+                        TextSpan(
+                          text: doubt.description,
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: theme.colorScheme.onSurface.withOpacity(0.6),
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                child: RichText(
+                RichText(
                   text: TextSpan(
                     children: [
                       TextSpan(
@@ -129,33 +132,36 @@ class DoubtPage extends StatelessWidget {
                     ],
                   ),
                 ),
-              ),
-              if (doubt.link.isNotEmpty)
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 16.0),
-                  child: RichText(
-                    text: TextSpan(
-                      children: [
-                        TextSpan(
-                          text: 'Link: ',
-                          style: theme.textTheme.bodyMedium?.copyWith(
-                            color:
-                                theme.colorScheme.onSurface.withOpacity(0.8),
-                            fontWeight: FontWeight.bold,
+                if (doubt.link.isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20.0),
+                    child: RichText(
+                      text: TextSpan(
+                        children: [
+                          TextSpan(
+                            text: 'Link: ',
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              color:
+                                  theme.colorScheme.onSurface.withOpacity(0.8),
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
-                        ),
-                        TextSpan(
-                          text: doubt.link,
-                          style: theme.textTheme.bodyMedium?.copyWith(
-                            color:
-                                theme.colorScheme.onSurface.withOpacity(0.6),
+                          TextSpan(
+                            text: doubt.link,
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              color: Colors.blueAccent,
+                              fontStyle: FontStyle.italic,
+                              decoration: TextDecoration.underline,
+                            ),
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () => launchUrlString(doubt.link),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
-                ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
