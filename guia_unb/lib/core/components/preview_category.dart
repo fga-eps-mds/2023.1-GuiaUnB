@@ -47,7 +47,7 @@ class PreviewCategory extends StatelessWidget {
         ),
         const Divider(),
         SizedBox(
-          height: 110 * category.doubts.length.toDouble(),
+          height: 220,
           child: ListView.builder(
             physics: const NeverScrollableScrollPhysics(),
             itemCount: previewDoubts.length,
@@ -68,6 +68,7 @@ class PreviewCategory extends StatelessWidget {
                           'description': previewDoubts[index].description,
                           'body': previewDoubts[index].body,
                           'icon': previewDoubts[index].icon,
+                          'link': previewDoubts[index].link,
                         },
                       },
                     ),
