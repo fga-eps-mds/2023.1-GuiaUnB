@@ -1,7 +1,6 @@
-import 'dart:ui';
-
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../core/models/category.dart';
@@ -37,11 +36,9 @@ class DoubtPage extends StatelessWidget {
             SliverAppBar(
               title: Text(category.title, style: theme.textTheme.headlineLarge),
               floating: true,
-              // O AppBar fica flutuante enquanto você rola
               pinned: true,
-              // O AppBar é fixado no topo
-              expandedHeight: 250,
-              // Altura expandida do AppBar
+              snap: false,
+              expandedHeight: 200,
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back_ios),
                 onPressed: () => Navigator.pop(context),
