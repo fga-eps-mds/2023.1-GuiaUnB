@@ -18,6 +18,10 @@ class DoubtCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
+    final limitDescription = description.length > 100
+        ? '${description.substring(0, 80)}...'
+        : description;
+
     return InkWell(
       onTap: onTap,
       child: SizedBox(
@@ -30,7 +34,7 @@ class DoubtCard extends StatelessWidget {
             color: theme.colorScheme.tertiary,
           ),
           title: Text(title, style: theme.textTheme.labelMedium),
-          subtitle: Text(description,
+          subtitle: Text(limitDescription,
               style: theme.textTheme.bodySmall?.copyWith(
                 color: theme.colorScheme.onSurface.withOpacity(0.6),
               )),
