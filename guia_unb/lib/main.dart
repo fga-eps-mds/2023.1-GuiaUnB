@@ -40,7 +40,6 @@ class GuiaUnB extends StatelessWidget {
               Routes.category: (_) => const CategoryPage(),
               Routes.doubt: (_) => const DoubtPage(),
             },
-            debugShowCheckedModeBanner: false,
           );
         },
       ),
