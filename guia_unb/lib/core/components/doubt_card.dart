@@ -18,7 +18,7 @@ class DoubtCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    final limitDescription = description.length > 100
+    final limitDescription = description.length > 80
         ? '${description.substring(0, 80)}...'
         : description;
 
