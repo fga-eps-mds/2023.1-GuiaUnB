@@ -59,11 +59,10 @@ class SplashPageState extends State<SplashPage>
             actions: [
               TextButton(
                 onPressed: () {
-                  Navigator.of(context).pop();
                   SystemNavigator.pop();
                 },
                 child: Text(
-                  'OK',
+                  'Sair',
                   style: TextStyle(
                     color: Theme.of(context).colorScheme.tertiary,
                   ),
