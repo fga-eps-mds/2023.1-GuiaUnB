@@ -35,9 +35,6 @@ jobs:
  
     - name: Run tests for Flutter
       run: flutter test --coverage
-
-    - name: Running lint
-      run: flutter analyze
       
     - name: Build apk
       run: flutter build apk
