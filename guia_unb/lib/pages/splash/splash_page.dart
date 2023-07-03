@@ -32,11 +32,12 @@ class SplashPageState extends State<SplashPage>
     loadDataAndNavigate();
   }
 
-  void loadDataAndNavigate() async {
+  void loadDataAndNavigate() {
     try {
-      await Firebase.initializeApp().then((_) =>
-          Provider.of<DatabaseProvider>(context, listen: false).loadData());
-      navigateToAppropriateScreen();
+      Firebase.initializeApp().then((_) =>
+          Provider.of<DatabaseProvider>(context, listen: false)
+              .loadData()
+              .then((_) => navigateToAppropriateScreen()));
     } catch (error) {
       debugPrint('Erro ao carregar os dados: $error');
       showDialog(
@@ -58,9 +59,7 @@ class SplashPageState extends State<SplashPage>
             content: const Text('Não foi possível carregar os dados.'),
             actions: [
               TextButton(
-                onPressed: () {
-                  SystemNavigator.pop();
-                },
+                onPressed: () => SystemNavigator.pop(),
                 child: Text(
                   'Sair',
                   style: TextStyle(
