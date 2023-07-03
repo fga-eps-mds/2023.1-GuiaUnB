@@ -90,8 +90,9 @@ class DoubtPage extends StatelessWidget {
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 20.0),
-                  child: RichText(
-                    text: TextSpan(
+                  child: SelectableText.rich(
+                    textAlign: TextAlign.justify,
+                    TextSpan(
                       children: [
                         TextSpan(
                           text: 'Pergunta: ',
@@ -110,8 +111,9 @@ class DoubtPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                RichText(
-                  text: TextSpan(
+                SelectableText.rich(
+                  textAlign: TextAlign.justify,
+                  TextSpan(
                     children: [
                       TextSpan(
                         text: 'Resposta: ',
@@ -132,8 +134,8 @@ class DoubtPage extends StatelessWidget {
                 if (doubt.link.isNotEmpty)
                   Padding(
                     padding: const EdgeInsets.only(top: 20.0),
-                    child: RichText(
-                      text: TextSpan(
+                    child: SelectableText.rich(
+                      TextSpan(
                         children: [
                           TextSpan(
                             text: 'Link: ',
