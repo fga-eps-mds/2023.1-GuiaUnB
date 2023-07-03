@@ -1,0 +1,53 @@
+site_name: Guia UnB
+site_url: https://guia-unb.github.io
+theme:
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+plugins:
+  - search
+nav:
+  - Introdução: "index.md"
+  - Arquitetura: "Pages/arquitetura/2023-05-06-arquitetura.md"
+  - Backlog: "Pages/backlog/2023-05-06-backlog.md"
+  - Branches: "Pages/branches/2023-05-04-branches.md"
+  - Commits: "Pages/commits/2023-05-04-commits.md"
+  - Comunicação: "Pages/comunicacao/2023-05-04-plano-de-comunicação.md"
+  - Código de Conduta: "Pages/conduta/CODE_OF_CONDUCT.md"
+  - Gerenciamento: "Pages/gerenciamento/2023-05-04-plano-de-gerenciamento-de-riscos.md"
+  - Issue Template:
+    - Custom: "Pages/issue/custom.md"
+    - Pull Request: "Pages/issue/pull_request_template.md"
+    - Feature: "Pages/issue/feature_request.md"
+    - Bug: "Pages/issue/bug_report.md"
+  - Contribuição: "Pages/contribuicao/CONTRIBUTING.md"
+  - Personas: "Pages/personas/2023-05-23-documento-de-personas.md"
+  - Protótipo: "Pages/prototipo/2023-05-11-documento-de-protótipo.md"
+  - Sprints:
+    - Sprint 0:
+      - Planejamento: "Pages/sprints/sprint0/2023-05-06-planejamento.md"
+      - Resultado: "Pages/sprints/sprint0/2023-05-06-resultados.md"
+    - Sprint 1:
+      - Planejamento: "Pages/sprints/sprint1/2023-05-06-planejamento.md"
+      - Resultado: "Pages/sprints/sprint1/2023-05-06-resultados.md"
+    - Sprint 2:
+      - Planejamento: "Pages/sprints/sprint2/2023-05-06-planejamento.md"
+      - Resultado: "Pages/sprints/sprint2/2023-05-06-resultados.md"
+    - Sprint 3:
+      - Planejamento: "Pages/sprints/sprint3/2023-05-06-planejamento.md"
+      - Resultado: "Pages/sprints/sprint3/2023-05-06-resultados.md"
+    - Sprint 4:
+      - Planejamento: "Pages/sprints/sprint4/2023-05-06-planejamento.md"
+      - Resultado: "Pages/sprints/sprint4/2023-05-06-resultados.md"
+    - Sprint 5:
+      - Planejamento: "Pages/sprints/sprint5/2023-05-06-planejamento.md"
+      - Resultado: "Pages/sprints/sprint5/2023-05-06-resultados.md"
+    - Sprint 6:
+      - Planejamento: "Pages/sprints/sprint6/2023-05-11-planejamento.md"
+      - Resultado: "Pages/sprints/sprint6/2023-05-11-resultados.md"
+  - StoryBoard: "Pages/storyboard/2023-05-23-storyboard.md"
+  - Usuário: "Pages/usuario/2023-05-23-perfil-de-usuário.md"
+  - Visão: "Pages/visao/2023-05-05-documento-de-visão.md"
+
