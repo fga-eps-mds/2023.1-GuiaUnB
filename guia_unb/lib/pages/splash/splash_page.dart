@@ -46,14 +46,14 @@ class SplashPageState extends State<SplashPage>
           return AlertDialog(
             title: Row(
               mainAxisAlignment: MainAxisAlignment.start,
-              children: const [
-                Icon(
+              children: [
+                const Icon(
                   Icons.error,
                   color: Colors.red,
                   size: 45,
                 ),
-                SizedBox(width: 40),
-                Text('Erro'),
+                const SizedBox(width: 40),
+                const Text('Erro'),
               ],
             ),
             content: const Text('Não foi possível carregar os dados.'),
