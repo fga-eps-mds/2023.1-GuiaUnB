@@ -5,6 +5,7 @@ excerpt: ""
 | :--------: | :----: | :----------:                   | :---------------: |
 | 04/05/2023 |  0.1   | Abertura do documento | [Arthur Gabriel](https://github.com/ArthurGabrieel)|
 | 06/05/2023 |  0.2  | Atualizações nas Ferramentas | [Thiago Freitas](https://github.com/thiagorfreitas)|
+| 03/07/2023 |  0.3  | Correção nas imagens | [Thiago Freitas](https://github.com/thiagorfreitas)|
 
 ## 1. Objetivo
 Este documento tem como objetivo oficializar os meios de comunicação entre os membros do projeto, explicitando desde as ferramentas utilizadas até os processos necessários para assegurar que as informações sejam armazenadas, organizadas e distribuídas.
@@ -13,10 +14,10 @@ Este documento tem como objetivo oficializar os meios de comunicação entre os 
 
 | Ícone            | Ferramenta    | Descrição                                |
 | :--------------: | :-----------: | :--------------------------------------: |
-| ![image](https://cdn.iconscout.com/icon/free/png-256/github-1521500-1288242.png) | GitHub | Ferramenta de versionamento, onde temos os códigos do produto, e por ela comentamos as Issues que são trabalhadas. |
-| ![image](/guia_unb/assets/images/whatsapp-logo.png) | Whatsapp | Utilizado para a comunicação rápida e do dia a dia, para dinamizar a troca de informações entre a equipe. |
+| ![image](https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg) | GitHub | Ferramenta de versionamento, onde temos os códigos do produto, e por ela comentamos as Issues que são trabalhadas. |
+| ![image](https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg) | Whatsapp | Utilizado para a comunicação rápida e do dia a dia, para dinamizar a troca de informações entre a equipe. |
 | ![image](https://cdn.iconscout.com/icon/free/png-256/discord-2752210-2285027.png) | Discord | Utilizado para reuniões como pré-planejamento e planejamento da sprint, sprint review, as vezes daily e quaisquer outras reuniões que forem marcadas. |
-| ![image](/guia_unb/assets/images/notion-logo.png) | Notion | Utilizado para organizar e centralizar as informações do projeto como fontes de estudo, planejamento de tarefas e sugestões de funcionalidades. |
+| ![image](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/240px-Notion-logo.svg.png) | Notion | Utilizado para organizar e centralizar as informações do projeto como fontes de estudo, planejamento de tarefas e sugestões de funcionalidades. |
 
 ## 3. Diretrizes e procedimentos usados para comunicar
 ### 3.1 Comunicação Geral
