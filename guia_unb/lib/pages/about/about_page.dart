@@ -139,21 +139,10 @@ class AboutPage extends StatelessWidget {
                         TextSpan(
                             text:
                                 ' Encontre as informações de contato e horários de funcionamento para facilitar o acesso a esses serviços.\n\n'),
-                        TextSpan(
-                          text: 'Personalizar sua Experiência:\n',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        TextSpan(
-                          text:
-                              'O GuiaUnb permite que você personalize sua experiência de acordo com seus interesses e necessidades.',
-                        ),
-                        TextSpan(
-                            text:
-                                ' Adicione seus cursos favoritos, marque eventos importantes em seu calendário e receba notificações relevantes para se manter atualizado.'),
                       ],
                     ),
                   ),
-                  const SizedBox(height: 80), // Aumente o espaçamento aqui
+                  const SizedBox(height: 60), // Aumente o espaçamento aqui
                 ],
               ),
             ),
