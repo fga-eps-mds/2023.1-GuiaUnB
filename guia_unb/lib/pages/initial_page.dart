@@ -44,7 +44,7 @@ class _MainPageState extends State<InitialPage> {
   static const List<BottomNavigationBarItem> _bottomNavigationBarItems = [
     BottomNavigationBarItem(
       icon: Icon(Icons.home),
-      label: 'Home',
+      label: 'Início',
     ),
     BottomNavigationBarItem(
       icon: Icon(Icons.help),

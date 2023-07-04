@@ -69,14 +69,7 @@ class AboutPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'Sobre o Guia UnB',
-                    style: theme.textTheme.titleMedium?.copyWith(
-                      fontSize: 24,
-                      color: theme.colorScheme.onSurface,
-                    ),
-                  ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   RichText(
                     textAlign: TextAlign.start,
                     text: TextSpan(
@@ -183,7 +176,7 @@ class AboutPage extends StatelessWidget {
                   style: theme.textTheme.labelMedium
                       ?.copyWith(color: AppColors.labelWhite),
                 ),
-                icon: const Icon(Icons.error_outline,
+                icon: const Icon(Icons.bug_report_rounded,
                     color: AppColors.labelWhite),
                 onPressed: _sendEmail,
               ),
