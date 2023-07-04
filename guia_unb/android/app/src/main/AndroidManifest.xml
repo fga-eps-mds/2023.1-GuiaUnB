@@ -1,9 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.guia_unb">
-   <application
-        android:label="guia_unb"
+    package="br.com.mds.guiaunb">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:label="Guia UnB"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
         <activity
             android:name=".MainActivity"
             android:exported="true"

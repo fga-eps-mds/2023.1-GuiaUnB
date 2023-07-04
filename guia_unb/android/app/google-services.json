@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "466271756446",
+    "project_id": "guiaunb-41bd8",
+    "storage_bucket": "guiaunb-41bd8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466271756446:android:68a4f7083b00d2d4ee9b8f",
+        "android_client_info": {
+          "package_name": "br.com.mds.guiaunb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466271756446-nrdp2lrv7iiudpoe5304j8badofnmvig.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLZxafqKIKS5Q9RI42xyWCbzCMFiXeq5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466271756446-nrdp2lrv7iiudpoe5304j8badofnmvig.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

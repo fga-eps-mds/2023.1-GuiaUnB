@@ -1,99 +1,63 @@
 import 'package:flutter/material.dart';
-import 'package:guia_unb/pages/home/inicio/inicio.dart';
-import 'package:guia_unb/pages/home/sobre/sobre.dart';
-import 'dicas/dicas.dart';
+import 'package:guia_unb/core/components/custom_appbar.dart';
+import 'package:guia_unb/core/components/preview_category.dart';
+import 'package:provider/provider.dart';
 
-class HomePage extends StatefulWidget {
+import '../../../core/components/category_card.dart';
+import '../../../core/providers/database_provider.dart';
+import '../../core/config/routes/routes.dart';
+
+class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  int _selectedIndex = 0;
-
-  void _onItemTapped(int index) {
-    setState(() => _selectedIndex = index);
-  }
-
-  Widget _getSelectedPage() {
-    switch (_selectedIndex) {
-      case 0:
-        return const InitialPage();
-      case 1:
-        return const TipsPage();
-      case 2:
-        return const AboutPage();
-      default:
-        return const InitialPage();
-    }
-  }
-
-  @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
+    final categories = Provider.of<DatabaseProvider>(context).data;
+
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: const Size.fromHeight(75),
-        child: AppBar(
-          toolbarHeight: 70,
-          title: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                "Duvidas Frequentes",
-                style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24,
-                    ),
+      appBar: const CustomAppBar(
+        title: 'Duvidas Frequentes',
+        subtitle: 'Lista de dúvidas frequentes',
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(
+              height: screenSize.height * 0.33,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.all(8),
+                itemCount: categories.length,
+                separatorBuilder: (_, __) => const SizedBox(width: 12),
+                itemBuilder: (_, index) => CategoryCard(
+                  title: categories[index].title,
+                  description: categories[index].description,
+                  icon: categories[index].icon,
+                  onTap: () => Navigator.pushNamed(
+                    context,
+                    Routes.category,
+                    arguments: categories[index],
+                  ),
+                ),
               ),
-              Text(
-                "Lista de dúvidas frequentes",
-                style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .onSurface
-                          .withOpacity(0.8),
-                    fontSize: 16,
-                    ),
+            ),
+            const Divider(),
+            SizedBox(
+              height: screenSize.height * 0.43,
+              child: ListView.separated(
+                itemCount: categories.length,
+                separatorBuilder: (context, index) => const SizedBox(height: 0),
+                itemBuilder: (_, index) => Column(
+                  children: [
+                    PreviewCategory(category: categories[index]),
+                    const Divider(),
+                  ],
+                ),
               ),
-            ],
-          ),
-          automaticallyImplyLeading: false,
+            )
+          ],
         ),
-      ),
-      body: AnimatedSwitcher(
-        duration: const Duration(milliseconds: 300),
-        transitionBuilder: (child, animation) {
-          return SlideTransition(
-            position: Tween<Offset>(
-              begin: const Offset(-2, 0),
-              end: const Offset(0, 0),
-            ).animate(animation),
-            child: child,
-          );
-        },
-        child: _getSelectedPage(),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Theme.of(context).colorScheme.background,
-        fixedColor: Theme.of(context).colorScheme.secondary,
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.tips_and_updates),
-            label: 'Dicas',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.help),
-            label: 'Sobre',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        onTap: _onItemTapped,
       ),
     );
   }
