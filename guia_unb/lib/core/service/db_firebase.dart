@@ -28,6 +28,7 @@ class DatabaseFirebase implements IDatabase {
         final doubtTitle = doubtData['title'] as String;
         final doubtDescription = doubtData['description'] as String;
         final doubtBody = doubtData['body'] as String;
+        final doubtLink = doubtData['link'] as String;
         final doubtIconString = doubtData['icon'] as String;
 
         final doubtIcon = IconsHelper.getIconFromString(doubtIconString);
@@ -36,6 +37,7 @@ class DatabaseFirebase implements IDatabase {
             title: doubtTitle,
             description: doubtDescription,
             body: doubtBody,
+            link: doubtLink,
             icon: doubtIcon);
       }).toList();
 

@@ -1,4 +1,6 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 import '../../core/models/category.dart';
 import '../../core/models/doubt.dart';
@@ -17,21 +19,25 @@ class DoubtPage extends StatelessWidget {
         title: doubtData['title'],
         description: doubtData['description'],
         body: doubtData['body'],
-        icon: doubtData['icon']);
+        icon: doubtData['icon'],
+        link: doubtData['link']);
     final theme = Theme.of(context);
+
+    String firebaseString = doubt.body;
+    String convertedString = firebaseString.replaceAll('\\n', '\n');
+
+    debugPrint('----- link: ${doubt.link}');
 
     return Scaffold(
       body: NestedScrollView(
         headerSliverBuilder: (_, __) {
           return [
             SliverAppBar(
-              title: Text(doubt.title, style: theme.textTheme.headlineLarge),
+              title: Text(category.title, style: theme.textTheme.headlineLarge),
               floating: true,
-              // O AppBar fica flutuante enquanto você rola
               pinned: true,
-              // O AppBar é fixado no topo
-              expandedHeight: 250,
-              // Altura expandida do AppBar
+              snap: false,
+              expandedHeight: 200,
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back_ios),
                 onPressed: () => Navigator.pop(context),
@@ -61,31 +67,101 @@ class DoubtPage extends StatelessWidget {
             ),
           ];
         },
-        body: Column(
-          children: [
-            ListTile(
-              isThreeLine: true,
-              leading: Icon(
-                doubt.icon,
-                size: 32,
-                color: theme.colorScheme.tertiary,
-              ),
-              title: Text(doubt.title, style: theme.textTheme.labelMedium),
-              subtitle: Text(category.title.toUpperCase(),
-                  style: theme.textTheme.bodySmall?.copyWith(
-                    color: theme.colorScheme.onSurface.withOpacity(0.6),
-                  )),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 16),
-              child: Text(
-                doubt.body,
-                style: theme.textTheme.bodyMedium?.copyWith(
-                  color: theme.colorScheme.onSurface.withOpacity(0.6),
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                ListTile(
+                  isThreeLine: true,
+                  leading: Icon(
+                    doubt.icon,
+                    size: 32,
+                    color: theme.colorScheme.tertiary,
+                  ),
+                  title: Text(doubt.title, style: theme.textTheme.labelMedium),
+                  subtitle: Text(
+                    category.title.toUpperCase(),
+                    style: theme.textTheme.bodySmall?.copyWith(
+                      color: theme.colorScheme.onSurface.withOpacity(0.6),
+                    ),
+                  ),
                 ),
-              ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 20.0),
+                  child: SelectableText.rich(
+                    textAlign: TextAlign.justify,
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                          text: 'Pergunta: ',
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: theme.colorScheme.onSurface.withOpacity(0.8),
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        TextSpan(
+                          text: doubt.description,
+                          style: theme.textTheme.bodyMedium?.copyWith(
+                            color: theme.colorScheme.onSurface.withOpacity(0.6),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                SelectableText.rich(
+                  textAlign: TextAlign.justify,
+                  TextSpan(
+                    children: [
+                      TextSpan(
+                        text: 'Resposta: ',
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          color: theme.colorScheme.onSurface.withOpacity(0.8),
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      TextSpan(
+                        text: convertedString,
+                        style: theme.textTheme.bodyMedium?.copyWith(
+                          color: theme.colorScheme.onSurface.withOpacity(0.6),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                if (doubt.link.isNotEmpty)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20.0),
+                    child: SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                            text: 'Link: ',
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              color:
+                                  theme.colorScheme.onSurface.withOpacity(0.8),
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          TextSpan(
+                            text: doubt.link,
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              color: Colors.blueAccent,
+                              fontStyle: FontStyle.italic,
+                              decoration: TextDecoration.underline,
+                            ),
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () => launchUrlString(doubt.link),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );

@@ -12,6 +12,7 @@ class PreviewCategory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final previewDoubts = category.doubts.sublist(0, 2);
 
     return Column(
       children: [
@@ -46,27 +47,28 @@ class PreviewCategory extends StatelessWidget {
         ),
         const Divider(),
         SizedBox(
-          height: 110 * category.doubts.length.toDouble(),
+          height: 220,
           child: ListView.builder(
             physics: const NeverScrollableScrollPhysics(),
-            itemCount: category.doubts.length,
+            itemCount: previewDoubts.length,
             itemBuilder: (_, index) {
               return Column(
                 children: [
                   DoubtCard(
-                    title: category.doubts[index].title,
-                    description: category.doubts[index].description,
-                    icon: category.doubts[index].icon,
+                    title: previewDoubts[index].title,
+                    description: previewDoubts[index].description,
+                    icon: previewDoubts[index].icon,
                     onTap: () => Navigator.pushNamed(
                       context,
                       Routes.doubt,
                       arguments: {
                         'category': category,
                         'doubt': {
-                          'title': category.doubts[index].title,
-                          'description': category.doubts[index].description,
-                          'body': category.doubts[index].body,
-                          'icon': category.doubts[index].icon,
+                          'title': previewDoubts[index].title,
+                          'description': previewDoubts[index].description,
+                          'body': previewDoubts[index].body,
+                          'icon': previewDoubts[index].icon,
+                          'link': previewDoubts[index].link,
                         },
                       },
                     ),

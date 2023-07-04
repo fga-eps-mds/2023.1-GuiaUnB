@@ -39,6 +39,7 @@ class CategoryPage extends StatelessWidget {
                     'description': category.doubts[index].description,
                     'body': category.doubts[index].body,
                     'icon': category.doubts[index].icon,
+                    'link': category.doubts[index].link,
                   },
                 },
               ),

@@ -20,42 +20,44 @@ class HomePage extends StatelessWidget {
         title: 'Duvidas Frequentes',
         subtitle: 'Lista de dúvidas frequentes',
       ),
-      body: Column(
-        children: [
-          SizedBox(
-            height: screenSize.height * 0.30,
-            child: ListView.separated(
-              scrollDirection: Axis.horizontal,
-              padding: const EdgeInsets.all(8),
-              itemCount: categories.length,
-              separatorBuilder: (_, __) => const SizedBox(width: 12),
-              itemBuilder: (_, index) => CategoryCard(
-                title: categories[index].title,
-                description: categories[index].description,
-                icon: categories[index].icon,
-                onTap: () => Navigator.pushNamed(
-                  context,
-                  Routes.category,
-                  arguments: categories[index],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            SizedBox(
+              height: screenSize.height * 0.33,
+              child: ListView.separated(
+                scrollDirection: Axis.horizontal,
+                padding: const EdgeInsets.all(8),
+                itemCount: categories.length,
+                separatorBuilder: (_, __) => const SizedBox(width: 12),
+                itemBuilder: (_, index) => CategoryCard(
+                  title: categories[index].title,
+                  description: categories[index].description,
+                  icon: categories[index].icon,
+                  onTap: () => Navigator.pushNamed(
+                    context,
+                    Routes.category,
+                    arguments: categories[index],
+                  ),
                 ),
               ),
             ),
-          ),
-          const Divider(),
-          SizedBox(
-            height: MediaQuery.of(context).size.height * 0.49,
-            child: ListView.builder(
-              itemCount: categories.length,
-              itemBuilder: (_, index) =>
-                  Column(
-                    children: [
-                      PreviewCategory(category: categories[index]),
-                      const Divider(),
-                    ],
-                  ),
-            ),
-          )
-        ],
+            const Divider(),
+            SizedBox(
+              height: screenSize.height * 0.43,
+              child: ListView.separated(
+                itemCount: categories.length,
+                separatorBuilder: (context, index) => const SizedBox(height: 0),
+                itemBuilder: (_, index) => Column(
+                  children: [
+                    PreviewCategory(category: categories[index]),
+                    const Divider(),
+                  ],
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
