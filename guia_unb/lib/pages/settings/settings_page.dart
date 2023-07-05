@@ -1,8 +1,10 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:guia_unb/core/components/custom_appbar.dart';
 import 'package:provider/provider.dart';
 
-import '../../core/config/routes/routes.dart';
 import '../../core/providers/theme_provider.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -67,7 +69,7 @@ class _SettingsPageState extends State<SettingsPage> {
               color: theme.colorScheme.tertiary,
             ),
             onTap: () =>
-                Navigator.pushReplacementNamed(context, Routes.onboarding),
+                SystemNavigator.pop(animated: true).then((_) => exit(0)),
           ),
           const Divider(),
         ],

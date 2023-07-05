@@ -5,7 +5,7 @@ class IconsHelper {
     final Map<String, IconData> iconsMap = {
       'home': Icons.home,
       'access_alarms': Icons.access_alarms,
-      'money': Icons.attach_money_rounded,
+      'attach_money_rounded': Icons.attach_money_rounded,
       'wifi_rounded': Icons.wifi_rounded,
       'question_answer': Icons.question_answer,
       'health_and_safety': Icons.health_and_safety,

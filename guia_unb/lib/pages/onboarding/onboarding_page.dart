@@ -19,22 +19,19 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   List<Widget> onboardingSlides = const [
     OnboardingSlide(
-      image: 'assets/images/logo.png',
       title: 'Bem-vindo',
       description:
           'O Guia UnB é um aplicativo que te ajuda a tirar dúvidas sobre a Universidade de Brasília.',
     ),
     OnboardingSlide(
-      image: 'assets/images/logo.png',
       title: 'Benefícios',
       description:
           'O app traz benefícios como acesso rápido a informações relevantes sobre a UnB, com uma interface intuitiva e amigável para uma navegação fácil e agradável.',
     ),
     OnboardingSlide(
-      image: 'assets/images/logo.png',
-      title: 'Orientações',
+      title: 'Agradecimentos',
       description:
-          'Na tela inicial é possível ver as dúvidas frequentes separadas por categoria.',
+          'Muito obrigado por baixar o Guia UnB! Esperamos que você aproveite o aplicativo e que ele te ajude a ter uma experiência universitária mais tranquila e prática.',
     ),
   ];
 
@@ -45,16 +42,23 @@ class _OnboardingPageState extends State<OnboardingPage> {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final screenHeight = MediaQuery.of(context).size.height;
     final isNotLastPage = currentIndex < onboardingSlides.length - 1;
 
     return Scaffold(
       body: Column(
         children: [
+          Image.asset(
+            'assets/images/logo.png',
+            height: screenHeight * 0.5,
+            width: double.infinity,
+          ),
           Expanded(
             child: CarouselSlider(
               carouselController: _carouselController,
               options: CarouselOptions(
-                height: MediaQuery.of(context).size.height,
+                height: screenHeight * 0.5,
                 viewportFraction: 1.0,
                 enableInfiniteScroll: false,
                 onPageChanged: (index, reason) {
@@ -72,7 +76,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
               dotsCount: onboardingSlides.length,
               position: currentIndex.toDouble(),
               decorator: DotsDecorator(
-                activeColor: Theme.of(context).colorScheme.secondary,
+                activeColor: theme.colorScheme.secondary,
                 activeSize: const Size(10.0, 10.0),
                 activeShape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10.0),
@@ -83,7 +87,7 @@ class _OnboardingPageState extends State<OnboardingPage> {
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: Theme.of(context).colorScheme.secondary,
+              backgroundColor: theme.colorScheme.secondary,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30.0)),
               padding:
@@ -99,10 +103,10 @@ class _OnboardingPageState extends State<OnboardingPage> {
               }
             },
             child: Text(isNotLastPage ? 'Próximo' : 'Começar',
-                style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.bold,
-                    )),
+                style: theme.textTheme.bodySmall!.copyWith(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                )),
           ),
           const SizedBox(height: 60.0),
         ],

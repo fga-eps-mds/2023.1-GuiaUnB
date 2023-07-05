@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
 class OnboardingSlide extends StatelessWidget {
-  final String image;
   final String title;
   final String description;
 
   const OnboardingSlide({
     super.key,
-    required this.image,
     required this.title,
     required this.description,
   });
@@ -20,10 +18,6 @@ class OnboardingSlide extends StatelessWidget {
       width: double.infinity,
       child: Column(
         children: [
-          Image.asset(
-            image,
-            width: double.infinity,
-          ),
           const SizedBox(height: 50),
           Text(
             title,
