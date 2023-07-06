@@ -4,9 +4,10 @@
 
 ## Histórico de Versões
 
-|    Data    | Versão |       Descrição       |
-| :--------: | :----: | :-------------------: |
-| 06/07/2023 |  0.1   | Abertura do documento |
+|    Data    | Versão |        Descrição        |
+| :--------: | :----: | :---------------------: |
+| 06/07/2023 |  0.1   |  Abertura do documento  |
+| 06/07/2023 |  0.2   | Atualização da Situação |
 
 ## Tamanho da Sprint
 
@@ -25,7 +26,7 @@
 | [#71](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/71) |                 Sprint 13 - Cadastro de Dúvidas no Firebase                  |  _Concluída_   |
 | [#73](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/73) |                 Sprint 13 - Imagens para tela de Onboarding                  | _Em Andamento_ |
 | [#74](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/74) |                      Sprint 13 - Criar ícone para o App                      | _Em Andamento_ |
-| [#75](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/75) |                    Sprint 13 - Documentar sprints 6 à 14                     | _Em Andamento_ |
+| [#75](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/75) |                    Sprint 13 - Documentar sprints 6 à 14                     |  _Concluída_   |
 
 ## Papeis
 
