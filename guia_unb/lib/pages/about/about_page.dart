@@ -69,14 +69,7 @@ class AboutPage extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    'Sobre o Guia UnB',
-                    style: theme.textTheme.titleMedium?.copyWith(
-                      fontSize: 24,
-                      color: theme.colorScheme.onSurface,
-                    ),
-                  ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 10),
                   RichText(
                     textAlign: TextAlign.start,
                     text: TextSpan(
@@ -146,21 +139,10 @@ class AboutPage extends StatelessWidget {
                         TextSpan(
                             text:
                                 ' Encontre as informações de contato e horários de funcionamento para facilitar o acesso a esses serviços.\n\n'),
-                        TextSpan(
-                          text: 'Personalizar sua Experiência:\n',
-                          style: TextStyle(fontWeight: FontWeight.bold),
-                        ),
-                        TextSpan(
-                          text:
-                              'O GuiaUnb permite que você personalize sua experiência de acordo com seus interesses e necessidades.',
-                        ),
-                        TextSpan(
-                            text:
-                                ' Adicione seus cursos favoritos, marque eventos importantes em seu calendário e receba notificações relevantes para se manter atualizado.'),
                       ],
                     ),
                   ),
-                  const SizedBox(height: 80), // Aumente o espaçamento aqui
+                  const SizedBox(height: 60), // Aumente o espaçamento aqui
                 ],
               ),
             ),
@@ -183,7 +165,7 @@ class AboutPage extends StatelessWidget {
                   style: theme.textTheme.labelMedium
                       ?.copyWith(color: AppColors.labelWhite),
                 ),
-                icon: const Icon(Icons.error_outline,
+                icon: const Icon(Icons.bug_report_rounded,
                     color: AppColors.labelWhite),
                 onPressed: _sendEmail,
               ),

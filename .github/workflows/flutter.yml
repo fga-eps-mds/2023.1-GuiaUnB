@@ -37,4 +37,4 @@ jobs:
       run: flutter test --coverage
       
     - name: Build apk
-      run: flutter build apk
+      run: flutter build
