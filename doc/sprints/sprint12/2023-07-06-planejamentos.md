@@ -1,4 +1,4 @@
-### Nesta sprint, foi decidio: Criar Pipelines de Integração Contínua e Implementar Página de Configurações.
+### Nesta sprint, foi decidio: Mostrar tela de Onboarding apenas na primeira execução do aplicativo e Implementar botão de envio de email para relatar bugs e o GitHub Pages para a documentação do projeto.
 #
 
 ## Histórico de Versões
@@ -9,9 +9,9 @@
 
 ## Tamanho da Sprint
 
-**Início**: 12/06/23
+**Início**: 19/06/23
 
-**Fim**: 18/06/23
+**Fim**: 25/06/23
 
 **Duração**: 7 dias
 
@@ -19,8 +19,9 @@
 
 |                            Issue                             |              Título               |                    Responsáveis                     |
 | :----------------------------------------------------------: | :-------------------------------: | :-------------------------------------------------: |
-| [#61](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/61) | Sprint 11 - Criar Pipelines de Integração Contínua | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
-| [#63](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/63) | Sprint 11 - Implementar Página de Configurações | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
+| [#66](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/66) | Sprint 12 - Mostrar tela de Onboarding apenas na primeira execução do aplicativo | [Arthur Gabriel](https://github.com/ArthurGabrieel) e [Thiago Freitas](https://github.com/thiagorfreitas) |
+| [#67](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/67) | Sprint 12 - Implementar botão de envio de email para relatar bugs | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
+| [#72](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/72) | Sprint 12 - Construir o GitHub Pages | [Alexandre Beck](https://github.com/zzzBECK) |
 
 
 
