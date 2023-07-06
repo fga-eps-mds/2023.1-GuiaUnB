@@ -1,4 +1,6 @@
-Nessa sprint focamos em documentação e estudo de tecnologias. A equipe se dividiu em dois grupos, um para estudar a linguagem Dart e o framework Flutter e outro para estudar o framework React Native. Além disso, foi feito o levantamento de requisitos e a descrição do problema. Por fim, foi criado um template para as issues do projeto.
+### Nessa sprint focamos em documentação e estudo de tecnologias. A equipe se dividiu em dois grupos, um para estudar a linguagem Dart e o framework Flutter e outro para estudar o framework React Native. Além disso, foi feito o levantamento de requisitos e a descrição do problema. Por fim, foi criado um template para as issues do projeto.
+
+#
 
 ## Histórico de Versões
 

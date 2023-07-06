@@ -1,4 +1,6 @@
-Nessa sprint a equipe se acostumou com o padrão de documentação do projeto e criou a documentação de arquitetura e de políticas de segurança. Além disso, foi criado o protótipo de baixa fidelidade e o story map. Por fim, foi feita a atualização do README.md.
+### Nessa sprint a equipe se acostumou com o padrão de documentação do projeto e criou a documentação de arquitetura e de políticas de segurança. Além disso, foi criado o protótipo de baixa fidelidade e o story map. Por fim, foi feita a atualização do README.md.
+
+#
 
 ## Histórico de Versões
 

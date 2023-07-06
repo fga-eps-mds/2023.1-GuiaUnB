@@ -1,4 +1,6 @@
-Durante a sprint 1, conseguimos realizar as atividades que foram propostas para a sprint, como a criação da página do Notion do projeto, estudar arquitetura de software e organizar o tempo disponível dos integrantes do grupo. Além disso, conseguimos realizar a ambientação do projeto.
+### Durante a sprint 1, conseguimos realizar as atividades que foram propostas para a sprint, como a criação da página do Notion do projeto, estudar arquitetura de software e organizar o tempo disponível dos integrantes do grupo. Além disso, conseguimos realizar a ambientação do projeto.
+
+#
 
 ## Histórico de Versões
 
@@ -12,7 +14,7 @@ Durante a sprint 1, conseguimos realizar as atividades que foram propostas para 
 
 **Fim**: 09/04/23
 
-**Duração**:  dias
+**Duração**: dias
 
 ## Objetivos
 
@@ -21,6 +23,7 @@ Durante a sprint 1, conseguimos realizar as atividades que foram propostas para 
 | [#2](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/2) |          Sprint 1 - Criação da página do Notion do Projeto          | _Concluído_ |
 | [#4](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/4) |             Sprint 1 - Estudar arquitetura de software              | _Concluído_ |
 | [#6](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/6) | Sprint 1 - Organização do tempo disponível dos integrantes do grupo | _Concluído_ |
+
 ## Papeis
 
 | Função        |                                                                           Nome                                                                            |

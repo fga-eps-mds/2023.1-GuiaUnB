@@ -1,4 +1,6 @@
-Durante esta sprint, foram atribuídos os papéis de Scrum Master, PO e Arquiteto. Como essa sprint foi dedicada à ambientação, a equipe se concentrou em aprimorar os conhecimentos em áreas específicas e compartilhar esses conhecimentos com os demais membros do grupo. Para isso, os membros estudaram temas como Scrum, GitHub, arquitetura, frameworks e linguagens. Além disso, foi criada uma planilha para registrar os horários da equipe e melhor visualizar a distribuição de tempo dedicado à disciplina. No final da sprint, o integrante Lucas Soares foi remanejado e, portanto, teve que deixar a nossa equipe.
+### Durante esta sprint, foram atribuídos os papéis de Scrum Master, PO e Arquiteto. Como essa sprint foi dedicada à ambientação, a equipe se concentrou em aprimorar os conhecimentos em áreas específicas e compartilhar esses conhecimentos com os demais membros do grupo. Para isso, os membros estudaram temas como Scrum, GitHub, arquitetura, frameworks e linguagens. Além disso, foi criada uma planilha para registrar os horários da equipe e melhor visualizar a distribuição de tempo dedicado à disciplina. No final da sprint, o integrante Lucas Soares foi remanejado e, portanto, teve que deixar a nossa equipe.
+
+#
 
 ## Histórico de Versões
 

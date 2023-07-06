@@ -1,4 +1,6 @@
-Como resultado do andamento da sprint...
+### Como resultado do andamento da sprint, foi criado o protótipo de alta fidelidade e o documento de personas.
+
+#
 
 ## Histórico de Versões
 

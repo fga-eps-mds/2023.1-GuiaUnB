@@ -1,4 +1,6 @@
-Nesta sprint, a equipe foi introduzida à proposta da disciplina e apresentada às possíveis opções de projetos. Em seguida, reuniram-se para elaborar a descrição e contextualização do projeto selecionado.
+### Nesta sprint, a equipe foi introduzida à proposta da disciplina e apresentada às possíveis opções de projetos. Em seguida, reuniram-se para elaborar a descrição e contextualização do projeto selecionado.
+
+#
 
 ## Histórico de Versões
 
@@ -20,7 +22,6 @@ Nesta sprint, a equipe foi introduzida à proposta da disciplina e apresentada �
 | :----------------------------------------------------------: | :-------------------------------: | :-------------------------------------------------: |
 | [#1](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/1) |  Sprint 0 - Descrição do Projeto  | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
 | [#3](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/3) | Sprint 0 - Ambientação do Projeto | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
-
 
 ## Papeis
 

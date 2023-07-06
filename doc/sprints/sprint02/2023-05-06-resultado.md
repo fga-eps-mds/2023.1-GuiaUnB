@@ -1,4 +1,6 @@
-Na sprint 2, começamos o estudo das tecnologias propostas, além disso foi feito o levantamento de requisitos e a descrição do problema. Por fim, foi criado um template para as issues do projeto.
+### Na sprint 2, começamos o estudo das tecnologias propostas, além disso foi feito o levantamento de requisitos e a descrição do problema. Por fim, foi criado um template para as issues do projeto.
+
+#
 
 ## Histórico de Versões
 
