@@ -1,11 +1,11 @@
 Nessa sprint a equipe se acostumou com o padrão de documentação do projeto e criou a documentação de arquitetura e de políticas de segurança. Além disso, foi criado o protótipo de baixa fidelidade e o story map. Por fim, foi feita a atualização do README.md.
 
-
 ## Histórico de Versões
 
 |    Data    | Versão |       Descrição       |
 | :--------: | :----: | :-------------------: |
 | 06/05/2023 |  0.1   | Abertura do documento |
+| 06/07/2023 |  0.2   | Atualização Situação  |
 
 ## Tamanho da Sprint
 
@@ -17,14 +17,13 @@ Nessa sprint a equipe se acostumou com o padrão de documentação do projeto e 
 
 ## Objetivos
 
-|                            Issue                             |              Título               |                    Situação                     |
-| :----------------------------------------------------------: | :-------------------------------: | :-------------------------------------------------: |
-| [#15](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/15) | Sprint 4 - Criação do Protótipo de Baixa Fidelidade | _Concluída_ |
-| [#16](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/16) |  Sprint 4 - Criação do Story Map  | _Em Andamento_ |
-| [#22](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/22) | Sprint 4 - Criação Documentação de Arquitetura | _Concluída_ |
-| [#23](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/23) | Sprint 4 - Criação Documentação de Políticas de Segurança | _Concluída_ |
-| [#24](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/24) | Sprint 4 - Atualização do README.md | _Concluída_ |
-
+|                             Issue                              |                          Título                           |    Situação    |
+| :------------------------------------------------------------: | :-------------------------------------------------------: | :------------: |
+| [#15](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/15) |    Sprint 4 - Criação do Protótipo de Baixa Fidelidade    |  _Concluída_   |
+| [#16](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/16) |              Sprint 4 - Criação do Story Map              | _Em Andamento_ |
+| [#22](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/22) |      Sprint 4 - Criação Documentação de Arquitetura       |  _Concluída_   |
+| [#23](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/23) | Sprint 4 - Criação Documentação de Políticas de Segurança |  _Concluída_   |
+| [#24](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/24) |            Sprint 4 - Atualização do README.md            |  _Concluída_   |
 
 ## Papeis
 

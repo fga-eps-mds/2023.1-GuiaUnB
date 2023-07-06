@@ -5,7 +5,7 @@ Como resultado do andamento da sprint...
 |    Data    | Versão |       Descrição       |
 | :--------: | :----: | :-------------------: |
 | 11/05/2023 |  0.1   | Abertura do documento |
-| 06/07/2023 |  0.2   | Atualização de resultados  |
+| 06/07/2023 |  0.2   | Atualização Situação  |
 
 ## Tamanho da Sprint
 
@@ -17,18 +17,17 @@ Como resultado do andamento da sprint...
 
 ## Objetivos
 
-|                            Issue                             |              Título               |                    Situação                      |
-| :----------------------------------------------------------: | :-------------------------------: | :-------------------------------------------------: |
-| [#41](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/41) | Sprint 6 - Criação de Protótipo de Alta de Fidelidade | _Concluída_ |
-| [#42](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/42) | Sprint 6 - Documento de Personas | _Concluída_ |
-| [#43](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/43) | Sprint 6 - Criação do Story Board | _Em Andamento_ |
-
+|                             Issue                              |                        Título                         |    Situação    |
+| :------------------------------------------------------------: | :---------------------------------------------------: | :------------: |
+| [#41](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/41) | Sprint 6 - Criação de Protótipo de Alta de Fidelidade |  _Concluída_   |
+| [#42](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/42) |           Sprint 6 - Documento de Personas            |  _Concluída_   |
+| [#43](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/43) |           Sprint 6 - Criação do Story Board           | _Em Andamento_ |
 
 ## Papeis
 
 | Função        |                                                                           Nome                                                                            |
-| ------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------: | --- |
 | Scrum Master  |                                                    [Thiago Freitas](https://github.com/thiagorfreitas)                                                    |
 | PO            |                                                    [Lucas Avelar](https://github.com/LucasAvelar2711)                                                     |
 | Arquiteto     |                                                    [Arthur Gabriel](https://github.com/ArthurGabrieel)                                                    |
-| Tecnologistas | [Igor Ribeiro](https://github.com/igor-ribeir0), [Alexandre Beck](https://github.com/zzzBECK) e [Genilson Junior](https://github.com/GenilsonJunior99006) |a
+| Tecnologistas | [Igor Ribeiro](https://github.com/igor-ribeir0), [Alexandre Beck](https://github.com/zzzBECK) e [Genilson Junior](https://github.com/GenilsonJunior99006) | a   |
