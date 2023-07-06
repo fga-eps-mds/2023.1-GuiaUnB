@@ -19,7 +19,7 @@ Nessa sprint a equipe se acostumou com o padrão de documentação do projeto e 
 
 |                            Issue                             |              Título               |                    Situação                     |
 | :----------------------------------------------------------: | :-------------------------------: | :-------------------------------------------------: |
-| [#15](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/15) | Sprint 4 - Criação do Protótipo de Baixa Fidelidade | _Em Andamento_ |
+| [#15](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/15) | Sprint 4 - Criação do Protótipo de Baixa Fidelidade | _Concluída_ |
 | [#16](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/16) |  Sprint 4 - Criação do Story Map  | _Em Andamento_ |
 | [#22](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/22) | Sprint 4 - Criação Documentação de Arquitetura | _Concluída_ |
 | [#23](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/23) | Sprint 4 - Criação Documentação de Políticas de Segurança | _Concluída_ |
