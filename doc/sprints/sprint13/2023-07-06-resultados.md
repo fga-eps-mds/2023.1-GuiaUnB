@@ -1,4 +1,4 @@
-### Como resultado do andamento da sprint, foi criado o protótipo de alta fidelidade, o documento de personas e o story board.
+### Como resultado do andamento da sprint, Limitação do uso do aplicativo na orientação vertical, foi concluída. Foi estudado como funciona o processo de publicação do aplicativo nas lojas de apps. Foi feito o cadastro de dúvidas no Firebase. Foi feito o documento de documentação das sprints 6 à 14.
 
 #
 
