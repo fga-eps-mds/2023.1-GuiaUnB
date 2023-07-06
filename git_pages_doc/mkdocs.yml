@@ -24,7 +24,7 @@ nav:
     - Bug: "Pages/issue/bug_report.md"
   - Contribuição: "Pages/contribuicao/CONTRIBUTING.md"
   - Personas: "Pages/personas/2023-05-23-documento-de-personas.md"
-  - Protótipo: "Pages/prototipo/2023-05-11-documento-de-protótipo.md"
+  - Protótipo: "Pages/prototipo/2023-05-11-documento-de-prototipo.md"
   - Sprints:
     - Sprint 0:
       - Planejamento: "Pages/sprints/sprint0/2023-05-06-planejamento.md"
@@ -50,4 +50,5 @@ nav:
   - StoryBoard: "Pages/storyboard/2023-05-23-storyboard.md"
   - Usuário: "Pages/usuario/2023-05-23-perfil-de-usuário.md"
   - Visão: "Pages/visao/2023-05-05-documento-de-visão.md"
+  - Política de Privacidade: "Pages/policy/privacy_policy.md"
 
