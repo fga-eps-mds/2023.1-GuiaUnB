@@ -51,7 +51,7 @@ Agora você pode executar o aplicativo no seu dispositivo Android ou iOS, ou em 
 		<td align="center"><a href="https://github.com/thiagorfreitas"><img src="https://avatars.githubusercontent.com/u/77907084?v=4" width="100px;" alt=""/><br /><sub><b>Thiago Freitas</b></sub></a><br /><a href="https://github.com/thiagorfreitas"></a></td>
 		<td align="center"><a href="https://github.com/LucasAvelar2711"><img src="https://avatars.githubusercontent.com/u/88166607?v=4" width="100px;" alt=""/><br /><sub><b>Lucas Avelar</b></sub></a><br /><a href="https://github.com/LucasAvelar2711"></a></td>
 		<td align="center"><a href="https://github.com/igor-ribeir0"><img src="https://avatars.githubusercontent.com/u/91838885?v=4" width="100px;" alt=""/><br /><sub><b>Igor Ribeiro </b></sub></a><br /><a href="https://github.com/igor-ribeir0"></a></td>
-        <td align="center"><a href="https://github.com/GenilsonJunior99006"><img src="https://avatars.githubusercontent.com/u/61212256?v=4" width="100px;" alt=""/><br /><sub><b>Genilson Junior </b></sub></a><br /><a href="https://github.com/GenilsonJunior99006"></a></td>
+        <td align="center"><a href="https://github.com/GenilsonJrs"><img src="https://avatars.githubusercontent.com/u/61212256?v=4" width="100px;" alt=""/><br /><sub><b>Genilson Junior </b></sub></a><br /><a href="https://github.com/GenilsonJrs"></a></td>
 	</tr>
 </table>
 

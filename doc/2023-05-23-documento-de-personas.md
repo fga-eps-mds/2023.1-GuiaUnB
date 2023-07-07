@@ -90,5 +90,5 @@ As personas têm como objetivo fornecer uma perspectiva adicional sobre os usuá
 
 | Data  | Versão |                      Descrição                       |                                                Autor                                                |                                                                                                      |
 | :---: | :----: | :--------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
-| 23/05/2023 | 0.1 |      Criação do Documento de Personas     | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) |
-| 31/05/2023 | 0.2  |      Atualização do Documento de Personas     | [Genilson Silva](https://github.com/GenilsonJunior99006)|
+| 23/05/2023 | 0.1 |      Criação do Documento de Personas     | [Genilson Silva](https://github.com/GenilsonJrs) e [Igor Ribeiro](https://github.com/igor-ribeir0) |
+| 31/05/2023 | 0.2  |      Atualização do Documento de Personas     | [Genilson Silva](https://github.com/GenilsonJrs)|

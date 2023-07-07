@@ -112,7 +112,7 @@ Os usuários poderão utilizar o aplicativo baixando ele na loja de aplicativos 
 | Scrum Master | [Thiago Freitas](https://github.com/thiagorfreitas) |
 | Product Owner | [Lucas Avelar](https://github.com/LucasAvelar2711) |
 | Arquiteto de Software | [Arthur Gabriel](https://github.com/ArthurGabrieel)|
-| Desenvolvedor | [Alexandre Beck](https://github.com/zzzBECK), [Igor Ribeiro](https://github.com/igor-ribeir0) e [Genilson Silva](https://github.com/GenilsonJunior99006)|
+| Desenvolvedor | [Alexandre Beck](https://github.com/zzzBECK), [Igor Ribeiro](https://github.com/igor-ribeir0) e [Genilson Silva](https://github.com/GenilsonJrs)|
 
 ### 3.5 Perfis dos Usuários
 
