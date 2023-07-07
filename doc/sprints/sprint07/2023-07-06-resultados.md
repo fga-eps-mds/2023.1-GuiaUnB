@@ -31,4 +31,4 @@
 | Scrum Master  |                                                    [Alexandre Beck](https://github.com/zzzBECK)                                                   |
 | PO            |                                                    [Lucas Avelar](https://github.com/LucasAvelar2711)                                                     |
 | Arquiteto     |                                                    [Arthur Gabriel](https://github.com/ArthurGabrieel)                                                    |
-| Tecnologistas | [Igor Ribeiro](https://github.com/igor-ribeir0), [Thiago Freitas](https://github.com/thiagorfreitas) e [Genilson Junior](https://github.com/GenilsonJunior99006) |
+| Tecnologistas | [Igor Ribeiro](https://github.com/igor-ribeir0), [Thiago Freitas](https://github.com/thiagorfreitas) e [Genilson Junior](https://github.com/GenilsonJrs) |
