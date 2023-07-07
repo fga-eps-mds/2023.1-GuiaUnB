@@ -47,5 +47,5 @@ Concluímos que a partir desse documento podemos ter uma visão inicial das tare
 
 | Data  | Versão |                      Descrição                       |                                                Autor                                                |                                                                                                   |
 | :---: | :----: | :--------------------------------------------------: | :-------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
-| 23/05/23 | 0.1  |      Criação do documento de StoryBoard       | [Genilson Silva](https://github.com/GenilsonJunior99006) e [Igor Ribeiro](https://github.com/igor-ribeir0) ||
-| 31/05/23 | 0.2  |      Atualização do StoryBoard       | [Genilson Silva](https://github.com/GenilsonJunior99006)|
+| 23/05/23 | 0.1  |      Criação do documento de StoryBoard       | [Genilson Silva](https://github.com/GenilsonJrs) e [Igor Ribeiro](https://github.com/igor-ribeir0) ||
+| 31/05/23 | 0.2  |      Atualização do StoryBoard       | [Genilson Silva](https://github.com/GenilsonJrs)|
