@@ -28,48 +28,48 @@ nav:
   - Sprints:
     - Sprint 0:
       - Planejamento: "Pages/sprints/sprint00/2023-05-06-planejamento.md"
-      - Resultado: "Pages/sprints/sprint0/2023-05-06-resultados.md"
+      - Resultado: "Pages/sprints/sprint00/2023-05-06-resultados.md"
     - Sprint 1:
       - Planejamento: "Pages/sprints/sprint01/2023-05-06-planejamento.md"
-      - Resultado: "Pages/sprints/sprint1/2023-05-06-resultados.md"
+      - Resultado: "Pages/sprints/sprint01/2023-05-06-resultado.md"
     - Sprint 2:
       - Planejamento: "Pages/sprints/sprint02/2023-05-06-planejamento.md"
-      - Resultado: "Pages/sprints/sprint2/2023-05-06-resultados.md"
+      - Resultado: "Pages/sprints/sprint02/2023-05-06-resultado.md"
     - Sprint 3:
       - Planejamento: "Pages/sprints/sprint03/2023-05-06-planejamento.md"
-      - Resultado: "Pages/sprints/sprint3/2023-05-06-resultados.md"
+      - Resultado: "Pages/sprints/sprint03/2023-05-06-resultados.md"
     - Sprint 4:
       - Planejamento: "Pages/sprints/sprint04/2023-05-06-planejamento.md"
-      - Resultado: "Pages/sprints/sprint4/2023-05-06-resultados.md"
+      - Resultado: "Pages/sprints/sprint04/2023-05-06-resultados.md"
     - Sprint 5:
       - Planejamento: "Pages/sprints/sprint05/2023-05-06-planejamento.md"
-      - Resultado: "Pages/sprints/sprint5/2023-05-06-resultados.md"
+      - Resultado: "Pages/sprints/sprint05/2023-05-06-resultados.md"
     - Sprint 6:
-      - Planejamento: "Pages/sprints/sprint06/2023-05-11-planejamento.md"
-      - Resultado: "Pages/sprints/sprint6/2023-05-11-resultados.md"
+      - Planejamento: "Pages/sprints/sprint06/2023-05-11-planejamentos.md"
+      - Resultado: "Pages/sprints/sprint06/2023-05-11-resultados.md"
     - Sprint 7:
-      - Planejamento: "Pages/sprints/sprint07/2023-07-06-planejamento.md"
-      - Resultado: "Pages/sprints/sprint7/2023-07-06-resultados.md"
+      - Planejamento: "Pages/sprints/sprint07/2023-07-06-planejamentos.md"
+      - Resultado: "Pages/sprints/sprint07/2023-07-06-resultados.md"
     - Sprint 8:
-      - Planejamento: "Pages/sprints/sprint08/2023-07-06-planejamento.md"
-      - Resultado: "Pages/sprints/sprint8/2023-07-06-resultados.md"
+      - Planejamento: "Pages/sprints/sprint08/2023-07-06-planejamentos.md"
+      - Resultado: "Pages/sprints/sprint08/2023-07-06-resultados.md"
     - Sprint 9:
-      - Planejamento: "Pages/sprints/sprint09/2023-07-06-planejamento.md"
-      - Resultado: "Pages/sprints/sprint9/2023-07-06-resultados.md"
+      - Planejamento: "Pages/sprints/sprint09/2023-07-06-planejamentos.md"
+      - Resultado: "Pages/sprints/sprint09/2023-07-06-resultados.md"
     - Sprint 10:
-      - Planejamento: "Pages/sprints/sprint10/2023-07-06-planejamento.md"
+      - Planejamento: "Pages/sprints/sprint10/2023-07-06-planejamentos.md"
       - Resultado: "Pages/sprints/sprint10/2023-07-06-resultados.md"
     - Sprint 11:
-      - Planejamento: "Pages/sprints/sprint11/2023-07-06-planejamento.md"
+      - Planejamento: "Pages/sprints/sprint11/2023-07-06-planejamentos.md"
       - Resultado: "Pages/sprints/sprint11/2023-07-06-resultados.md"
     - Sprint 12:
-      - Planejamento: "Pages/sprints/sprint12/2023-07-06-planejamento.md"
+      - Planejamento: "Pages/sprints/sprint12/2023-07-06-planejamentos.md"
       - Resultado: "Pages/sprints/sprint12/2023-07-06-resultados.md"
     - Sprint 13:
-      - Planejamento: "Pages/sprints/sprint13/2023-07-06-planejamento.md"
+      - Planejamento: "Pages/sprints/sprint13/2023-07-06-planejamentos.md"
       - Resultado: "Pages/sprints/sprint13/2023-07-06-resultados.md"
     - Sprint 14:
-      - Planejamento: "Pages/sprints/sprint14/2023-07-06-planejamento.md"
+      - Planejamento: "Pages/sprints/sprint14/2023-07-06-planejamentos.md"
       - Resultado: "Pages/sprints/sprint14/2023-07-06-resultados.md"
   - StoryBoard: "Pages/storyboard/2023-05-23-storyboard.md"
   - Usuário: "Pages/usuario/2023-05-23-perfil-de-usuário.md"
