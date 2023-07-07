@@ -1,4 +1,6 @@
-Nesta sprint, a equipe foi decidido criar o Story Map do projeto, criar o Protótipo de Baixa Fidelidade e documentação de Políticas de Segurança, Arquitetura, Padronização de Branches e atualização do README.md
+### Nesta sprint, a equipe foi introduzida à proposta da disciplina e apresentada às possíveis opções de projetos. Em seguida, reuniram-se para elaborar a descrição e contextualização do projeto selecionado.
+
+#
 
 ## Histórico de Versões
 
@@ -8,9 +10,9 @@ Nesta sprint, a equipe foi decidido criar o Story Map do projeto, criar o Protó
 
 ## Tamanho da Sprint
 
-**Início**: 24/04/23
+**Início**: 28/03/23
 
-**Fim**: 30/04/23
+**Fim**: 04/04/23
 
 **Duração**: 7 dias
 
@@ -18,12 +20,8 @@ Nesta sprint, a equipe foi decidido criar o Story Map do projeto, criar o Protó
 
 |                            Issue                             |              Título               |                    Responsáveis                     |
 | :----------------------------------------------------------: | :-------------------------------: | :-------------------------------------------------: |
-| [#15](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/15) | Sprint 4 - Criação do Protótipo de Baixa Fidelidade | [Lucas Avelar](https://github.com/LucasAvelar2711) |
-| [#16](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/16) |  Sprint 4 - Criação do Story Map  | [Alexandre Beck](https://github.com/zzzBECK) |
-| [#22](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/22) | Sprint 4 - Criação Documentação de Arquitetura | [Arthur Gabriel](https://github.com/ArthurGabrieel) e [Thiago Freitas](https://github.com/thiagorfreitas) |
-| [#23](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/23) | Sprint 4 - Criação Documentação de Políticas de Segurança | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
-| [#24](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/24) | Sprint 4 - Atualização do README.md | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
-
+| [#1](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/1) |  Sprint 0 - Descrição do Projeto  | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
+| [#3](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/3) | Sprint 0 - Ambientação do Projeto | [Arthur Gabriel](https://github.com/ArthurGabrieel) |
 
 ## Papeis
 

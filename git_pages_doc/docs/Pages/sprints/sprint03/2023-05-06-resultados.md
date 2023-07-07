@@ -1,4 +1,6 @@
-Na sprint 3, a equipe foi estruturada entre seus papeis e funções. Além disso, foi criado o Product Backlog, foi utilizado o período para o aprendizado de novas ferramentas e também foi criado o documento de código de conduta e de contribuição.
+### Na sprint 3, a equipe foi estruturada entre seus papeis e funções. Além disso, foi criado o Product Backlog, foi utilizado o período para o aprendizado de novas ferramentas e também foi criado o documento de código de conduta e de contribuição.
+
+#
 
 ## Histórico de Versões
 
@@ -23,7 +25,6 @@ Na sprint 3, a equipe foi estruturada entre seus papeis e funções. Além disso
 | [#14](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/3)  |             Sprint 3 - Estudar Git Flow              | _Concluída_ |
 | [#30](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/30) | Sprint 3 - Criação do Documento de Código de Conduta | _Concluída_ |
 | [#31](https://github.com/fga-eps-mds/2023.1-GuiaUnB/issues/31) |   Sprint 3 - Criação do Documento de Contribuição    | _Concluída_ |
-
 
 ## Papeis
 

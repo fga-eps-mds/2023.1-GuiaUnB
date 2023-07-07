@@ -1,4 +1,6 @@
-Foi decidido criar uma página no Notion para a equipe, a fim de facilitar o planejamento das tarefas. Além disso, houve uma organização do tempo disponível de cada membro, para que pudéssemos agendar reuniões onde todos ou a maioria pudessem estar presentes. Também foi iniciada uma discussão sobre a importância da arquitetura de software e quais possíveis arquiteturas poderíamos utilizar.
+### Foi decidido criar uma página no Notion para a equipe, a fim de facilitar o planejamento das tarefas. Além disso, houve uma organização do tempo disponível de cada membro, para que pudéssemos agendar reuniões onde todos ou a maioria pudessem estar presentes. Também foi iniciada uma discussão sobre a importância da arquitetura de software e quais possíveis arquiteturas poderíamos utilizar.
+
+#
 
 ## Histórico de Versões
 
