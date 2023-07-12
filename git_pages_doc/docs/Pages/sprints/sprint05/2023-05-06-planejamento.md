@@ -28,9 +28,9 @@
 
 ## Papeis
 
-| Função        |                                                                           Nome                                                                            |
-| ------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------: | --- |
-| Scrum Master  |                                                    [Thiago Freitas](https://github.com/thiagorfreitas)                                                    |
-| PO            |                                                    [Lucas Avelar](https://github.com/LucasAvelar2711)                                                     |
-| Arquiteto     |                                                    [Arthur Gabriel](https://github.com/ArthurGabrieel)                                                    |
-| Tecnologistas | [Igor Ribeiro](https://github.com/igor-ribeir0), [Alexandre Beck](https://github.com/zzzBECK) e [Genilson Junior](https://github.com/GenilsonJrs) | a   |
+| Função        |                                                                           Nome                                                                           |
+| ------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Scrum Master  |                                                       [Alexandre Beck](https://github.com/zzzBECK)                                                       |
+| PO            |                                                    [Lucas Avelar](https://github.com/LucasAvelar2711)                                                    |
+| Arquiteto     |                                                   [Arthur Gabriel](https://github.com/ArthurGabrieel)                                                    |
+| Tecnologistas | [Igor Ribeiro](https://github.com/igor-ribeir0), [Thiago Freitas](https://github.com/thiagorfreitas) e [Genilson Junior](https://github.com/GenilsonJrs) |
