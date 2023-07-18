@@ -40,7 +40,9 @@ Agora você pode executar o aplicativo no seu dispositivo Android ou iOS, ou em 
 
 [Template para criação de pull requests](.github/ISSUE_TEMPLATE/.pull_request_template.md)
 
+## 🏪 Disponível para download da Play Store
 
+[Link para loja](https://play.google.com/store/apps/details?id=br.com.mds.guiaunb&pli=1)
 
 ## 👨‍💻 Desenvolvedores
 
